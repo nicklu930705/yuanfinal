@@ -14,7 +14,10 @@ const heroProductIds = [
   '02_食品保鮮耐熱袋-01_台塑保鮮耐熱袋-200x300mm_150枚',
   '02_食品保鮮耐熱袋-02_營潔平板式耐熱袋-四兩裝_15.5x19.5cm',
   '03_夾鏈袋-01_台塑LDPE夾鏈袋-08號_170x240mm',
-  '04_病媒防治-01_蟑螂防治-快點絕_0.5百分比凝膠餌劑'
+  '04_病媒防治-01_蟑螂防治-快點絕_0.5百分比凝膠餌劑',
+  'yuan-product-paper-cups',
+  'yuan-product-sealing-film',
+  'yuan-product-mosquito-lamp'
 ];
 
 export default function HeroOrbit() {
