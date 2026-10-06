@@ -135,7 +135,7 @@ export default function HeroOrbit() {
     } else if (id === '01_清潔袋-04_醫療感染性廢棄物袋-規格') {
       coverImg = '/assets/01_清潔袋/04_醫療感染性廢棄物袋/系列規格圖__IMG_0215.JPG';
     } else if (id === '02_食品保鮮耐熱袋-01_台塑保鮮耐熱袋-200x300mm_150枚') {
-      coverImg = '/assets/hero/food_bag_200x300.jpg';
+      coverImg = '/assets/02_食品保鮮耐熱袋/01_台塑保鮮耐熱袋/200x300mm_150枚/展示圖.jpeg';
     } else if (id === '02_食品保鮮耐熱袋-02_營潔平板式耐熱袋-四兩裝_15.5x19.5cm') {
       coverImg = '/assets/hero/yingjie_306.jpg';
     } else if (id === '03_夾鏈袋-01_台塑LDPE夾鏈袋-08號_170x240mm') {
