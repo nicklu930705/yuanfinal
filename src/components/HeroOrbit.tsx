@@ -125,7 +125,7 @@ export default function HeroOrbit() {
     
     // Override image for specific cleaning bags with safe ASCII paths
     if (id === '01_清潔袋-01_一般捲取式-大_45L') {
-      coverImg = '/assets/hero/taisu_45l_cover.png';
+      coverImg = '/assets/01_清潔袋/01_一般捲取式/大_45L/展示圖.jpeg';
     } else if (id === '01_清潔袋-02_拉繩式-大_45L_24張') {
       coverImg = '/assets/hero/drawstring_45l_24.png';
     } else if (id === '01_清潔袋-03_抽取式與業務用-超大_黑色_28張') {
