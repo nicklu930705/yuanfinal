@@ -174,7 +174,7 @@ export const products: Product[] = [
     "images": [
       {
         "role": "展示圖",
-        "path": "/assets/01_清潔袋/01_一般捲取式/大_45L/展示圖.jpeg",
+        "path": "/assets/01_清潔袋/01_一般捲取式/大_45L/展示圖2.jpeg",
         "note": "",
         "order": 0
       },
