@@ -104,7 +104,7 @@ export default function Home() {
                           <span className="text-on-surface font-medium">{product.specs[0]}</span>
                         </div>
                         <div className="flex items-center justify-between text-slate-muted">
-                          <span>出貨</span>
+                          <span>包裝數量</span>
                           <span className="text-on-surface font-medium">{product.specs[1]}</span>
                         </div>
                       </div>
