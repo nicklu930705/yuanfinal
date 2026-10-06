@@ -131,6 +131,12 @@ export default function ProductDetail() {
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight">{product.name}</h1>
             
+            {product.description && (
+              <div className="mb-8 text-slate-600 leading-relaxed bg-primary-50/20 p-6 rounded-[2rem] border border-primary-100/50">
+                <p className="whitespace-pre-line">{product.description}</p>
+              </div>
+            )}
+            
             <div className="flex-grow">
               {hasSpecs && selectedSpec ? (
                 <div className="mb-8">
@@ -192,12 +198,6 @@ export default function ProductDetail() {
               )}
             </div>
 
-            {product.description && (
-              <div className="mb-8 text-slate-600 leading-relaxed bg-primary-50/20 p-6 rounded-[2rem] border border-primary-100/50">
-                <p className="whitespace-pre-line">{product.description}</p>
-              </div>
-            )}
-            
             {hasSpecs && (
               <div className="mb-8">
                 <h3 className="text-sm font-bold text-slate-900 mb-3 uppercase tracking-wider">規格選擇</h3>
