@@ -98,14 +98,14 @@ export default function Home() {
                     <div className="p-5">
                       <h3 className="text-xl font-bold text-on-surface">{product.name}</h3>
                       <p className="text-sm text-on-surface-variant mt-2 leading-relaxed line-clamp-2">{product.desc}</p>
-                      <div className="mt-4 pt-4 border-t border-border-subtle space-y-2.5">
-                        <div className="flex items-center justify-between text-slate-muted text-sm font-bold uppercase tracking-wider">
+                      <div className="mt-4 pt-4 border-t border-border-subtle space-y-2">
+                        <div className="flex items-center justify-between text-slate-muted text-[10px] font-bold uppercase tracking-widest">
                           <span>規格</span>
-                          <span className="text-on-surface text-base md:text-lg font-extrabold">{product.specs[0]}</span>
+                          <span className="text-on-surface text-sm font-bold">{product.specs[0]}</span>
                         </div>
-                        <div className="flex items-center justify-between text-slate-muted text-sm font-bold uppercase tracking-wider">
+                        <div className="flex items-center justify-between text-slate-muted text-[10px] font-bold uppercase tracking-widest">
                           <span>包裝數量</span>
-                          <span className="text-on-surface text-base md:text-lg font-extrabold">{product.specs[1]}</span>
+                          <span className="text-on-surface text-sm font-bold">{product.specs[1]}</span>
                         </div>
                       </div>
                     </div>
