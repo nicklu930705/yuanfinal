@@ -142,7 +142,7 @@ export default function HeroOrbit() {
     } else if (id === '03_夾鏈袋-01_台塑LDPE夾鏈袋-01號_50x70mm') {
       coverImg = '/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/01號_50x70mm/展示圖.jpeg';
     } else if (id === '04_病媒防治-02_老鼠防治-一錠鼠_滅鼠餌劑') {
-      coverImg = '/assets/04_病媒防治/02_老鼠防治/一錠鼠_滅鼠餌劑/01_包裝主圖__IMG_0268.JPG';
+      coverImg = '/assets/04_病媒防治/02_老鼠防治/一錠鼠_滅鼠餌劑/展示圖.jpeg';
     } else if (id === '04_病媒防治-01_蟑螂防治-快點絕_0.5百分比凝膠餌劑') {
       coverImg = '/assets/hero/cockroach_bait.jpg';
     } else if (id === 'fp-zipper-storage') {
