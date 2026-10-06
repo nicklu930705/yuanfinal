@@ -145,9 +145,9 @@ export default function ProductDetail() {
                       { label: '張數', value: `${selectedSpec.sheets_per_box} 張 / 單位` },
                       { label: '條碼', value: selectedSpec.barcode || '-' }
                     ].map((item, i) => (
-                      <div key={i} className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                        <div className="text-xs text-slate-400 font-bold uppercase mb-1.5">{item.label}</div>
-                        <div className="text-base md:text-lg font-bold text-slate-700">{item.value}</div>
+                      <div key={i} className="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                        <div className="text-sm text-slate-400 font-bold uppercase mb-2">{item.label}</div>
+                        <div className="text-lg md:text-xl font-extrabold text-slate-900">{item.value}</div>
                       </div>
                     ))}
                   </div>
@@ -173,9 +173,9 @@ export default function ProductDetail() {
                       { label: '容量尺寸', value: product.parsedSpec?.capacity_or_dim || '-' },
                       { label: '包裝數量', value: product.parsedSpec?.quantity || '-' }
                     ].map((item, i) => (
-                      <div key={i} className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                        <div className="text-xs text-slate-400 font-bold uppercase mb-1.5">{item.label}</div>
-                        <div className="text-base md:text-lg font-bold text-slate-700">{item.value}</div>
+                      <div key={i} className="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                        <div className="text-sm text-slate-400 font-bold uppercase mb-2">{item.label}</div>
+                        <div className="text-lg md:text-xl font-extrabold text-slate-900">{item.value}</div>
                       </div>
                     ))}
                   </div>
