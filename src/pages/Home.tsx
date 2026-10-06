@@ -53,7 +53,7 @@ export default function Home() {
                   name: '台塑清潔袋｜大型 45L',
                   desc: '經典大型規格，適用於大多數標準垃圾桶。特殊的防漏封口技術，能有效防止液體滲出，是居家清潔的最佳幫手。',
                   tag: '熱銷清潔袋',
-                  img: '/assets/01_清潔袋/01_一般捲取式/大_45L/規格圖__IMG_0222.JPG',
+                  img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=professional+commercial+grade+heavy-duty+black+trash+bag+roll+neatly+presented+on+a+clean+minimalist+modern+background+studio+lighting+high+quality+texture&image_size=landscape_4_3',
                   specs: ['大 45L', '30張 / 捲'],
                   price: '38',
                   link: '/products/01_清潔袋-01_一般捲取式-大_45L'
