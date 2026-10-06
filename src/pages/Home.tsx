@@ -156,7 +156,7 @@ export default function Home() {
           </section>
 
           {/* Sample Request Banner */}
-          <section className="relative rounded-[2.5rem] overflow-hidden bg-primary text-white p-8 md:p-20">
+          <section className="relative rounded-[2.5rem] overflow-hidden bg-black text-white p-8 md:p-20">
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
               <div className="max-w-xl text-center md:text-left">
                 <h2 className="text-4xl font-headline font-bold mb-6">還在猜尺寸與厚度嗎？</h2>
