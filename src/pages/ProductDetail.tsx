@@ -131,42 +131,6 @@ export default function ProductDetail() {
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight">{product.name}</h1>
             
-            {product.description && (
-              <div className="mb-8 text-slate-600 leading-relaxed bg-primary-50/20 p-6 rounded-[2rem] border border-primary-100/50">
-                <p className="whitespace-pre-line">{product.description}</p>
-              </div>
-            )}
-            
-            {!product.notForSale && (
-              <div className="bg-stone-50 text-slate-700 p-4 rounded-2xl flex items-start mb-8 border border-slate-200 shadow-sm">
-                <Info className="w-5 h-5 mr-3 flex-shrink-0 mt-0.5 text-primary-600" />
-                <div className="text-sm leading-relaxed font-medium">
-                  價格、運費與交期由專人確認後提供。
-                </div>
-              </div>
-            )}
-
-            {hasSpecs && (
-              <div className="mb-8">
-                <h3 className="text-sm font-bold text-slate-900 mb-3 uppercase tracking-wider">規格選擇</h3>
-                <div className="flex flex-wrap gap-2.5">
-                  {product.specs.map(spec => (
-                    <button
-                      key={spec.id}
-                      onClick={() => setSelectedSpecId(spec.id)}
-                      className={`px-5 py-2.5 rounded-2xl text-sm font-bold transition-all border ${
-                        selectedSpecId === spec.id 
-                          ? 'border-primary-600 bg-primary-600 text-white shadow-lg shadow-primary-100 scale-105' 
-                          : 'border-slate-200 bg-white text-slate-600 hover:border-primary-300 hover:bg-primary-50/30'
-                      }`}
-                    >
-                      {spec.label}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-
             <div className="flex-grow">
               {hasSpecs && selectedSpec ? (
                 <div className="mb-8">
@@ -217,7 +181,43 @@ export default function ProductDetail() {
                   </div>
                 </div>
               )}
+
+              {!product.notForSale && (
+                <div className="bg-stone-50 text-slate-700 p-4 rounded-2xl flex items-start mb-8 border border-slate-200 shadow-sm">
+                  <Info className="w-5 h-5 mr-3 flex-shrink-0 mt-0.5 text-primary-600" />
+                  <div className="text-sm leading-relaxed font-medium">
+                    價格、運費與交期由專人確認後提供。
+                  </div>
+                </div>
+              )}
             </div>
+
+            {product.description && (
+              <div className="mb-8 text-slate-600 leading-relaxed bg-primary-50/20 p-6 rounded-[2rem] border border-primary-100/50">
+                <p className="whitespace-pre-line">{product.description}</p>
+              </div>
+            )}
+            
+            {hasSpecs && (
+              <div className="mb-8">
+                <h3 className="text-sm font-bold text-slate-900 mb-3 uppercase tracking-wider">規格選擇</h3>
+                <div className="flex flex-wrap gap-2.5">
+                  {product.specs.map(spec => (
+                    <button
+                      key={spec.id}
+                      onClick={() => setSelectedSpecId(spec.id)}
+                      className={`px-5 py-2.5 rounded-2xl text-sm font-bold transition-all border ${
+                        selectedSpecId === spec.id 
+                          ? 'border-primary-600 bg-primary-600 text-white shadow-lg shadow-primary-100 scale-105' 
+                          : 'border-slate-200 bg-white text-slate-600 hover:border-primary-300 hover:bg-primary-50/30'
+                      }`}
+                    >
+                      {spec.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {!product.notForSale ? (
               <div className="mt-auto border-t border-slate-100 pt-8">
