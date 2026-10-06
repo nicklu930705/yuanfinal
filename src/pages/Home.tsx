@@ -49,44 +49,44 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
-                  id: '01_清潔袋',
-                  name: '特厚抗撕裂垃圾袋',
-                  desc: '45L / 94L / 120L 承重不漏。圓底高壓無縫封口不滴湯水，營業廚餘耐磨抗刺穿。',
-                  tag: '營業後廚必備',
-                  img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA-oSSaRpf1WMtzTpSsK1W-6ET51vLfSqbbXcQNX1ex_p3xIPV1uysJkgljHzFef61D5pJYv_eGCr0sbBu0bcSeWmYJG_q4GJlhMp2WW9128lcDs2vFHveUHX-kWeDPVPbznuAmGqQSIJB-FUH26PH872soGo3NcYCT0fUHgj9nJYNhfg-sLCVSRWchNU9ISbeOpJvXgkzxzU2D6WYfNo7HaVkswK-Sjo4V6c0GcdA_0oB5PCA8d1q38Q',
-                  specs: ['特厚 0.045mm ~ 0.06mm', '50包 / 箱 (批發現貨)'],
+                  id: '01_清潔袋-01_一般捲取式-大_45L',
+                  name: '台塑清潔袋｜大型 45L',
+                  desc: '經典大型規格，適用於大多數標準垃圾桶。特殊的防漏封口技術，能有效防止液體滲出，是居家清潔的最佳幫手。',
+                  tag: '熱銷清潔袋',
+                  img: '/assets/01_清潔袋/01_一般捲取式/大_45L/規格圖__IMG_0222.JPG',
+                  specs: ['大 45L', '30張 / 捲'],
                   price: '38',
-                  link: '/products?category=01_清潔袋'
+                  link: '/products/01_清潔袋-01_一般捲取式-大_45L'
                 },
                 {
-                  id: '02_食品保鮮耐熱袋',
-                  name: '食品級高密度耐熱袋',
-                  desc: '耐熱 110°C / 防油防燙。SGS 溶出檢驗零塑化劑。4兩、6兩、半斤至3斤全規格現貨。',
-                  tag: '熱湯外帶專用',
-                  img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCSBJ9G7F1DalXiBgCHGHFNnoGgrBIREpr40TQM7Ek6SMoDkM5NJeWUg3O4idky9oOyCQe5IjU9htFyQpQiM_m1QDrxFGOTgI8c6V_w9nfr9m-jnGBYXqO4dfSJp7rMdhi_OeFppd9NmrnSwCiZMqyOlKUC-8PnSErozwWn-9AbJ3851tKowFClPoC0VMNk77MIMyTPLSu7u1-SqQDriTUhVX0AA18P_O-kV69chvB2Thv-hBtR6ZZt6A',
-                  specs: ['4兩 ~ 3斤 (全規格)', 'SGS 食品級 HDPE'],
+                  id: '02_食品保鮮耐熱袋-01_台塑保鮮耐熱袋-200x300mm_150枚',
+                  name: '台塑保鮮耐熱袋｜150枚',
+                  desc: '選用 100% 全新食品級原料，不含塑化劑，符合衛生安全標準。強韌耐用防漏，耐熱性佳，適合食材分裝與保鮮。',
+                  tag: '廚房保鮮必備',
+                  img: '/assets/02_食品保鮮耐熱袋/01_台塑保鮮耐熱袋/200x300mm_150枚/包裝正面圖__IMG_0243.JPG',
+                  specs: ['200x300mm', '150枚 / 盒'],
                   price: '42',
-                  link: '/products?category=02_食品保鮮耐熱袋'
+                  link: '/products/02_食品保鮮耐熱袋-01_台塑保鮮耐熱袋-200x300mm_150枚'
                 },
                 {
-                  id: '03_夾鏈袋',
-                  name: '密封加厚夾鏈袋',
-                  desc: '加厚 0.08mm 緊密咬合。冷凍冷藏不脆化，防潮保鮮必備，1號至12號常備供應。',
-                  tag: '乾貨備料分裝',
-                  img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAFYYwZXtrKri0OlMpVJe-1aPEpvmg1csR7yTT_WDxVaXsZbL0-v_R9cr005EQW7O6HwXYncpemDWQeZjFlrx-RSSeKp7iRX7gBcb995pV96B3j_z7pgpiHLdoPACsTgEPbRlA6HA6QZYYuUgyLiY06-Moc61BBbvJBT--XPR1YeqPZJOA8Qj8qgd2Fw0ZbN7vAfqk4ewBwL5v1D1VYgw__7gjBqbsy31SnZhXMw7mkVjPEFupttPtTAg',
-                  specs: ['特厚 0.08mm', '1號 ~ 12號 (全系列)'],
+                  id: '03_夾鏈袋-01_台塑LDPE夾鏈袋-01號_50x70mm',
+                  name: '台塑夾鏈袋｜1號',
+                  desc: '高品質食品級 PE 材質，透明度高。獨家高品質夾鏈封口，密封性極佳，適合各類生活小物分類收納。',
+                  tag: '分類收納神器',
+                  img: '/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/01號_50x70mm/規格圖__IMG_0255.JPG',
+                  specs: ['1號 (50x70mm)', '100張 / 包'],
                   price: '25',
-                  link: '/products?category=03_夾鏈袋'
+                  link: '/products/03_夾鏈袋-01_台塑LDPE夾鏈袋-01號_50x70mm'
                 },
                 {
-                  id: 'yuan-product-sealing-film',
-                  name: '通用型自動封口膜',
-                  desc: 'PP/PE/紙杯通用。高韌性易撕取，印刷清晰不掉漆，適用各式市售封口機。',
-                  tag: '飲品外帶必備',
-                  img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=rolls+of+plastic+cup+sealing+film+with+cute+boba+tea+patterns+on+a+bright+modern+background&image_size=landscape_4_3',
-                  specs: ['PP / PE / 紙杯通用', '可封約 2,500 杯'],
-                  price: '320',
-                  link: '/products/yuan-product-sealing-film'
+                  id: '04_病媒防治-02_老鼠防治-一錠鼠_滅鼠餌劑',
+                  name: '一錠鼠｜滅鼠餌劑',
+                  desc: '強力誘引配方搭配高效滅鼠成分，針對老鼠習性設計。投藥簡便，能有效解決鼠患問題，維護環境衛生。',
+                  tag: '專業病媒防治',
+                  img: '/assets/04_病媒防治/02_老鼠防治/一錠鼠_滅鼠餌劑/01_包裝主圖__IMG_0268.JPG',
+                  specs: ['高效滅鼠餌劑', '環境衛生用藥'],
+                  price: '120',
+                  link: '/products/04_病媒防治-02_老鼠防治-一錠鼠_滅鼠餌劑'
                 }
               ].map((product, idx) => (
                 <div key={idx} className="group relative bg-surface-container-lowest rounded-3xl border border-border-warm overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
