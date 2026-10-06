@@ -126,7 +126,7 @@ export default function ProductDetail() {
 
           {/* Product Info */}
           <div className="flex flex-col">
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary-50 text-primary-600 text-xs font-bold mb-4 w-fit border border-primary-100">
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-black text-white text-xs font-bold mb-4 w-fit">
               {product.categoryId.split('_')[1] || product.categoryId}
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight">{product.name}</h1>
