@@ -72,12 +72,12 @@ export default function ProductDetail() {
         <ArrowLeft className="w-4 h-4 mr-1 group-hover:-translate-x-1 transition-transform" /> 回上頁
       </button>
 
-      <div className="bg-white rounded-4xl shadow-xl border border-slate-100 overflow-hidden">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+      <div className="bg-transparent rounded-4xl overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           
           {/* Image Gallery */}
-          <div className="p-6 md:p-10 bg-stone-50 border-b md:border-b-0 md:border-r border-slate-100 flex flex-col">
-            <div className="relative aspect-square w-full mb-6 bg-white rounded-3xl overflow-hidden border border-slate-200 group flex items-center justify-center shadow-inner">
+          <div className="flex flex-col">
+            <div className="relative aspect-square w-full mb-6 bg-white rounded-3xl overflow-hidden border border-slate-200 group flex items-center justify-center">
               {selectedImage ? (
                 <>
                   <img 
@@ -125,7 +125,7 @@ export default function ProductDetail() {
           </div>
 
           {/* Product Info */}
-          <div className="p-6 md:p-10 flex flex-col">
+          <div className="flex flex-col">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary-50 text-primary-600 text-xs font-bold mb-4 w-fit border border-primary-100">
               {product.categoryId.split('_')[1] || product.categoryId}
             </div>
@@ -151,7 +151,7 @@ export default function ProductDetail() {
                       { label: '張數', value: `${selectedSpec.sheets_per_box} 張 / 單位` },
                       { label: '條碼', value: selectedSpec.barcode || '-' }
                     ].map((item, i) => (
-                      <div key={i} className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                      <div key={i} className="bg-slate-50/50 p-4 rounded-2xl">
                         <div className="text-sm text-slate-400 font-bold uppercase mb-1.5">{item.label}</div>
                         <div className="text-base md:text-lg font-bold text-slate-900">{item.value}</div>
                       </div>
@@ -179,7 +179,7 @@ export default function ProductDetail() {
                       { label: '容量尺寸', value: product.parsedSpec?.capacity_or_dim || '-' },
                       { label: '包裝數量', value: product.parsedSpec?.quantity || '-' }
                     ].map((item, i) => (
-                      <div key={i} className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                      <div key={i} className="bg-slate-50/50 p-4 rounded-2xl">
                         <div className="text-sm text-slate-400 font-bold uppercase mb-1.5">{item.label}</div>
                         <div className="text-base md:text-lg font-bold text-slate-900">{item.value}</div>
                       </div>
