@@ -156,7 +156,7 @@ export default function Admin() {
                         onChange={(e) => updateOrderStatus(order.id, e.target.value)}
                         className={`text-sm font-medium px-3 py-1.5 rounded-full border focus:outline-none ${
                           order.status === '待處理' ? 'bg-amber-100 text-amber-800 border-amber-200' :
-                          order.status === '已聯絡' ? 'bg-blue-100 text-blue-800 border-blue-200' :
+                          order.status === '已聯絡' ? 'bg-slate-100 text-slate-800 border-slate-200' :
                           order.status === '已確認' ? 'bg-indigo-100 text-indigo-800 border-indigo-200' :
                           order.status === '已完成' ? 'bg-green-100 text-green-800 border-green-200' :
                           'bg-slate-100 text-slate-800 border-slate-200'
