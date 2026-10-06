@@ -786,10 +786,16 @@ export const products: Product[] = [
     "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。",
     "images": [
       {
+        "role": "展示圖",
+        "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/01號_50x70mm/展示圖.jpeg",
+        "note": "",
+        "order": 0
+      },
+      {
         "role": "規格圖",
         "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/01號_50x70mm/規格圖__IMG_0255.JPG",
         "note": "原圖號數為1號；厚0.04mm，100張。00號與0號是不同尺寸。",
-        "order": 0
+        "order": 1
       }
     ],
     "specs": [],

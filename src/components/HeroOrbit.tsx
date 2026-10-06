@@ -13,7 +13,8 @@ const heroProductIds = [
   'fp-freezer-bag',
   '02_食品保鮮耐熱袋-01_台塑保鮮耐熱袋-200x300mm_150枚',
   '02_食品保鮮耐熱袋-02_營潔平板式耐熱袋-四兩裝_15.5x19.5cm',
-  '03_夾鏈袋-01_台塑LDPE夾鏈袋-08號_170x240mm',
+  '03_夾鏈袋-01_台塑LDPE夾鏈袋-01號_50x70mm',
+  '04_病媒防治-02_老鼠防治-一錠鼠_滅鼠餌劑',
   '04_病媒防治-01_蟑螂防治-快點絕_0.5百分比凝膠餌劑',
   'yuan-product-paper-cups',
   'yuan-product-sealing-film',
@@ -138,14 +139,16 @@ export default function HeroOrbit() {
       coverImg = '/assets/02_食品保鮮耐熱袋/01_台塑保鮮耐熱袋/200x300mm_150枚/展示圖.jpeg';
     } else if (id === '02_食品保鮮耐熱袋-02_營潔平板式耐熱袋-四兩裝_15.5x19.5cm') {
       coverImg = '/assets/hero/yingjie_306.jpg';
-    } else if (id === '03_夾鏈袋-01_台塑LDPE夾鏈袋-08號_170x240mm') {
-      coverImg = '/assets/hero/zipper_bag_08_v3.png';
+    } else if (id === '03_夾鏈袋-01_台塑LDPE夾鏈袋-01號_50x70mm') {
+      coverImg = '/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/01號_50x70mm/展示圖.jpeg';
+    } else if (id === '04_病媒防治-02_老鼠防治-一錠鼠_滅鼠餌劑') {
+      coverImg = '/assets/04_病媒防治/02_老鼠防治/一錠鼠_滅鼠餌劑/01_包裝主圖__IMG_0268.JPG';
+    } else if (id === '04_病媒防治-01_蟑螂防治-快點絕_0.5百分比凝膠餌劑') {
+      coverImg = '/assets/hero/cockroach_bait.jpg';
     } else if (id === 'fp-zipper-storage') {
       coverImg = '/assets/hero/zipper_storage_l.jpg';
     } else if (id === 'fp-freezer-bag') {
       coverImg = '/assets/hero/freezer_bag_l_cover.jpg';
-    } else if (id === '04_病媒防治-01_蟑螂防治-快點絕_0.5百分比凝膠餌劑') {
-      coverImg = '/assets/hero/cockroach_bait.jpg';
     }
 
     return {
