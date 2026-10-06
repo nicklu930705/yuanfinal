@@ -47,8 +47,27 @@ export default {
         "tertiary": "#000000",
         "border-warm": "#E8E4DC",
         "outline": "#76777d",
+        "primary": {
+          DEFAULT: "#0284c7",
+          50: "#f0f9ff",
+          100: "#e0f2fe",
+          200: "#bae6fd",
+          300: "#7dd3fc",
+          400: "#38bdf8",
+          500: "#0ea5e9",
+          600: "#0284c7",
+          700: "#0369a1",
+          800: "#075985",
+          900: "#0c4a6e",
+        },
+        "accent": {
+          DEFAULT: "#0284c7",
+          50: "#f0f9ff",
+          100: "#e0f2fe",
+          200: "#bae6fd",
+          600: "#0284c7",
+        },
         "primary-container": "#131b2e",
-        "primary": "#000000",
         "on-error": "#ffffff",
         "error-container": "#ffdad6",
         "slate-muted": "#475569",
@@ -65,7 +84,8 @@ export default {
         "lg": "0.5rem",
         "xl": "0.75rem",
         "2xl": "1rem",
-        "3xl": "1.5rem"
+        "3xl": "1.5rem",
+        "4xl": "2.5rem"
       },
       "fontFamily": {
         "sans": ["Noto Sans TC", "Noto Sans", "sans-serif"],

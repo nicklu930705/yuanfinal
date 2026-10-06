@@ -85,14 +85,14 @@ export default function ProductGrid() {
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Sidebar Filters */}
         <div className="w-full lg:w-64 flex-shrink-0">
-          <div className="bg-white p-4 rounded-xl shadow-sm border border-slate-100 sticky top-24">
-            <h2 className="text-lg font-bold mb-4 border-b pb-2">分類</h2>
+          <div className="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 sticky top-24">
+            <h2 className="text-lg font-bold mb-4 border-b pb-2">分類篩選</h2>
             <div className="overflow-x-auto lg:overflow-visible pb-2 lg:pb-0">
               <ul className="flex lg:flex-col space-x-2 lg:space-x-0 lg:space-y-2 min-w-max lg:min-w-0">
                 <li>
                   <button
                     onClick={() => handleCategoryChange('', '')}
-                    className={`whitespace-nowrap w-full text-left px-3 py-2 rounded-md transition ${!categoryFilter ? 'bg-primary-50 text-primary-700 font-bold border border-primary-200' : 'hover:bg-slate-50 border border-transparent'}`}
+                    className={`whitespace-nowrap w-full text-left px-4 py-2.5 rounded-2xl transition ${!categoryFilter ? 'bg-primary-50 text-primary-600 font-bold border border-primary-200' : 'hover:bg-slate-50 border border-transparent text-slate-600'}`}
                   >
                     全部商品
                   </button>
@@ -101,33 +101,30 @@ export default function ProductGrid() {
                   <li key={cat.id} className="flex flex-col">
                     <button
                       onClick={() => handleCategoryChange(cat.id, '')}
-                      className={`whitespace-nowrap w-full text-left px-3 py-2 rounded-md transition ${categoryFilter === cat.id && !subcategoryFilter ? 'bg-primary-50 text-primary-700 font-bold border border-primary-200' : 'hover:bg-slate-50 border border-transparent'}`}
+                      className={`whitespace-nowrap w-full text-left px-4 py-2.5 rounded-2xl transition ${categoryFilter === cat.id && !subcategoryFilter ? 'bg-primary-50 text-primary-600 font-bold border border-primary-200' : 'hover:bg-slate-50 border border-transparent text-slate-600'}`}
                     >
                       {cat.name}
                     </button>
-                    {/* Subcategories (Desktop: always nested; Mobile: horizontal list below parent) */}
+                    {/* Subcategories */}
                     {categoryFilter === cat.id && cat.subcategories && cat.subcategories.length > 0 && (
                       <>
-                        {/* Desktop view */}
                         <ul className="pl-4 mt-1 space-y-1 hidden lg:block">
                           {cat.subcategories.map(sub => (
                             <li key={sub.id}>
                               <button
                                 onClick={() => handleCategoryChange(cat.id, sub.id)}
-                                className={`w-full text-left px-2 py-1.5 text-sm rounded transition ${subcategoryFilter === sub.id ? 'text-primary-600 font-bold bg-primary-50/50' : 'text-slate-600 hover:text-primary-600 hover:bg-slate-50'}`}
+                                className={`w-full text-left px-3 py-2 text-sm rounded-xl transition ${subcategoryFilter === sub.id ? 'text-primary-600 font-bold bg-primary-50/50' : 'text-slate-500 hover:text-primary-600 hover:bg-slate-50'}`}
                               >
                                 {sub.name}
                               </button>
                             </li>
                           ))}
                         </ul>
-                        {/* Mobile view: absolute positioned or just horizontal list? 
-                            Let's add them as inline siblings for mobile horizontal scroll */}
                         {cat.subcategories.map(sub => (
                           <li key={sub.id} className="lg:hidden">
                             <button
                               onClick={() => handleCategoryChange(cat.id, sub.id)}
-                              className={`whitespace-nowrap px-3 py-2 rounded-md transition border ${subcategoryFilter === sub.id ? 'bg-primary-50 text-primary-700 font-bold border-primary-200' : 'hover:bg-slate-50 border-transparent'}`}
+                              className={`whitespace-nowrap px-4 py-2.5 rounded-2xl transition border ${subcategoryFilter === sub.id ? 'bg-primary-50 text-primary-600 font-bold border-primary-200' : 'hover:bg-slate-50 border-transparent text-slate-600'}`}
                             >
                               {sub.name}
                             </button>
@@ -147,18 +144,18 @@ export default function ProductGrid() {
           {/* Search Bar & Results Count */}
           <div className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="relative flex-1 max-w-md">
-              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                 <Search className="h-5 w-5 text-slate-400" />
               </div>
               <input
                 type="text"
                 placeholder="搜尋品名、尺寸、號數..."
-                className="block w-full pl-10 pr-3 py-2.5 border border-slate-300 rounded-md leading-5 bg-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-primary-500 focus:border-primary-500 sm:text-sm shadow-sm transition"
+                className="block w-full pl-11 pr-4 py-3 border border-slate-200 rounded-2xl leading-5 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 sm:text-sm shadow-sm transition"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
             </div>
-            <div className="text-slate-500 text-sm font-medium">
+            <div className="text-slate-500 text-sm font-medium bg-white px-4 py-2 rounded-full border border-slate-100 shadow-sm">
               顯示 {filteredProducts.length} 項商品
             </div>
           </div>
@@ -181,31 +178,32 @@ export default function ProductGrid() {
               }
 
               return (
-                <Link key={product.id} to={`/products/${encodeURIComponent(product.id)}`} className="group bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-primary-200 overflow-hidden flex flex-col transition-all">
-                  <div className="aspect-w-4 aspect-h-3 w-full bg-white relative border-b border-slate-50">
+                <Link key={product.id} to={`/products/${encodeURIComponent(product.id)}`} className="group bg-white rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-xl hover:border-primary-200 overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1">
+                  <div className="aspect-w-4 aspect-h-3 w-full bg-stone-50 relative border-b border-slate-50 overflow-hidden">
                     {coverImg ? (
-                      <img src={coverImg} alt={product.name} className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" />
+                      <img src={coverImg} alt={product.name} className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500" />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-slate-400 text-sm">無圖片</div>
                     )}
                   </div>
-                  <div className="p-3 sm:p-4 flex flex-col flex-grow">
-                    <div className="text-[10px] sm:text-xs text-primary-600 font-medium mb-1 line-clamp-1">
+                  <div className="p-4 sm:p-5 flex flex-col flex-grow">
+                    <div className="text-[10px] sm:text-xs text-primary-600 font-bold mb-1.5 uppercase tracking-wider">
                       {subName}
                     </div>
-                    <h3 className="text-sm sm:text-base lg:text-lg font-bold text-slate-900 mb-1 sm:mb-2 line-clamp-2 leading-snug">
+                    <h3 className="text-sm sm:text-base lg:text-lg font-bold text-slate-900 mb-1 sm:mb-2 line-clamp-2 leading-tight group-hover:text-primary-600 transition-colors">
                       {product.name}
                     </h3>
-                    <div className="text-xs sm:text-sm text-slate-500 mb-3 line-clamp-1">
+                    <div className="text-xs sm:text-sm text-slate-500 mb-4 line-clamp-1 bg-slate-50 px-2 py-1 rounded-lg w-fit">
                       {specString || '標準規格'}
                     </div>
                     
-                    <div className="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between">
-                      <span className="text-slate-400 text-xs sm:text-sm group-hover:text-primary-600 transition-colors">
+                    <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
+                      <span className="text-slate-400 text-xs sm:text-sm font-medium group-hover:text-primary-600 transition-colors flex items-center gap-1">
                         {product.notForSale ? '查看詳情' : '查看規格'}
+                        <span className="material-symbols-outlined text-[16px]">chevron_right</span>
                       </span>
                       {!product.notForSale && (
-                        <span className="text-accent-600 font-bold text-xs sm:text-sm bg-accent-50 px-2 py-1 rounded">批量詢價</span>
+                        <span className="text-primary-600 font-bold text-[10px] sm:text-xs bg-primary-50 px-2.5 py-1 rounded-full border border-primary-100 shadow-sm">批量詢價</span>
                       )}
                     </div>
                   </div>
@@ -231,11 +229,11 @@ export default function ProductGrid() {
           {/* Pagination */}
           {totalPages > 1 && (
             <div className="mt-10 flex justify-center">
-              <nav className="flex items-center space-x-1 sm:space-x-2">
+              <nav className="flex items-center space-x-1 sm:space-x-2 bg-white p-2 rounded-2xl border border-slate-100 shadow-sm">
                 <button
                   onClick={() => handlePageChange(currentPage - 1)}
                   disabled={currentPage === 1}
-                  className="px-3 py-2 rounded-md border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed transition"
+                  className="px-4 py-2 rounded-xl border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed transition text-sm font-bold"
                 >
                   上一頁
                 </button>
@@ -245,9 +243,9 @@ export default function ProductGrid() {
                     <button
                       key={page}
                       onClick={() => handlePageChange(page)}
-                      className={`w-10 h-10 rounded-md border transition flex items-center justify-center font-medium ${
+                      className={`w-10 h-10 rounded-xl border transition flex items-center justify-center font-bold text-sm ${
                         currentPage === page 
-                          ? 'bg-primary-600 text-white border-primary-600' 
+                          ? 'bg-primary-600 text-white border-primary-600 shadow-md shadow-primary-200' 
                           : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
                       }`}
                     >
@@ -255,14 +253,14 @@ export default function ProductGrid() {
                     </button>
                   ))}
                 </div>
-                <div className="sm:hidden px-4 py-2 text-slate-600 font-medium">
+                <div className="sm:hidden px-4 py-2 text-slate-600 font-bold">
                   {currentPage} / {totalPages}
                 </div>
 
                 <button
                   onClick={() => handlePageChange(currentPage + 1)}
                   disabled={currentPage === totalPages}
-                  className="px-3 py-2 rounded-md border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed transition"
+                  className="px-4 py-2 rounded-xl border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed transition text-sm font-bold"
                 >
                   下一頁
                 </button>
