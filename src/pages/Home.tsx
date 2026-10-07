@@ -106,23 +106,28 @@ export default function Home() {
           </section>
 
           {/* Inquiry and Brand Sections */}
-          <div className="flex flex-col gap-6 mb-8 w-full">
+          <div className="flex flex-col gap-2 mb-4 w-full">
             {/* Inquiry Banner */}
-            <section className="mt-12 bg-black rounded-[2rem] p-8 text-center border border-slate-800 w-full">
-              <h3 className="text-xl font-bold text-white mb-2">不確定規格？讓我們協助您挑選。</h3>
-              <p className="text-slate-400 mb-6">提供需要的品項、尺寸與數量，透過 LINE 聯繫採購。</p>
-              <a 
-                href="https://line.me/R/ti/p/%40593cexey" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="inline-flex items-center px-8 py-3 bg-[#00B900] hover:bg-[#009900] text-white font-bold rounded-xl transition shadow-lg active:scale-95"
-              >
-                LINE 聯絡詢價
-              </a>
+            <section className="mt-8 bg-black rounded-[2.5rem] p-8 md:p-12 border border-slate-800 w-full">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+                <div className="flex flex-col gap-3">
+                  <h3 className="text-2xl md:text-4xl font-bold text-white">不確定規格？讓我們協助您挑選。</h3>
+                  <p className="text-slate-400 text-sm md:text-lg">提供需要的品項、尺寸與數量，透過 LINE 聯繫採購。</p>
+                </div>
+                <a 
+                  href="https://line.me/R/ti/p/%40593cexey" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-2 px-10 py-5 bg-[#00B900] hover:bg-[#00B900]/90 text-white font-bold rounded-2xl transition-all shadow-[0_0_20px_rgba(0,185,0,0.3)] active:scale-95 text-xl whitespace-nowrap"
+                >
+                  <span className="material-symbols-outlined">chat</span>
+                  LINE 聯絡詢價
+                </a>
+              </div>
             </section>
 
             {/* Home Brand Section */}
-            <section className="bg-transparent py-16 sm:py-24 px-4 sm:px-6 lg:px-8 w-full text-center rounded-[2.5rem]">
+            <section className="bg-transparent py-10 sm:py-16 px-4 sm:px-6 lg:px-8 w-full text-center rounded-[2.5rem]">
               <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-slate-900">關於侑安國際有限公司</h2>
               <p className="text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto">
                 以品質立信，以服務致遠<br />
