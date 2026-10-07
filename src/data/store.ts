@@ -1523,36 +1523,8 @@ export const products: Product[] = [
     "images": [],
     "specs": [
       {
-        "id": "fp-freezer-bag-l",
-        "size": "L",
-        "label": "大",
-        "dimensions": [
-          26.8,
-          27.3
-        ],
-        "sheets_per_box": 14,
-        "barcode": "4711046993152",
-        "images": [
-          {
-            "role": "包裝正面主圖",
-            "path": "/assets/03_夾鏈袋/03_台塑保鮮冷凍袋/L_大_14張每盒/01_包裝正面主圖__IMG_0284.JPG",
-            "order": 1
-          },
-          {
-            "role": "包裝用途面",
-            "path": "/assets/03_夾鏈袋/03_台塑保鮮冷凍袋/L_大_14張每盒/02_包裝用途面__IMG_0285.JPG",
-            "order": 2
-          },
-          {
-            "role": "包裝背面規格",
-            "path": "/assets/03_夾鏈袋/03_台塑保鮮冷凍袋/L_大_14張每盒/03_包裝背面規格__IMG_0286.JPG",
-            "order": 3
-          }
-        ]
-      },
-      {
         "id": "fp-freezer-bag-m",
-        "size": "M",
+        "size": "中",
         "label": "中",
         "dimensions": [
           17.8,
@@ -1577,13 +1549,41 @@ export const products: Product[] = [
             "order": 3
           }
         ]
+      },
+      {
+        "id": "fp-freezer-bag-l",
+        "size": "大",
+        "label": "大",
+        "dimensions": [
+          26.8,
+          27.3
+        ],
+        "sheets_per_box": 14,
+        "barcode": "4711046993152",
+        "images": [
+          {
+            "role": "包裝正面主圖",
+            "path": "/assets/03_夾鏈袋/03_台塑保鮮冷凍袋/L_大_14張每盒/01_包裝正面主圖__IMG_0284.JPG",
+            "order": 1
+          },
+          {
+            "role": "包裝用途面",
+            "path": "/assets/03_夾鏈袋/03_台塑保鮮冷凍袋/L_大_14張每盒/02_包裝用途面__IMG_0285.JPG",
+            "order": 2
+          },
+          {
+            "role": "包裝背面規格",
+            "path": "/assets/03_夾鏈袋/03_台塑保鮮冷凍袋/L_大_14張每盒/03_包裝背面規格__IMG_0286.JPG",
+            "order": 3
+          }
+        ]
       }
     ],
     "shared_images": [
       {
         "role": "系列規格圖",
         "path": "/assets/03_夾鏈袋/03_台塑保鮮冷凍袋/00_系列共用/04_系列規格圖__IMG_0283.JPG",
-        "order": 4
+        "order": 0
       }
     ],
     "parsedSpec": null

@@ -245,8 +245,8 @@ export default function ProductDetail() {
                 )}
 
                 {/* Step 2: Select Color/Variant (顏色) */}
-                {selectedSize && groupedSpecs[selectedSize] && product.subcategoryId !== '04_醫療感染性廢棄物袋' && (
-                  <div>
+                {selectedSize && groupedSpecs[selectedSize] && groupedSpecs[selectedSize].length > 1 && product.subcategoryId !== '04_醫療感染性廢棄物袋' && (
+                  <div className="mt-4">
                     <div className="flex flex-wrap gap-2.5">
                       {groupedSpecs[selectedSize].map(spec => (
                         <button
