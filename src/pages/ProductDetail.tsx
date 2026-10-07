@@ -203,10 +203,10 @@ export default function ProductDetail() {
                       { 
                         label: '張數', 
                         value: product.categoryId === '01_清潔袋' 
-                          ? `${selectedSpec.sheets_per_box} 張/捲` 
+                          ? `${selectedSpec.sheets_per_box} 枚/捲` 
                           : product.categoryId === '03_夾鏈袋'
-                            ? `${selectedSpec.sheets_per_box} 張`
-                            : `${selectedSpec.sheets_per_box} 張/盒`
+                            ? `${selectedSpec.sheets_per_box} 枚`
+                            : `${selectedSpec.sheets_per_box} 枚/盒`
                       }
                     ].map((item, i) => (
                       <React.Fragment key={i}>

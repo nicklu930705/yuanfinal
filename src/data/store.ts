@@ -288,7 +288,7 @@ export const products: Product[] = [
     "subcategoryId": "01_一般捲取式",
     "name": "台塑清潔袋｜超大型 90L",
     "originalName": "超大_90L",
-    "description": "專業級超大容量，滿足高強度清理需求。一捲多張，經濟實惠，是大型活動、工地或營業場所清潔的理想選擇。",
+    "description": "專業級超大容量，滿足高強度清理需求。一捲多枚，經濟實惠，是大型活動、工地或營業場所清潔的理想選擇。",
     "images": [
       {
         "role": "規格圖",
@@ -387,7 +387,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "飯店旅館無心捲",
       "capacity_or_dim": "10L",
-      "quantity": "100張/捲"
+      "quantity": "100枚/捲"
     }
   },
   {
