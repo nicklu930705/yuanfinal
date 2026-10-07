@@ -14,7 +14,7 @@ export default function Navbar() {
     { name: '全部商品', path: '/products' },
     { name: '營業用包材', path: '/products?category=05_餐飲外帶包材' },
     { name: '環境衛生除蟲', path: '/products?category=04_病媒防治' },
-    { name: '企業介紹', path: '/about' },
+    { name: '關於我們', path: '/about' },
   ];
 
   return (
