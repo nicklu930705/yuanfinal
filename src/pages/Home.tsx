@@ -89,7 +89,7 @@ export default function Home() {
                   link: '/products/04_病媒防治-02_老鼠防治-一錠鼠_滅鼠餌劑'
                 }
               ].map((product, idx) => (
-                <div key={idx} className="group relative bg-surface-container-lowest rounded-3xl border border-border-warm overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <Link key={idx} to={product.link} className="group relative bg-surface-container-lowest rounded-3xl border border-border-warm overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                   <div>
                     <div className="aspect-[4/3] bg-stone-100 relative overflow-hidden">
                       <img className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src={product.img} alt={product.name} />
@@ -98,32 +98,9 @@ export default function Home() {
                     <div className="p-5">
                       <h3 className="text-xl font-bold text-on-surface">{product.name}</h3>
                       <p className="text-sm text-on-surface-variant mt-2 leading-relaxed line-clamp-2">{product.desc}</p>
-                      <div className="mt-4 pt-4 border-t border-border-subtle space-y-2">
-                        <div className="flex items-center justify-between text-slate-muted text-[10px] font-bold uppercase tracking-widest">
-                          <span>規格</span>
-                          <span className="text-on-surface text-sm font-bold">{product.specs[0]}</span>
-                        </div>
-                        <div className="flex items-center justify-between text-slate-muted text-[10px] font-bold uppercase tracking-widest">
-                          <span>包裝數量</span>
-                          <span className="text-on-surface text-sm font-bold">{product.specs[1]}</span>
-                        </div>
-                      </div>
                     </div>
                   </div>
-                  <div className="p-5 pt-0">
-                    <div className="bg-surface-linen p-3 rounded-2xl border border-border-warm mb-4">
-                      <span className="text-xs font-bold text-secondary block">批發價起</span>
-                      <div className="flex items-baseline gap-1">
-                        <span className="text-2xl font-bold text-on-surface">${product.price}</span>
-                        <span className="text-xs text-slate-muted">/ 包 (箱購)</span>
-                      </div>
-                    </div>
-                    <Link className="w-full py-3 px-4 bg-primary text-white hover:bg-stone-800 rounded-2xl font-bold flex items-center justify-center gap-1.5 transition-colors" to={product.link}>
-                      <span>立即選購</span>
-                      <span className="material-symbols-outlined text-[16px]">chevron_right</span>
-                    </Link>
-                  </div>
-                </div>
+                </Link>
               ))}
             </div>
           </section>

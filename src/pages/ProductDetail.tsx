@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ShoppingCart, Info, ChevronLeft, ChevronRight } from 'lucide-react';
 import { products } from '../data/store';
@@ -144,17 +144,17 @@ export default function ProductDetail() {
                     <span className="w-1.5 h-6 bg-primary-600 rounded-full"></span>
                     規格詳情
                   </h3>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-y-4 text-sm">
                     {[
                       { label: '款式', value: selectedSpec.label },
-                      { label: '尺寸', value: `${selectedSpec.dimensions.join(' × ')} cm` },
+                      { label: '規格', value: `${selectedSpec.dimensions.join(' × ')} cm` },
                       { label: '張數', value: `${selectedSpec.sheets_per_box} 張 / 單位` },
                       { label: '條碼', value: selectedSpec.barcode || '-' }
                     ].map((item, i) => (
-                      <div key={i} className="bg-slate-50/50 p-4 rounded-2xl">
-                        <div className="text-sm text-slate-400 font-bold uppercase mb-1.5">{item.label}</div>
-                        <div className="text-base md:text-lg font-bold text-slate-900">{item.value}</div>
-                      </div>
+                      <React.Fragment key={i}>
+                        <div className="text-slate-500">{item.label}</div>
+                        <div className="font-medium text-right text-slate-900">{item.value}</div>
+                      </React.Fragment>
                     ))}
                   </div>
                   
@@ -173,16 +173,16 @@ export default function ProductDetail() {
                     <span className="w-1.5 h-6 bg-primary-600 rounded-full"></span>
                     商品詳情
                   </h3>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-y-4 text-sm">
                     {[
-                      { label: '規格類型', value: product.parsedSpec?.size_or_type || '-' },
-                      { label: '容量尺寸', value: product.parsedSpec?.capacity_or_dim || '-' },
+                      { label: '款式', value: product.parsedSpec?.size_or_type || '-' },
+                      { label: '規格', value: product.parsedSpec?.capacity_or_dim || '-' },
                       { label: '包裝數量', value: product.parsedSpec?.quantity || '-' }
                     ].map((item, i) => (
-                      <div key={i} className="bg-slate-50/50 p-4 rounded-2xl">
-                        <div className="text-sm text-slate-400 font-bold uppercase mb-1.5">{item.label}</div>
-                        <div className="text-base md:text-lg font-bold text-slate-900">{item.value}</div>
-                      </div>
+                      <React.Fragment key={i}>
+                        <div className="text-slate-500">{item.label}</div>
+                        <div className="font-medium text-right text-slate-900">{item.value}</div>
+                      </React.Fragment>
                     ))}
                   </div>
                 </div>
