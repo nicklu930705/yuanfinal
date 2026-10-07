@@ -12,8 +12,35 @@ export default function ProductDetail() {
   const product = products.find(p => p.id === decodeURIComponent(id || ''));
   
   const hasSpecs = product?.specs && product.specs.length > 0;
-  const [selectedSpecId, setSelectedSpecId] = useState(hasSpecs ? product.specs[0].id : '');
   
+  // Group specs by size (款式) for multi-step selection
+  const groupedSpecs = React.useMemo(() => {
+    if (!hasSpecs) return {};
+    return product.specs.reduce((acc, spec) => {
+      if (!acc[spec.size]) acc[spec.size] = [];
+      acc[spec.size].push(spec);
+      return acc;
+    }, {} as Record<string, typeof product.specs>);
+  }, [product, hasSpecs]);
+
+  const sizes = Object.keys(groupedSpecs);
+  const isMultiStep = sizes.length > 1 && sizes.some(s => groupedSpecs[s].length > 0);
+
+  const [selectedSize, setSelectedSize] = useState(sizes[0] || '');
+  const [selectedSpecId, setSelectedSpecId] = useState('');
+
+  // Update selectedSpecId when size changes or when component mounts
+  useEffect(() => {
+    if (selectedSize && groupedSpecs[selectedSize]) {
+      const currentSpecs = groupedSpecs[selectedSize];
+      // Keep current spec if it matches the new size, otherwise pick first
+      const currentSpec = currentSpecs.find(s => s.id === selectedSpecId);
+      if (!currentSpec) {
+        setSelectedSpecId(currentSpecs[0].id);
+      }
+    }
+  }, [selectedSize, groupedSpecs]);
+
   const selectedSpec = hasSpecs ? product.specs.find(s => s.id === selectedSpecId) : null;
   
   // Combine images depending on whether it has specs
@@ -183,21 +210,50 @@ export default function ProductDetail() {
             {hasSpecs && (
               <div className="mb-8">
                 <h3 className="text-sm font-bold text-slate-900 mb-3 uppercase tracking-wider">規格選擇</h3>
-                <div className="flex flex-wrap gap-2.5">
-                  {product.specs.map(spec => (
-                    <button
-                      key={spec.id}
-                      onClick={() => setSelectedSpecId(spec.id)}
-                      className={`px-5 py-2.5 rounded-2xl text-sm font-bold transition-all border ${
-                        selectedSpecId === spec.id 
-                          ? 'border-primary-600 bg-primary-600 text-white shadow-lg shadow-primary-100 scale-105' 
-                          : 'border-slate-200 bg-white text-slate-600 hover:border-primary-300 hover:bg-primary-50/30'
-                      }`}
-                    >
-                      {spec.label}
-                    </button>
-                  ))}
-                </div>
+                
+                {/* Step 1: Select Size/Type (款式) if there are multiple */}
+                {sizes.length > 1 && (
+                  <div className="mb-4">
+                    <p className="text-xs text-slate-500 mb-2 font-bold">1. 選擇款式</p>
+                    <div className="flex flex-wrap gap-2.5">
+                      {sizes.map(size => (
+                        <button
+                          key={size}
+                          onClick={() => setSelectedSize(size)}
+                          className={`px-5 py-2.5 rounded-2xl text-sm font-bold transition-all border ${
+                            selectedSize === size 
+                              ? 'border-primary-600 bg-primary-600 text-white shadow-lg shadow-primary-100 scale-105' 
+                              : 'border-slate-200 bg-white text-slate-600 hover:border-primary-300 hover:bg-primary-50/30'
+                          }`}
+                        >
+                          {size}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Step 2: Select Color/Variant (顏色) */}
+                {selectedSize && groupedSpecs[selectedSize] && (
+                  <div>
+                    {sizes.length > 1 && <p className="text-xs text-slate-500 mb-2 font-bold">2. 選擇顏色</p>}
+                    <div className="flex flex-wrap gap-2.5">
+                      {groupedSpecs[selectedSize].map(spec => (
+                        <button
+                          key={spec.id}
+                          onClick={() => setSelectedSpecId(spec.id)}
+                          className={`px-5 py-2.5 rounded-2xl text-sm font-bold transition-all border ${
+                            selectedSpecId === spec.id 
+                              ? 'border-primary-600 bg-primary-600 text-white shadow-lg shadow-primary-100 scale-105' 
+                              : 'border-slate-200 bg-white text-slate-600 hover:border-primary-300 hover:bg-primary-50/30'
+                          }`}
+                        >
+                          {spec.label}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             )}
 
