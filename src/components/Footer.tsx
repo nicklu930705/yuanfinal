@@ -12,7 +12,7 @@ export default function Footer() {
             <span className="text-xl font-headline font-bold text-on-surface">侑安國際</span>
           </div>
           <p className="text-sm text-on-surface-variant max-w-sm leading-relaxed font-medium">
-            侑安國際有限公司專注於餐飲營業包材與專業環境衛生用藥，做全台餐飲頭家最堅實的後勤支柱。
+            以品質立信，以服務致遠。我們提供台塑原料專業經銷、免洗餐具包材、客製化包材服務。 為什麼選擇我們：專業、穩定、長期。
           </p>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mt-4">
             <Link className="text-sm font-bold text-on-surface-variant hover:text-primary-600 transition-colors" to="/">首頁</Link>
