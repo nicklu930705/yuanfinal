@@ -17,7 +17,7 @@ export default function MainLayout() {
       
       {/* Global Brand Section before Footer */}
       {!isHomePage && (
-        <div className="flex flex-col gap-2 mb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="flex flex-col gap-2 mb-0 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
           {/* Inquiry Banner */}
           <section className="mt-8 bg-black rounded-[2.5rem] p-8 md:p-12 border border-slate-800 w-full">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
@@ -38,7 +38,7 @@ export default function MainLayout() {
           </section>
 
           {/* Brand Info */}
-          <section className="bg-transparent py-10 sm:py-16 px-4 sm:px-6 lg:px-8 w-full text-center rounded-[2.5rem]">
+          <section className="bg-transparent pt-10 sm:pt-16 pb-4 px-4 sm:px-6 lg:px-8 w-full text-center rounded-[2.5rem]">
             <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-slate-900">關於侑安國際有限公司</h2>
             <p className="text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto">
               以品質立信，以服務致遠<br />
