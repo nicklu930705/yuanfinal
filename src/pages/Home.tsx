@@ -8,24 +8,26 @@ export default function Home() {
       <main className="py-12 md:py-24">
         <div className="max-w-[1360px] mx-auto px-6 md:px-10">
           {/* Hero Section */}
-          <section className="mb-20">
-            <h1 className="text-4xl md:text-6xl font-display font-bold text-on-surface leading-tight">
-              侑安國際<br />
-              <span className="text-slate-muted">餐飲後勤供應的首選夥伴</span>
-            </h1>
-            <p className="text-lg md:text-xl text-on-surface-variant mt-6 max-w-3xl leading-relaxed font-body">
-              我們為餐飲店家提供高品質的營業用包材與環境衛生備品。從食品級耐熱袋到專業除蟲藥劑，侑安國際以合規、穩定、透明的服務，支援您的店鋪營運。
-            </p>
-          </section>
-
-          {/* Hero Featured Image */}
-          <section className="mb-24">
-            <div className="w-full aspect-[21/9] md:aspect-[21/7] rounded-[2.5rem] overflow-hidden bg-stone-100">
+          <section className="relative mb-24 overflow-hidden rounded-[2.5rem] bg-slate-900 min-h-[400px] md:min-h-[500px] flex items-center">
+            {/* Background Image Layer */}
+            <div className="absolute inset-0 z-0">
               <img 
                 src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Professional%20high-end%20catering%20supplies%20and%20minimalist%20packaging%2C%20clean%20aesthetic%2C%20organized%20workspace%2C%20soft%20natural%20window%20light%2C%20commercial%20product%20photography%2C%20neutral%20tones%2C%20high%20resolution%2C%208k&image_size=landscape_16_9" 
                 alt="Professional Catering Supplies" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover opacity-50"
               />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent"></div>
+            </div>
+
+            {/* Content Layer */}
+            <div className="relative z-10 px-8 md:px-16 py-12 md:py-20">
+              <h1 className="text-4xl md:text-6xl font-display font-bold text-white leading-tight">
+                侑安國際<br />
+                <span className="text-slate-300">餐飲後勤供應的首選夥伴</span>
+              </h1>
+              <p className="text-lg md:text-xl text-slate-100 mt-6 max-w-2xl leading-relaxed font-body font-medium">
+                我們為餐飲店家提供高品質的營業用包材與環境衛生備品。從食品級耐熱袋到專業除蟲藥劑，侑安國際以合規、穩定、透明的服務，支援您的店鋪營運。
+              </p>
             </div>
           </section>
 
