@@ -164,7 +164,16 @@ export default function ProductGrid() {
           <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-5 lg:gap-6">
             {currentProducts.map(product => {
               const hasSpecs = product.specs && product.specs.length > 0;
-              const coverImg = hasSpecs ? (product.specs[0]?.images?.[0]?.path || product.shared_images?.[0]?.path) : (product.images[0]?.path || '');
+              
+              // Logic for cover image: 
+              // 1. If it's a cleaning bag, always use the product's main image (which is the spec image)
+              // 2. Otherwise, try spec image -> shared image -> main image
+              const coverImg = product.categoryId === '01_清潔袋' 
+                ? (product.images[0]?.path || '')
+                : (hasSpecs 
+                    ? (product.specs[0]?.images?.[0]?.path || product.shared_images?.[0]?.path || product.images[0]?.path || '') 
+                    : (product.images[0]?.path || '')
+                  );
               
               // Extract subcategory name for display
               const subName = product.subcategoryId.split('_')[1] || product.subcategoryId;
