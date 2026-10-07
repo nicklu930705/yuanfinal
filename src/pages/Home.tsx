@@ -105,20 +105,37 @@ export default function Home() {
             ))}
           </section>
 
-          {/* Home Brand Section before Footer */}
-          <section className="bg-black py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto w-full text-center mb-0 rounded-[2.5rem]">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-white">關於侑安國際有限公司</h2>
-            <p className="text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto">
-              以品質立信，以服務致遠<br />
-              台塑原料專業經銷、免洗餐具包材、客製化包材服務。
-            </p>
-            <Link 
-              className="inline-flex items-center text-primary-400 font-medium hover:text-primary-300 transition" 
-              to="/about"
-            >
-              了解詳細企業資訊 <span className="material-symbols-outlined ml-1 text-[18px]">arrow_right_alt</span>
-            </Link>
-          </section>
+          {/* Inquiry and Brand Sections */}
+          <div className="flex flex-col gap-6 mb-8">
+            {/* Inquiry Banner */}
+            <section className="mt-12 bg-slate-800 rounded-[2rem] p-8 text-center border border-slate-700 max-w-3xl mx-auto w-full">
+              <h3 className="text-xl font-bold text-white mb-2">不確定規格？讓我們協助您挑選。</h3>
+              <p className="text-slate-400 mb-6">提供需要的品項、尺寸與數量，透過 LINE 聯繫採購。</p>
+              <a 
+                href="https://line.me/R/ti/p/%40593cexey" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center px-8 py-3 bg-[#00B900] hover:bg-[#009900] text-white font-bold rounded-xl transition shadow-lg active:scale-95"
+              >
+                LINE 聯絡詢價
+              </a>
+            </section>
+
+            {/* Home Brand Section */}
+            <section className="bg-black py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto w-full text-center rounded-[2.5rem]">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-white">關於侑安國際有限公司</h2>
+              <p className="text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto">
+                以品質立信，以服務致遠<br />
+                台塑原料專業經銷、免洗餐具包材、客製化包材服務。
+              </p>
+              <Link 
+                className="inline-flex items-center text-primary-400 font-medium hover:text-primary-300 transition" 
+                to="/about"
+              >
+                了解詳細企業資訊 <span className="material-symbols-outlined ml-1 text-[18px]">arrow_right_alt</span>
+              </Link>
+            </section>
+          </div>
 
           </div>
       </main>
