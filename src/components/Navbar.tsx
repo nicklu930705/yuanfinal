@@ -45,7 +45,7 @@ export default function Navbar() {
               <span className="text-xl font-headline font-bold text-on-surface tracking-tight leading-none group-hover:text-primary-600 transition-colors">
                 侑安國際
               </span>
-              <span className="text-[10px] text-slate-muted mt-1 tracking-wider uppercase font-bold opacity-80">
+              <span className="text-xs text-slate-muted mt-1 tracking-wider uppercase font-bold opacity-80">
                 包裝與清潔用品
               </span>
             </div>

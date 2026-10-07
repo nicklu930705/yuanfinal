@@ -109,12 +109,18 @@ export default function Home() {
           <section className="relative rounded-[2.5rem] overflow-hidden bg-black text-white p-8 md:p-20">
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
               <div className="max-w-xl text-center md:text-left">
-                <h2 className="text-4xl font-headline font-bold mb-6">還在猜尺寸與厚度嗎？</h2>
-                <p className="text-lg text-primary-fixed-dim opacity-90 leading-relaxed font-body">我們免費提供營業用袋類全規格樣品包。新北物流中心掛號配送，讓您親自試裝確認品質後再訂購。</p>
+                <h2 className="text-4xl font-headline font-bold mb-6">不確定規格？讓我們協助您挑選。</h2>
+                <p className="text-lg text-primary-fixed-dim opacity-90 leading-relaxed font-body">提供需要的品項、尺寸與數量，透過 LINE 聯繫採購。</p>
               </div>
-              <Link className="bg-surface-cream text-primary px-12 py-5 rounded-2xl font-bold text-xl hover:bg-white transition-all shadow-xl active:scale-[0.98]" to="/products">
-                免費索取樣品包
-              </Link>
+              <a 
+                className="bg-[#00B900] text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-[#009900] transition-all shadow-xl active:scale-[0.98] flex items-center gap-2" 
+                href="https://line.me/R/ti/p/%40593cexey"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="material-symbols-outlined">chat</span>
+                LINE 聯絡詢價
+              </a>
             </div>
             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/20 rounded-full -mr-32 -mt-32 blur-[100px]"></div>
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 rounded-full -ml-20 -mb-20 blur-[80px]"></div>
