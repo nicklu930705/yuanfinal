@@ -201,12 +201,6 @@ export const products: Product[] = [
         "path": "/assets/01_清潔袋/01_一般捲取式/大_45L/規格圖__IMG_0222.JPG",
         "note": "",
         "order": 0
-      },
-      {
-        "role": "展示圖",
-        "path": "/assets/01_清潔袋/01_一般捲取式/大_45L/展示圖2.jpeg",
-        "note": "",
-        "order": 1
       }
     ],
     "specs": [
