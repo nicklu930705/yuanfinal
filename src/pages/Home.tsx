@@ -18,6 +18,17 @@ export default function Home() {
             </p>
           </section>
 
+          {/* Hero Featured Image */}
+          <section className="mb-24">
+            <div className="w-full aspect-[21/9] md:aspect-[21/7] rounded-[2.5rem] overflow-hidden bg-stone-100">
+              <img 
+                src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Professional%20high-end%20catering%20supplies%20and%20minimalist%20packaging%2C%20clean%20aesthetic%2C%20organized%20workspace%2C%20soft%20natural%20window%20light%2C%20commercial%20product%20photography%2C%20neutral%20tones%2C%20high%20resolution%2C%208k&image_size=landscape_16_9" 
+                alt="Professional Catering Supplies" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </section>
+
           {/* Hot Products Section */}
           <section className="mb-24" id="products">
             <div className="flex items-end justify-between mb-12">
