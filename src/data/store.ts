@@ -173,14 +173,14 @@ export const products: Product[] = [
     "description": "經典大型規格，適用於大多數標準垃圾桶。特殊的防漏封口技術，能有效防止液體滲出，是居家清潔的最佳幫手。",
     "images": [
       {
-        "role": "展示圖",
-        "path": "/assets/01_清潔袋/01_一般捲取式/大_45L/展示圖2.jpeg",
+        "role": "規格圖",
+        "path": "/assets/01_清潔袋/01_一般捲取式/大_45L/規格圖__IMG_0222.JPG",
         "note": "",
         "order": 0
       },
       {
-        "role": "規格圖",
-        "path": "/assets/01_清潔袋/01_一般捲取式/大_45L/規格圖__IMG_0222.JPG",
+        "role": "展示圖",
+        "path": "/assets/01_清潔袋/01_一般捲取式/大_45L/展示圖2.jpeg",
         "note": "",
         "order": 1
       }
