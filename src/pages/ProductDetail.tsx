@@ -121,7 +121,7 @@ export default function ProductDetail() {
                       { 
                         label: '規格', 
                         value: product.categoryId === '01_清潔袋' 
-                          ? `${selectedSpec.size} (${selectedSpec.dimensions.join(' × ')} cm)`
+                          ? `${selectedSpec.size} (${selectedSpec.dimensions.map(d => d * 10).join(' × ')}mm)`
                           : `${selectedSpec.dimensions.join(' × ')} cm` 
                       },
                       { 

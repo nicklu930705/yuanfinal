@@ -161,7 +161,7 @@ export const products: Product[] = [
         "id": "01_清潔袋-01_一般捲取式-中_20L-black",
         "size": "中",
         "label": "黑色",
-        "dimensions": [53, 60],
+        "dimensions": [53, 63],
         "sheets_per_box": 54,
         "barcode": "",
         "images": []
@@ -170,7 +170,7 @@ export const products: Product[] = [
         "id": "01_清潔袋-01_一般捲取式-中_20L-pink",
         "size": "中",
         "label": "粉色",
-        "dimensions": [53, 60],
+        "dimensions": [53, 63],
         "sheets_per_box": 54,
         "barcode": "",
         "images": []
@@ -179,7 +179,7 @@ export const products: Product[] = [
         "id": "01_清潔袋-01_一般捲取式-中_20L-transparent",
         "size": "中",
         "label": "透明",
-        "dimensions": [53, 60],
+        "dimensions": [53, 63],
         "sheets_per_box": 54,
         "barcode": "",
         "images": []
@@ -346,7 +346,7 @@ export const products: Product[] = [
         "id": "01_清潔袋-01_一般捲取式-超小_10L-black",
         "size": "超小",
         "label": "黑色",
-        "dimensions": [43, 50],
+        "dimensions": [38, 45],
         "sheets_per_box": 100,
         "barcode": "",
         "images": []
@@ -355,7 +355,7 @@ export const products: Product[] = [
         "id": "01_清潔袋-01_一般捲取式-超小_10L-pink",
         "size": "超小",
         "label": "粉色",
-        "dimensions": [43, 50],
+        "dimensions": [38, 45],
         "sheets_per_box": 100,
         "barcode": "",
         "images": []
@@ -364,7 +364,7 @@ export const products: Product[] = [
         "id": "01_清潔袋-01_一般捲取式-超小_10L-transparent",
         "size": "超小",
         "label": "透明",
-        "dimensions": [43, 50],
+        "dimensions": [38, 45],
         "sheets_per_box": 100,
         "barcode": "",
         "images": []
@@ -411,13 +411,28 @@ export const products: Product[] = [
         "order": 0
       }
     ],
-    "specs": [],
+    "specs": [
+      {
+        "id": "01_清潔袋-02_拉繩式-大_45L_24張-black",
+        "size": "大",
+        "label": "黑色",
+        "dimensions": [65, 75],
+        "sheets_per_box": 24,
+        "barcode": "",
+        "images": []
+      },
+      {
+        "id": "01_清潔袋-02_拉繩式-大_45L_24張-transparent",
+        "size": "大",
+        "label": "透明",
+        "dimensions": [65, 75],
+        "sheets_per_box": 24,
+        "barcode": "",
+        "images": []
+      }
+    ],
     "shared_images": [],
-    "parsedSpec": {
-      "size_or_type": "大",
-      "capacity_or_dim": "45L",
-      "quantity": "24張/捲"
-    }
+    "parsedSpec": null
   },
   {
     "id": "01_清潔袋-02_拉繩式-巨無霸_130L_20張",
@@ -434,14 +449,29 @@ export const products: Product[] = [
         "order": 0
       }
     ],
-    "specs": [],
-    "shared_images": [],
-    "parsedSpec": {
-          "size_or_type": "巨無霸",
-          "capacity_or_dim": "130L",
-          "quantity": "20張/捲"
-        }
+    "specs": [
+      {
+        "id": "01_清潔袋-02_拉繩式-巨無霸_130L_20張-black",
+        "size": "巨無霸",
+        "label": "黑色",
+        "dimensions": [100, 110],
+        "sheets_per_box": 20,
+        "barcode": "",
+        "images": []
       },
+      {
+        "id": "01_清潔袋-02_拉繩式-巨無霸_130L_20張-transparent",
+        "size": "巨無霸",
+        "label": "透明",
+        "dimensions": [100, 110],
+        "sheets_per_box": 20,
+        "barcode": "",
+        "images": []
+      }
+    ],
+    "shared_images": [],
+    "parsedSpec": null
+  },
       {
         "id": "01_清潔袋-02_拉繩式-特大_70L_18張",
         "categoryId": "01_清潔袋",
@@ -457,14 +487,29 @@ export const products: Product[] = [
             "order": 0
           }
         ],
-        "specs": [],
-        "shared_images": [],
-        "parsedSpec": {
-          "size_or_type": "特大",
-          "capacity_or_dim": "70L",
-          "quantity": "18張/捲"
-        }
+        "specs": [
+      {
+        "id": "01_清潔袋-02_拉繩式-特大_70L_18張-black",
+        "size": "特大",
+        "label": "黑色",
+        "dimensions": [80, 90],
+        "sheets_per_box": 18,
+        "barcode": "",
+        "images": []
       },
+      {
+        "id": "01_清潔袋-02_拉繩式-特大_70L_18張-transparent",
+        "size": "特大",
+        "label": "透明",
+        "dimensions": [80, 90],
+        "sheets_per_box": 18,
+        "barcode": "",
+        "images": []
+      }
+    ],
+    "shared_images": [],
+    "parsedSpec": null
+  },
       {
         "id": "01_清潔袋-02_拉繩式-超大_90L_14張",
         "categoryId": "01_清潔袋",
@@ -480,14 +525,29 @@ export const products: Product[] = [
             "order": 0
           }
         ],
-        "specs": [],
-        "shared_images": [],
-        "parsedSpec": {
-          "size_or_type": "超大",
-          "capacity_or_dim": "90L",
-          "quantity": "14張/捲"
-        }
+        "specs": [
+      {
+        "id": "01_清潔袋-02_拉繩式-超大_90L_14張-black",
+        "size": "超大",
+        "label": "黑色",
+        "dimensions": [84, 95],
+        "sheets_per_box": 14,
+        "barcode": "",
+        "images": []
       },
+      {
+        "id": "01_清潔袋-02_拉繩式-超大_90L_14張-transparent",
+        "size": "超大",
+        "label": "透明",
+        "dimensions": [84, 95],
+        "sheets_per_box": 14,
+        "barcode": "",
+        "images": []
+      }
+    ],
+    "shared_images": [],
+    "parsedSpec": null
+  },
       {
         "id": "01_清潔袋-02_拉繩式-超大超值包_90L_25張",
         "categoryId": "01_清潔袋",
@@ -503,14 +563,29 @@ export const products: Product[] = [
             "order": 0
           }
         ],
-        "specs": [],
-        "shared_images": [],
-        "parsedSpec": {
-          "size_or_type": "超大超值包",
-          "capacity_or_dim": "90L",
-          "quantity": "25張/捲"
-        }
+        "specs": [
+      {
+        "id": "01_清潔袋-02_拉繩式-超大超值包_90L_25張-black",
+        "size": "超大超值包",
+        "label": "黑色",
+        "dimensions": [84, 95],
+        "sheets_per_box": 25,
+        "barcode": "",
+        "images": []
       },
+      {
+        "id": "01_清潔袋-02_拉繩式-超大超值包_90L_25張-transparent",
+        "size": "超大超值包",
+        "label": "透明",
+        "dimensions": [84, 95],
+        "sheets_per_box": 25,
+        "barcode": "",
+        "images": []
+      }
+    ],
+    "shared_images": [],
+    "parsedSpec": null
+  },
       {
         "id": "01_清潔袋-02_拉繩式-超特大_125L_15張",
         "categoryId": "01_清潔袋",
@@ -526,14 +601,29 @@ export const products: Product[] = [
             "order": 0
           }
         ],
-        "specs": [],
-        "shared_images": [],
-        "parsedSpec": {
-          "size_or_type": "超特大",
-          "capacity_or_dim": "125L",
-          "quantity": "15張/捲"
-        }
+        "specs": [
+      {
+        "id": "01_清潔袋-02_拉繩式-超特大_125L_15張-black",
+        "size": "超特大",
+        "label": "黑色",
+        "dimensions": [94, 110],
+        "sheets_per_box": 15,
+        "barcode": "",
+        "images": []
       },
+      {
+        "id": "01_清潔袋-02_拉繩式-超特大_125L_15張-transparent",
+        "size": "超特大",
+        "label": "透明",
+        "dimensions": [94, 110],
+        "sheets_per_box": 15,
+        "barcode": "",
+        "images": []
+      }
+    ],
+    "shared_images": [],
+    "parsedSpec": null
+  },
   {
     "id": "01_清潔袋-03_抽取式與業務用-超大_黑色_28張",
     "categoryId": "01_清潔袋",
