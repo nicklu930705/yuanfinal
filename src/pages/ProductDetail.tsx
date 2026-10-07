@@ -17,7 +17,8 @@ export default function ProductDetail() {
   const selectedSpec = hasSpecs ? product.specs.find(s => s.id === selectedSpecId) : null;
   
   // Combine images depending on whether it has specs
-  const displayImages = hasSpecs 
+  // For cleaning bags, we always show the product's main spec images regardless of color selection
+  const displayImages = (hasSpecs && product.categoryId !== '01_清潔袋')
     ? [...(selectedSpec?.images || []), ...(product.shared_images || [])].sort((a, b) => (a.order || 0) - (b.order || 0))
     : product?.images || [];
 
