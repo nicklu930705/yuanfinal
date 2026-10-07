@@ -44,32 +44,44 @@ export default function ProductDetail() {
   const selectedSpec = hasSpecs ? product.specs.find(s => s.id === selectedSpecId) : null;
   
   // Combine images depending on whether it has specs
-  // For cleaning bags, we always show the product's main spec images regardless of color selection
-  const displayImages = (hasSpecs && product.categoryId !== '01_清潔袋')
-    ? [...(selectedSpec?.images || []), ...(product.shared_images || [])].sort((a, b) => (a.order || 0) - (b.order || 0))
-    : product?.images || [];
+  // For cleaning bags, we prioritize showing the main product images (which are usually spec images)
+  // but also include shared images as fallback
+  const displayImages = [...(product?.images || []), ...(product?.shared_images || [])];
+  
+  // If it's not a cleaning bag and has specific spec images, we might want to prioritize those
+  // but for now, let's keep it simple and include all relevant images
+  const allAvailableImages = hasSpecs 
+    ? [...displayImages, ...(selectedSpec?.images || [])]
+    : displayImages;
 
-  const [selectedImage, setSelectedImage] = useState(displayImages[0]?.path || '');
+  // Sort by order and filter unique paths
+  const sortedImages = allAvailableImages
+    .sort((a, b) => (a.order || 0) - (b.order || 0))
+    .filter((img, index, self) => 
+      index === self.findIndex((t) => t.path === img.path)
+    );
+
+  const [selectedImage, setSelectedImage] = useState(sortedImages[0]?.path || '');
   const [quantity, setQuantity] = useState(1);
   const [showSuccess, setShowSuccess] = useState(false);
 
   // Helper for arrow navigation
   const handlePrevImage = () => {
-    const currentIndex = displayImages.findIndex(img => img.path === selectedImage);
-    const prevIndex = (currentIndex - 1 + displayImages.length) % displayImages.length;
-    setSelectedImage(displayImages[prevIndex].path);
+    const currentIndex = sortedImages.findIndex(img => img.path === selectedImage);
+    const prevIndex = (currentIndex - 1 + sortedImages.length) % sortedImages.length;
+    setSelectedImage(sortedImages[prevIndex].path);
   };
 
   const handleNextImage = () => {
-    const currentIndex = displayImages.findIndex(img => img.path === selectedImage);
-    const nextIndex = (currentIndex + 1) % displayImages.length;
-    setSelectedImage(displayImages[nextIndex].path);
+    const currentIndex = sortedImages.findIndex(img => img.path === selectedImage);
+    const nextIndex = (currentIndex + 1) % sortedImages.length;
+    setSelectedImage(sortedImages[nextIndex].path);
   };
 
   // Update selected image when spec changes
   useEffect(() => {
-    if (displayImages.length > 0) {
-      setSelectedImage(displayImages[0].path);
+    if (sortedImages.length > 0) {
+      setSelectedImage(sortedImages[0].path);
     }
   }, [selectedSpecId, product]);
 

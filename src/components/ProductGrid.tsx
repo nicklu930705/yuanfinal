@@ -166,14 +166,16 @@ export default function ProductGrid() {
               const hasSpecs = product.specs && product.specs.length > 0;
               
               // Logic for cover image: 
-              // 1. If it's a cleaning bag, always use the product's main image (which is the spec image)
-              // 2. Otherwise, try spec image -> shared image -> main image
-              const coverImg = product.categoryId === '01_清潔袋' 
-                ? (product.images[0]?.path || '')
-                : (hasSpecs 
-                    ? (product.specs[0]?.images?.[0]?.path || product.shared_images?.[0]?.path || product.images[0]?.path || '') 
-                    : (product.images[0]?.path || '')
-                  );
+              // 1. Try to find an image with role "規格圖" or "展示圖"
+              // 2. If not found, use the first available image from product.images, shared_images, or specs
+              const allImages = [
+                ...(product.images || []),
+                ...(product.shared_images || []),
+                ...(product.specs?.flatMap(s => s.images || []) || [])
+              ];
+              
+              const preferredImg = allImages.find(img => img.role === '規格圖' || img.role === '雙款規格圖' || img.role === '展示圖') || allImages[0];
+              const coverImg = preferredImg?.path || '';
               
               // Extract subcategory name for display
               const subName = product.subcategoryId.split('_')[1] || product.subcategoryId;
