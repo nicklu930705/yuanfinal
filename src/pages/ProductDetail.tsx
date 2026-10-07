@@ -117,8 +117,20 @@ export default function ProductDetail() {
                   <div className="grid grid-cols-2 gap-y-4 text-sm">
                     {[
                       { label: '款式', value: selectedSpec.label },
-                      { label: '規格', value: `${selectedSpec.dimensions.join(' × ')} cm` },
-                      { label: '張數', value: `${selectedSpec.sheets_per_box} 張` }
+                      { 
+                        label: '規格', 
+                        value: product.categoryId === '01_清潔袋' 
+                          ? `${selectedSpec.size} (${selectedSpec.dimensions.join(' × ')} cm)`
+                          : `${selectedSpec.dimensions.join(' × ')} cm` 
+                      },
+                      { 
+                        label: '張數', 
+                        value: product.categoryId === '01_清潔袋' 
+                          ? `${selectedSpec.sheets_per_box} 張/捲` 
+                          : product.categoryId === '03_夾鏈袋'
+                            ? `${selectedSpec.sheets_per_box} 張`
+                            : `${selectedSpec.sheets_per_box} 張/盒`
+                      }
                     ].map((item, i) => (
                       <React.Fragment key={i}>
                         <div className="text-slate-500">{item.label}</div>
@@ -209,7 +221,9 @@ export default function ProductDetail() {
                       className="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-white hover:shadow-sm text-slate-600 transition-all font-bold"
                     >+</button>
                   </div>
-                  <span className="ml-4 text-slate-500 font-bold">{hasSpecs ? '盒' : '件'}</span>
+                  <span className="ml-4 text-slate-500 font-bold">
+                    {product.categoryId === '01_清潔袋' ? '捲' : (product.categoryId === '03_夾鏈袋' ? '包' : '盒')}
+                  </span>
                 </div>
 
                 <div className="flex space-x-4">
