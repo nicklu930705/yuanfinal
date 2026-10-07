@@ -156,13 +156,37 @@ export const products: Product[] = [
         "order": 0
       }
     ],
-    "specs": [],
+    "specs": [
+      {
+        "id": "01_清潔袋-01_一般捲取式-中_20L-black",
+        "size": "中",
+        "label": "黑色",
+        "dimensions": [53, 60],
+        "sheets_per_box": 54,
+        "barcode": "",
+        "images": []
+      },
+      {
+        "id": "01_清潔袋-01_一般捲取式-中_20L-pink",
+        "size": "中",
+        "label": "粉色",
+        "dimensions": [53, 60],
+        "sheets_per_box": 54,
+        "barcode": "",
+        "images": []
+      },
+      {
+        "id": "01_清潔袋-01_一般捲取式-中_20L-transparent",
+        "size": "中",
+        "label": "透明",
+        "dimensions": [53, 60],
+        "sheets_per_box": 54,
+        "barcode": "",
+        "images": []
+      }
+    ],
     "shared_images": [],
-    "parsedSpec": {
-      "size_or_type": "中",
-      "capacity_or_dim": "20L",
-      "quantity": "54張/捲"
-    }
+    "parsedSpec": null
   },
   {
     "id": "01_清潔袋-01_一般捲取式-大_45L",
@@ -185,13 +209,46 @@ export const products: Product[] = [
         "order": 1
       }
     ],
-    "specs": [],
+    "specs": [
+      {
+        "id": "01_清潔袋-01_一般捲取式-大_45L-blue",
+        "size": "大",
+        "label": "藍色",
+        "dimensions": [65, 75],
+        "sheets_per_box": 30,
+        "barcode": "",
+        "images": []
+      },
+      {
+        "id": "01_清潔袋-01_一般捲取式-大_45L-black",
+        "size": "大",
+        "label": "黑色",
+        "dimensions": [65, 75],
+        "sheets_per_box": 30,
+        "barcode": "",
+        "images": []
+      },
+      {
+        "id": "01_清潔袋-01_一般捲取式-大_45L-pink",
+        "size": "大",
+        "label": "粉色",
+        "dimensions": [65, 75],
+        "sheets_per_box": 30,
+        "barcode": "",
+        "images": []
+      },
+      {
+        "id": "01_清潔袋-01_一般捲取式-大_45L-transparent",
+        "size": "大",
+        "label": "透明",
+        "dimensions": [65, 75],
+        "sheets_per_box": 30,
+        "barcode": "",
+        "images": []
+      }
+    ],
     "shared_images": [],
-    "parsedSpec": {
-      "size_or_type": "大",
-      "capacity_or_dim": "45L",
-      "quantity": "30張/捲"
-    }
+    "parsedSpec": null
   },
   {
     "id": "01_清潔袋-01_一般捲取式-特大_70L",
@@ -208,13 +265,28 @@ export const products: Product[] = [
         "order": 0
       }
     ],
-    "specs": [],
+    "specs": [
+      {
+        "id": "01_清潔袋-01_一般捲取式-特大_70L-black",
+        "size": "特大",
+        "label": "黑色",
+        "dimensions": [80, 90],
+        "sheets_per_box": 22,
+        "barcode": "",
+        "images": []
+      },
+      {
+        "id": "01_清潔袋-01_一般捲取式-特大_70L-transparent",
+        "size": "特大",
+        "label": "透明",
+        "dimensions": [80, 90],
+        "sheets_per_box": 22,
+        "barcode": "",
+        "images": []
+      }
+    ],
     "shared_images": [],
-    "parsedSpec": {
-      "size_or_type": "特大",
-      "capacity_or_dim": "70L",
-      "quantity": "22張/捲"
-    }
+    "parsedSpec": null
   },
   {
     "id": "01_清潔袋-01_一般捲取式-超大_90L",
@@ -231,13 +303,28 @@ export const products: Product[] = [
         "order": 0
       }
     ],
-    "specs": [],
+    "specs": [
+      {
+        "id": "01_清潔袋-01_一般捲取式-超大_90L-black",
+        "size": "超大",
+        "label": "黑色",
+        "dimensions": [86, 100],
+        "sheets_per_box": 16,
+        "barcode": "",
+        "images": []
+      },
+      {
+        "id": "01_清潔袋-01_一般捲取式-超大_90L-transparent",
+        "size": "超大",
+        "label": "透明",
+        "dimensions": [86, 100],
+        "sheets_per_box": 16,
+        "barcode": "",
+        "images": []
+      }
+    ],
     "shared_images": [],
-    "parsedSpec": {
-      "size_or_type": "超大",
-      "capacity_or_dim": "90L",
-      "quantity": "16張/捲"
-    }
+    "parsedSpec": null
   },
   {
     "id": "01_清潔袋-01_一般捲取式-超小_10L",
@@ -254,13 +341,37 @@ export const products: Product[] = [
         "order": 0
       }
     ],
-    "specs": [],
+    "specs": [
+      {
+        "id": "01_清潔袋-01_一般捲取式-超小_10L-black",
+        "size": "超小",
+        "label": "黑色",
+        "dimensions": [43, 50],
+        "sheets_per_box": 100,
+        "barcode": "",
+        "images": []
+      },
+      {
+        "id": "01_清潔袋-01_一般捲取式-超小_10L-pink",
+        "size": "超小",
+        "label": "粉色",
+        "dimensions": [43, 50],
+        "sheets_per_box": 100,
+        "barcode": "",
+        "images": []
+      },
+      {
+        "id": "01_清潔袋-01_一般捲取式-超小_10L-transparent",
+        "size": "超小",
+        "label": "透明",
+        "dimensions": [43, 50],
+        "sheets_per_box": 100,
+        "barcode": "",
+        "images": []
+      }
+    ],
     "shared_images": [],
-    "parsedSpec": {
-      "size_or_type": "超小",
-      "capacity_or_dim": "10L",
-      "quantity": "100張/捲"
-    }
+    "parsedSpec": null
   },
   {
     "id": "01_清潔袋-01_一般捲取式-飯店旅館無心捲_10L",
