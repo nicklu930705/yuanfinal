@@ -908,12 +908,6 @@ export const products: Product[] = [
         "order": 0
       },
       {
-        "role": "展示圖",
-        "path": "/assets/02_食品保鮮耐熱袋/01_台塑保鮮耐熱袋/200x300mm_150枚/展示圖.jpeg",
-        "note": "",
-        "order": 1
-      },
-      {
         "role": "包裝正面圖",
         "path": "/assets/02_食品保鮮耐熱袋/01_台塑保鮮耐熱袋/200x300mm_150枚/包裝正面圖__IMG_0243.JPG",
         "note": "",
@@ -947,12 +941,6 @@ export const products: Product[] = [
         "path": "/assets/02_食品保鮮耐熱袋/01_台塑保鮮耐熱袋/280x410mm_100枚/規格圖__IMG_0217.JPG",
         "note": "規格圖寫每捲；包裝是盒裝，售賣單位請再確認。",
         "order": 0
-      },
-      {
-        "role": "展示圖",
-        "path": "/assets/02_食品保鮮耐熱袋/01_台塑保鮮耐熱袋/280x410mm_100枚/展示圖.jpeg",
-        "note": "",
-        "order": 1
       },
       {
         "role": "包裝背面圖",
@@ -1051,12 +1039,6 @@ export const products: Product[] = [
         "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/01號_50x70mm/規格圖__IMG_0255.JPG",
         "note": "原圖號數為1號；厚0.04mm，100張。00號與0號是不同尺寸。",
         "order": 0
-      },
-      {
-        "role": "展示圖",
-        "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/01號_50x70mm/展示圖.jpeg",
-        "note": "",
-        "order": 1
       }
     ],
     "specs": [],
@@ -1386,12 +1368,6 @@ export const products: Product[] = [
         "path": "/assets/04_病媒防治/02_老鼠防治/一錠鼠_滅鼠餌劑/01_包裝主圖__IMG_0268.JPG",
         "note": "",
         "order": 0
-      },
-      {
-        "role": "展示圖",
-        "path": "/assets/04_病媒防治/02_老鼠防治/一錠鼠_滅鼠餌劑/展示圖.jpeg",
-        "note": "",
-        "order": 1
       },
       {
         "role": "宣傳主視覺",
