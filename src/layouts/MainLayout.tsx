@@ -39,16 +39,16 @@ export default function MainLayout() {
 
           {/* Brand Info */}
           <section className="bg-transparent pt-10 sm:pt-16 pb-4 px-4 sm:px-6 lg:px-8 w-full text-center rounded-[2.5rem]">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-slate-900">關於侑安國際有限公司</h2>
-            <p className="text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto">
+            <h2 className="text-3xl sm:text-5xl font-bold mb-8 text-slate-900">關於侑安國際有限公司</h2>
+            <p className="text-lg sm:text-2xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto font-medium">
               以品質立信，以服務致遠<br />
               台塑原料專業經銷、免洗餐具包材、客製化包材服務。
             </p>
             <Link 
-              className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition" 
+              className="inline-flex items-center text-xl text-primary-600 font-bold hover:text-primary-700 transition" 
               to="/about"
             >
-              了解詳細企業資訊 <ArrowRight className="ml-1 w-4 h-4" />
+              了解詳細企業資訊 <ArrowRight className="ml-2 w-6 h-6" />
             </Link>
           </section>
         </div>
