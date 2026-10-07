@@ -109,7 +109,7 @@ export default function ProductGrid() {
                     {categoryFilter === cat.id && cat.subcategories && cat.subcategories.length > 0 && (
                       <>
                         <ul className="pl-4 mt-1 space-y-1 hidden lg:block">
-                          {cat.subcategories.map(sub => (
+                          {cat.subcategories.filter(sub => sub.id !== '00_系列總覽').map(sub => (
                             <li key={sub.id}>
                               <button
                                 onClick={() => handleCategoryChange(cat.id, sub.id)}
@@ -120,7 +120,7 @@ export default function ProductGrid() {
                             </li>
                           ))}
                         </ul>
-                        {cat.subcategories.map(sub => (
+                        {cat.subcategories.filter(sub => sub.id !== '00_系列總覽').map(sub => (
                           <li key={sub.id} className="lg:hidden">
                             <button
                               onClick={() => handleCategoryChange(cat.id, sub.id)}
