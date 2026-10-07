@@ -82,7 +82,9 @@ export default function ProductDetail() {
                 <img 
                   src={selectedImage} 
                   alt={product.name} 
-                  className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500" 
+                  className={`w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ${
+                    product.name.includes('營潔') ? 'p-12 md:p-20' : 'p-4'
+                  }`} 
                 />
               ) : (
                 <div className="w-full h-full flex items-center justify-center text-slate-400">無圖片</div>

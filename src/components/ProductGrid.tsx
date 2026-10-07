@@ -181,7 +181,13 @@ export default function ProductGrid() {
                 <Link key={product.id} to={`/products/${encodeURIComponent(product.id)}`} className="group bg-white rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-xl hover:border-primary-200 overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1">
                   <div className="aspect-w-4 aspect-h-3 w-full bg-stone-50 relative border-b border-slate-50 overflow-hidden">
                     {coverImg ? (
-                      <img src={coverImg} alt={product.name} className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500" />
+                      <img 
+                        src={coverImg} 
+                        alt={product.name} 
+                        className={`w-full h-full object-contain group-hover:scale-110 transition-transform duration-500 ${
+                          product.name.includes('營潔') ? 'p-8 sm:p-10' : 'p-4'
+                        }`} 
+                      />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-slate-400 text-sm">無圖片</div>
                     )}
