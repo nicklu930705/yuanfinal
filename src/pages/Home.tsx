@@ -127,17 +127,17 @@ export default function Home() {
             </section>
 
             {/* Home Brand Section */}
-            <section className="bg-transparent pt-12 sm:pt-20 pb-6 px-4 sm:px-6 lg:px-8 w-full text-center rounded-[2.5rem]">
-              <h2 className="text-4xl sm:text-6xl font-bold mb-10 text-slate-900 tracking-tight">關於侑安國際有限公司</h2>
-              <p className="text-xl sm:text-3xl text-slate-600 mb-12 leading-relaxed max-w-4xl mx-auto font-medium">
+            <section className="bg-transparent pt-10 sm:pt-16 pb-4 px-4 sm:px-6 lg:px-8 w-full text-center rounded-[2.5rem]">
+              <h2 className="text-3xl sm:text-5xl font-bold mb-8 text-slate-900 tracking-tight">關於侑安國際有限公司</h2>
+              <p className="text-lg sm:text-2xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto font-medium">
                 以品質立信，以服務致遠<br />
                 台塑原料專業經銷、免洗餐具包材、客製化包材服務。
               </p>
               <Link 
-                className="inline-flex items-center text-2xl text-primary-600 font-extrabold hover:text-primary-700 transition group" 
+                className="inline-flex items-center text-xl text-primary-600 font-bold hover:text-primary-700 transition group" 
                 to="/about"
               >
-                了解詳細企業資訊 <span className="material-symbols-outlined ml-3 text-[32px] group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+                了解詳細企業資訊 <span className="material-symbols-outlined ml-2 text-[24px] group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
               </Link>
             </section>
           </div>
