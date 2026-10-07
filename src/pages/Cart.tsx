@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Trash2, AlertCircle, CheckCircle } from 'lucide-react';
+import { Trash2, AlertCircle, CheckCircle, ShoppingCart } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 export default function Cart() {
