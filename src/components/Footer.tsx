@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="bg-surface-linen border-t border-border-warm py-12 mt-20 font-body">
+    <footer className="bg-surface-linen border-t border-border-warm py-12 mt-4 font-body">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Column 1: Company Info */}
@@ -12,9 +12,6 @@ export default function Footer() {
               <p className="leading-relaxed">
                 以品質立信，以服務致遠<br />
                 台塑原料專業經銷、免洗餐具包材、客製化包材服務。
-              </p>
-              <p className="font-bold">
-                為什麼選擇我們：專業、穩定、長期。
               </p>
             </div>
           </div>

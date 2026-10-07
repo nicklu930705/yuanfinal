@@ -106,15 +106,14 @@ export default function Home() {
           </section>
 
           {/* Home Brand Section before Footer */}
-          <section className="bg-slate-50 py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto w-full text-center mb-12 rounded-[2.5rem]">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-slate-900">關於侑安國際有限公司</h2>
-            <p className="text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto">
+          <section className="bg-black py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto w-full text-center mb-0 rounded-[2.5rem]">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-white">關於侑安國際有限公司</h2>
+            <p className="text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto">
               以品質立信，以服務致遠<br />
-              台塑原料專業經銷、免洗餐具包材、客製化包材服務。<br />
-              為什麼選擇我們：專業、穩定、長期。
+              台塑原料專業經銷、免洗餐具包材、客製化包材服務。
             </p>
             <Link 
-              className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition" 
+              className="inline-flex items-center text-primary-400 font-medium hover:text-primary-300 transition" 
               to="/about"
             >
               了解詳細企業資訊 <span className="material-symbols-outlined ml-1 text-[18px]">arrow_right_alt</span>
