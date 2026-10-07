@@ -105,33 +105,6 @@ export default function Home() {
             ))}
           </section>
 
-          {/* Wholesale Pricing Summary */}
-          <section className="mb-24 bg-surface-container-low rounded-[2.5rem] border border-border-warm p-8 md:p-16">
-            <div className="max-w-4xl mx-auto text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-headline font-bold text-on-surface">量大更有利：大宗箱購階梯價</h2>
-              <p className="text-lg text-on-surface-variant mt-4 font-body">專為連鎖品牌與獨立店家設計，透明採購級距，買越多省越多</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                { title: '單店備貨', range: '1 箱起訂', desc: '適合小型餐飲店，享 95 折優惠，滿 $1,500 免運。' },
-                { title: '合購熱銷', range: '5 箱以上', desc: '整箱 88 折，專車配送直送門市，最划算的營運選擇。', featured: true },
-                { title: '連鎖品牌', range: '20 箱以上', desc: '專屬合約批發價，支援多點分批配送，企業月結服務。' }
-              ].map((tier, idx) => (
-                <div key={idx} className={`bg-white p-8 rounded-3xl border ${tier.featured ? 'border-2 border-secondary shadow-lg relative' : 'border-border-warm shadow-sm'} transition-transform hover:scale-[1.02]`}>
-                  {tier.featured && <span className="absolute -top-3 right-6 bg-secondary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Most Popular</span>}
-                  <span className={`text-xs font-bold uppercase tracking-widest ${tier.featured ? 'text-secondary' : 'text-slate-muted'}`}>{tier.title}</span>
-                  <h3 className="text-2xl font-bold mt-2">{tier.range}</h3>
-                  <p className="text-sm text-on-surface-variant mt-3 leading-relaxed">{tier.desc}</p>
-                </div>
-              ))}
-            </div>
-            <div className="text-center mt-12">
-              <Link className="inline-flex items-center gap-2 bg-primary text-white px-10 py-4 rounded-2xl font-bold hover:bg-stone-800 transition-all shadow-lg active:scale-95" to="/products">
-                查看詳細階梯價目表 <span className="material-symbols-outlined text-[20px]">receipt_long</span>
-              </Link>
-            </div>
-          </section>
-
           {/* Sample Request Banner */}
           <section className="relative rounded-[2.5rem] overflow-hidden bg-black text-white p-8 md:p-20">
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">

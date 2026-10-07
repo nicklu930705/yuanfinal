@@ -46,7 +46,7 @@ export default function Navbar() {
                 侑安國際
               </span>
               <span className="text-[10px] text-slate-muted mt-1 tracking-wider uppercase font-bold opacity-80">
-                Commercial Kitchen & Logistics
+                包裝與清潔用品
               </span>
             </div>
           </Link>
