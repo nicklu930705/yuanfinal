@@ -79,49 +79,17 @@ export default function ProductDetail() {
           <div className="flex flex-col">
             <div className="relative aspect-square w-full mb-6 bg-white rounded-3xl overflow-hidden border border-slate-200 group flex items-center justify-center">
               {selectedImage ? (
-                <>
-                  <img 
-                    src={selectedImage} 
-                    alt={product.name} 
-                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500" 
-                  />
-                  
-                  {/* Arrow Controls - only show if multiple images */}
-                  {displayImages.length > 1 && (
-                    <>
-                      <button 
-                        onClick={(e) => { e.stopPropagation(); handlePrevImage(); }}
-                        className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/90 shadow-lg text-slate-700 opacity-0 group-hover:opacity-100 transition-all hover:bg-white hover:scale-110"
-                      >
-                        <ChevronLeft className="w-6 h-6" />
-                      </button>
-                      <button 
-                        onClick={(e) => { e.stopPropagation(); handleNextImage(); }}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/90 shadow-lg text-slate-700 opacity-0 group-hover:opacity-100 transition-all hover:bg-white hover:scale-110"
-                      >
-                        <ChevronRight className="w-6 h-6" />
-                      </button>
-                    </>
-                  )}
-                </>
+                <img 
+                  src={selectedImage} 
+                  alt={product.name} 
+                  className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500" 
+                />
               ) : (
                 <div className="w-full h-full flex items-center justify-center text-slate-400">無圖片</div>
               )}
             </div>
             
-            {displayImages.length > 1 && (
-              <div className="grid grid-cols-4 gap-3">
-                {displayImages.map((img, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => setSelectedImage(img.path)}
-                    className={`aspect-square rounded-2xl overflow-hidden border-2 transition-all ${selectedImage === img.path ? 'border-primary-500 scale-95 shadow-md' : 'border-transparent hover:border-primary-200 opacity-70 hover:opacity-100'}`}
-                  >
-                    <img src={img.path} alt={img.role || '商品圖片'} className="w-full h-full object-contain bg-white p-2" />
-                  </button>
-                ))}
-              </div>
-            )}
+            {/* Thumbnails removed per user request */}
           </div>
 
           {/* Product Info */}
