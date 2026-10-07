@@ -92,7 +92,7 @@ export default function ProductDetail() {
   const handleAdd = () => {
     const specName = selectedSpec ? `${selectedSpec.label} (${selectedSpec.size})` : '標準規格';
     // For new products, order_unit is not in the json directly on variant, but let's use '盒' or '件'
-    const unit = selectedSpec ? '盒' : '件';
+    const unit = product.categoryId === '01_清潔袋' ? '捲' : (selectedSpec ? '盒' : '件');
 
     addItem({
       id: `${product.id}-${selectedSpecId || 'default'}`,

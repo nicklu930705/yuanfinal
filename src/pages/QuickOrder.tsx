@@ -29,7 +29,7 @@ export default function QuickOrder() {
           categoryId: product.categoryId,
           specLabel: `${spec.label} (${spec.size})`,
           coverImg: spec.images?.[0]?.path || product.images[0]?.path || '',
-          unit: '盒'
+          unit: product.categoryId === '01_清潔袋' ? '捲' : '盒'
         }));
       }
       return [{
