@@ -374,7 +374,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "超大",
       "capacity_or_dim": "90L",
-      "quantity": "14張"
+      "quantity": "14張/捲"
     }
   },
   {
@@ -443,7 +443,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "超大",
       "capacity_or_dim": "黑色",
-      "quantity": "28張"
+      "quantity": "28張/捲"
     }
   },
   {
@@ -751,7 +751,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "00號",
       "capacity_or_dim": "35x40mm",
-      "quantity": "100張/包"
+      "quantity": "100張/盒"
     }
   },
   {
@@ -774,7 +774,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "0號",
       "capacity_or_dim": "40x60mm",
-      "quantity": "100張/包"
+      "quantity": "100張/盒"
     }
   },
   {
@@ -803,7 +803,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "1號",
       "capacity_or_dim": "50x70mm",
-      "quantity": "100張/包"
+      "quantity": "100張/盒"
     }
   },
   {
@@ -826,7 +826,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "2號",
       "capacity_or_dim": "60x85mm",
-      "quantity": "100張/包"
+      "quantity": "100張/盒"
     }
   },
   {
@@ -849,7 +849,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "3號",
       "capacity_or_dim": "70x100mm",
-      "quantity": "100張/包"
+      "quantity": "100張/盒"
     }
   },
   {
@@ -872,7 +872,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "4號",
       "capacity_or_dim": "85x120mm",
-      "quantity": "100張/包"
+      "quantity": "100張/盒"
     }
   },
   {
@@ -895,7 +895,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "5號",
       "capacity_or_dim": "100x140mm",
-      "quantity": "100張/包"
+      "quantity": "100張/盒"
     }
   },
   {
@@ -918,7 +918,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "6號",
       "capacity_or_dim": "120x170mm",
-      "quantity": "100張/包"
+      "quantity": "100張/盒"
     }
   },
   {
@@ -941,7 +941,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "7號",
       "capacity_or_dim": "140x200mm",
-      "quantity": "100張/包"
+      "quantity": "100張/盒"
     }
   },
   {
@@ -964,7 +964,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "8號",
       "capacity_or_dim": "170x240mm",
-      "quantity": "100張/包"
+      "quantity": "100張/盒"
     }
   },
   {
@@ -987,7 +987,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "9號",
       "capacity_or_dim": "200x280mm",
-      "quantity": "100張/包"
+      "quantity": "100張/盒"
     }
   },
   {
@@ -1010,7 +1010,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "10號",
       "capacity_or_dim": "240x340mm",
-      "quantity": "100張/包"
+      "quantity": "100張/盒"
     }
   },
   {
@@ -1033,7 +1033,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "11號",
       "capacity_or_dim": "280x400mm",
-      "quantity": "100張/包"
+      "quantity": "100張/盒"
     }
   },
   {
@@ -1056,32 +1056,8 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "12號",
       "capacity_or_dim": "340x450mm",
-      "quantity": "100張/包"
+      "quantity": "100張/盒"
     }
-  },
-  {
-    "id": "04_病媒防治-01_蟑螂防治-00_蟑螂知識素材",
-    "categoryId": "04_病媒防治",
-    "subcategoryId": "01_蟑螂防治",
-    "name": "00",
-    "originalName": "00_蟑螂知識素材",
-    "description": "提供專業的蟑螂防治衛教知識，幫助您了解蟑螂的習性與危害，並掌握正確的防治方法，維護居家環境衛生。",
-    "images": [
-      {
-        "role": "蟑螂危害說明圖",
-        "path": "/assets/04_病媒防治/01_蟑螂防治/00_蟑螂知識素材/蟑螂危害說明圖__IMG_0265.JPG",
-        "note": "衛教類素材，不是獨立商品。",
-        "order": 0
-      }
-    ],
-    "specs": [],
-    "shared_images": [],
-    "parsedSpec": {
-      "size_or_type": "00",
-      "capacity_or_dim": "蟑螂知識素材",
-      "quantity": ""
-    },
-    "notForSale": true
   },
   {
     "id": "04_病媒防治-01_蟑螂防治-快點絕_0.5百分比凝膠餌劑",

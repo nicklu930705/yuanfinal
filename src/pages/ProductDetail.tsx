@@ -148,8 +148,7 @@ export default function ProductDetail() {
                     {[
                       { label: '款式', value: selectedSpec.label },
                       { label: '規格', value: `${selectedSpec.dimensions.join(' × ')} cm` },
-                      { label: '張數', value: `${selectedSpec.sheets_per_box} 張 / 單位` },
-                      { label: '條碼', value: selectedSpec.barcode || '-' }
+                      { label: '張數', value: `${selectedSpec.sheets_per_box} 張` }
                     ].map((item, i) => (
                       <React.Fragment key={i}>
                         <div className="text-slate-500">{item.label}</div>
