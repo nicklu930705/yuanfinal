@@ -28,8 +28,6 @@ export default function Navbar() {
           </span>
           <span className="text-outline-variant">|</span>
           <span className="hidden sm:inline">營業用現貨當日發貨</span>
-          <span className="hidden sm:inline text-outline-variant">|</span>
-          <span className="hidden md:inline text-on-surface font-medium">歡迎申請免運試樣包</span>
         </div>
       </div>
 
