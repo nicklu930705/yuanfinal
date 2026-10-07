@@ -62,9 +62,13 @@ export default function Navbar() {
           </nav>
 
           {/* Right Actions */}
-          <div className="flex items-center gap-4">
-            {/* Desktop Cart */}
-            <Link aria-label="需求清單" className="hidden lg:relative lg:flex p-2.5 rounded-xl text-on-surface hover:bg-primary-50 hover:text-primary-600 transition-all duration-300 border border-transparent hover:border-primary-100 shadow-sm hover:shadow" to="/cart">
+          <div className="flex items-center gap-2 sm:gap-4">
+            {/* Cart Icon (Visible on all screens) */}
+            <Link 
+              aria-label="需求清單" 
+              className="relative flex p-2.5 rounded-xl text-on-surface hover:bg-primary-50 hover:text-primary-600 transition-all duration-300 border border-transparent hover:border-primary-100 shadow-sm hover:shadow" 
+              to="/cart"
+            >
               <span className="material-symbols-outlined">shopping_cart</span>
               {totalQuantity > 0 && (
                 <span className="absolute -top-1 -right-1 bg-primary-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full min-w-[18px] text-center shadow-lg border-2 border-white">
