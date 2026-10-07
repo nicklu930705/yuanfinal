@@ -305,7 +305,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "大",
       "capacity_or_dim": "45L",
-      "quantity": "24張"
+      "quantity": "24張/捲"
     }
   },
   {
