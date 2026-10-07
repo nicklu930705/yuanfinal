@@ -17,8 +17,7 @@ export default function Footer() {
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mt-4">
             <Link className="text-sm font-bold text-on-surface-variant hover:text-primary-600 transition-colors" to="/">首頁</Link>
             <Link className="text-sm font-bold text-on-surface-variant hover:text-primary-600 transition-colors" to="/products">全部商品</Link>
-            <Link className="text-sm font-bold text-on-surface-variant hover:text-primary-600 transition-colors" to="/products?category=05_餐飲外帶包材">營業用包材</Link>
-            <Link className="text-sm font-bold text-on-surface-variant hover:text-primary-600 transition-colors" to="/products?category=04_病媒防治">環境衛生除蟲</Link>
+            <Link className="text-sm font-bold text-on-surface-variant hover:text-primary-600 transition-colors" to="/about">關於我們</Link>
           </div>
           <div className="flex flex-col gap-2 mt-6 text-sm text-slate-muted font-medium">
             <p>電話：02-24521268 | 地址：基隆市七堵區工建北路5號</p>
