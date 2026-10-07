@@ -12,11 +12,11 @@ export default function Home() {
             {/* Background Image Layer */}
             <div className="absolute inset-0 z-0">
               <img 
-                src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Professional%20high-end%20catering%20supplies%20and%20minimalist%20packaging%2C%20clean%20aesthetic%2C%20organized%20workspace%2C%20soft%20natural%20window%20light%2C%20commercial%20product%20photography%2C%20neutral%20tones%2C%20high%20resolution%2C%208k&image_size=landscape_16_9" 
-                alt="Professional Catering Supplies" 
-                className="w-full h-full object-cover opacity-50"
+                src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Modern%20minimalist%20catering%20logistics%2C%20neatly%20organized%20professional%20packaging%20supplies%2C%20bright%20and%20airy%20warehouse%20studio%20lighting%2C%20commercial%20product%20photography%2C%20clean%20aesthetic%2C%20high%20resolution%2C%208k&image_size=landscape_16_9" 
+                alt="Professional Catering Supplies V1" 
+                className="w-full h-full object-cover opacity-60"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
             </div>
 
             {/* Content Layer */}
