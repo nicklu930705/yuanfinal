@@ -112,7 +112,7 @@ export default function Cart() {
                         <button onClick={() => updateQuantity(item.id, item.quantity + 1)} className="w-8 h-8 flex items-center justify-center rounded-xl hover:bg-slate-50 text-slate-600 transition-all font-bold">+</button>
                       </div>
                       <span className="ml-3 text-slate-500 font-bold text-sm">
-                          {item.productId.startsWith('01_清潔袋') 
+                          {(item.productId.startsWith('01_清潔袋') || item.productId.startsWith('02_食品保鮮耐熱袋'))
                             ? '捲' 
                             : (item.productId.startsWith('03_夾鏈袋') ? '包' : '盒')}
                         </span>

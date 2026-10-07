@@ -29,7 +29,7 @@ export default function QuickOrder() {
           categoryId: product.categoryId,
           specLabel: `${spec.label} (${spec.size})`,
           coverImg: spec.images?.[0]?.path || product.images[0]?.path || '',
-          unit: product.categoryId === '01_清潔袋' ? '捲' : (product.categoryId === '03_夾鏈袋' ? '包' : '盒')
+          unit: (product.categoryId === '01_清潔袋' || product.categoryId === '02_食品保鮮耐熱袋') ? '捲' : (product.categoryId === '03_夾鏈袋' ? '包' : '盒')
         }));
       }
       return [{
@@ -39,7 +39,7 @@ export default function QuickOrder() {
         categoryId: product.categoryId,
         specLabel: '標準規格',
         coverImg: product.images[0]?.path || '',
-        unit: product.categoryId === '01_清潔袋' ? '捲' : (product.categoryId === '03_夾鏈袋' ? '包' : '盒')
+        unit: (product.categoryId === '01_清潔袋' || product.categoryId === '02_食品保鮮耐熱袋') ? '捲' : (product.categoryId === '03_夾鏈袋' ? '包' : '盒')
       }];
     });
   }, [filteredProducts]);

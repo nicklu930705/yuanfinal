@@ -925,7 +925,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "200x300mm",
       "capacity_or_dim": "150枚",
-      "quantity": "150枚/盒"
+      "quantity": "150枚/捲"
     }
   },
   {
@@ -954,7 +954,7 @@ export const products: Product[] = [
     "parsedSpec": {
       "size_or_type": "280x410mm",
       "capacity_or_dim": "100枚",
-      "quantity": "100枚/盒"
+      "quantity": "100枚/捲"
     }
   },
   {

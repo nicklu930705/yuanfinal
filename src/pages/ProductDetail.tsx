@@ -92,7 +92,7 @@ export default function ProductDetail() {
   const handleAdd = () => {
     const specName = selectedSpec ? `${selectedSpec.label} (${selectedSpec.size})` : '標準規格';
     // For new products, order_unit is not in the json directly on variant, but let's use '盒' or '件'
-    const unit = product.categoryId === '01_清潔袋' 
+    const unit = (product.categoryId === '01_清潔袋' || product.categoryId === '02_食品保鮮耐熱袋')
       ? '捲' 
       : (product.categoryId === '03_夾鏈袋' ? '包' : '盒');
 
@@ -202,7 +202,7 @@ export default function ProductDetail() {
                       },
                       { 
                         label: '張數', 
-                        value: product.categoryId === '01_清潔袋' 
+                        value: (product.categoryId === '01_清潔袋' || product.categoryId === '02_食品保鮮耐熱袋')
                           ? `${selectedSpec.sheets_per_box} 枚/捲` 
                           : product.categoryId === '03_夾鏈袋'
                             ? `${selectedSpec.sheets_per_box} 枚`
@@ -328,7 +328,7 @@ export default function ProductDetail() {
                     >+</button>
                   </div>
                   <span className="ml-4 text-slate-500 font-bold">
-                    {product.categoryId === '01_清潔袋' ? '捲' : (product.categoryId === '03_夾鏈袋' ? '包' : '盒')}
+                    {(product.categoryId === '01_清潔袋' || product.categoryId === '02_食品保鮮耐熱袋') ? '捲' : (product.categoryId === '03_夾鏈袋' ? '包' : '盒')}
                   </span>
                 </div>
 
