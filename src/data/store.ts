@@ -1448,36 +1448,8 @@ export const products: Product[] = [
     "images": [],
     "specs": [
       {
-        "id": "fp-zipper-storage-l",
-        "size": "L",
-        "label": "大",
-        "dimensions": [
-          26.8,
-          27.3
-        ],
-        "sheets_per_box": 20,
-        "barcode": "4711046993138",
-        "images": [
-          {
-            "role": "包裝正面主圖",
-            "path": "/assets/03_夾鏈袋/02_台塑保鮮密實袋/L_大_20張每盒/01_包裝正面主圖__IMG_0282.JPG",
-            "order": 1
-          },
-          {
-            "role": "包裝用途面",
-            "path": "/assets/03_夾鏈袋/02_台塑保鮮密實袋/L_大_20張每盒/02_包裝用途面__IMG_0276.JPG",
-            "order": 2
-          },
-          {
-            "role": "包裝背面規格",
-            "path": "/assets/03_夾鏈袋/02_台塑保鮮密實袋/L_大_20張每盒/03_包裝背面規格__IMG_0277.JPG",
-            "order": 3
-          }
-        ]
-      },
-      {
         "id": "fp-zipper-storage-m",
-        "size": "M",
+        "size": "中",
         "label": "中",
         "dimensions": [
           17.8,
@@ -1502,13 +1474,41 @@ export const products: Product[] = [
             "order": 3
           }
         ]
+      },
+      {
+        "id": "fp-zipper-storage-l",
+        "size": "大",
+        "label": "大",
+        "dimensions": [
+          26.8,
+          27.3
+        ],
+        "sheets_per_box": 20,
+        "barcode": "4711046993138",
+        "images": [
+          {
+            "role": "包裝正面主圖",
+            "path": "/assets/03_夾鏈袋/02_台塑保鮮密實袋/L_大_20張每盒/01_包裝正面主圖__IMG_0282.JPG",
+            "order": 1
+          },
+          {
+            "role": "包裝用途面",
+            "path": "/assets/03_夾鏈袋/02_台塑保鮮密實袋/L_大_20張每盒/02_包裝用途面__IMG_0276.JPG",
+            "order": 2
+          },
+          {
+            "role": "包裝背面規格",
+            "path": "/assets/03_夾鏈袋/02_台塑保鮮密實袋/L_大_20張每盒/03_包裝背面規格__IMG_0277.JPG",
+            "order": 3
+          }
+        ]
       }
     ],
     "shared_images": [
       {
         "role": "系列規格圖",
         "path": "/assets/03_夾鏈袋/02_台塑保鮮密實袋/00_系列共用/04_系列規格圖__IMG_0281.JPG",
-        "order": 4
+        "order": 0
       }
     ],
     "parsedSpec": null
