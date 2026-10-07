@@ -648,15 +648,6 @@ export const products: Product[] = [
         "sheets_per_box": 28,
         "barcode": "",
         "images": []
-      },
-      {
-        "id": "01_清潔袋-03_抽取式與業務用-超大-transparent",
-        "size": "超大",
-        "label": "透明",
-        "dimensions": [90, 110],
-        "sheets_per_box": 28,
-        "barcode": "",
-        "images": []
       }
     ],
     "shared_images": [],
@@ -682,7 +673,7 @@ export const products: Product[] = [
         "id": "01_清潔袋-03_抽取式與業務用-超巨大_165L-black",
         "size": "超巨大",
         "label": "黑色",
-        "dimensions": [110, 130],
+        "dimensions": [106, 120],
         "sheets_per_box": 22,
         "barcode": "",
         "images": []
@@ -691,7 +682,7 @@ export const products: Product[] = [
         "id": "01_清潔袋-03_抽取式與業務用-超巨大_165L-transparent",
         "size": "超巨大",
         "label": "透明",
-        "dimensions": [110, 130],
+        "dimensions": [106, 120],
         "sheets_per_box": 22,
         "barcode": "",
         "images": []
@@ -755,15 +746,6 @@ export const products: Product[] = [
         ],
         "specs": [
       {
-        "id": "01_清潔袋-03_抽取式與業務用-超特大_125L-black",
-        "size": "超特大",
-        "label": "黑色",
-        "dimensions": [92, 110],
-        "sheets_per_box": 21,
-        "barcode": "",
-        "images": []
-      },
-      {
         "id": "01_清潔袋-03_抽取式與業務用-超特大_125L-transparent",
         "size": "超特大",
         "label": "透明",
@@ -794,18 +776,18 @@ export const products: Product[] = [
         "specs": [
       {
         "id": "01_清潔袋-03_抽取式與業務用-超特大-standard-black",
-        "size": "一般版",
+        "size": "一般款",
         "label": "黑色",
-        "dimensions": [92, 110],
+        "dimensions": [94, 110],
         "sheets_per_box": 30,
         "barcode": "",
         "images": []
       },
       {
         "id": "01_清潔袋-03_抽取式與業務用-超特大-standard-transparent",
-        "size": "一般版",
+        "size": "一般款",
         "label": "透明",
-        "dimensions": [92, 110],
+        "dimensions": [94, 110],
         "sheets_per_box": 30,
         "barcode": "",
         "images": []
@@ -814,7 +796,7 @@ export const products: Product[] = [
         "id": "01_清潔袋-03_抽取式與業務用-超特大-thickened-black",
         "size": "加厚款",
         "label": "黑色",
-        "dimensions": [92, 110],
+        "dimensions": [94, 110],
         "sheets_per_box": 27,
         "barcode": "",
         "images": []
