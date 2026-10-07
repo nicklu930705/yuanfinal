@@ -639,13 +639,28 @@ export const products: Product[] = [
         "order": 0
       }
     ],
-    "specs": [],
+    "specs": [
+      {
+        "id": "01_清潔袋-03_抽取式與業務用-超大-black",
+        "size": "超大",
+        "label": "黑色",
+        "dimensions": [90, 110],
+        "sheets_per_box": 28,
+        "barcode": "",
+        "images": []
+      },
+      {
+        "id": "01_清潔袋-03_抽取式與業務用-超大-transparent",
+        "size": "超大",
+        "label": "透明",
+        "dimensions": [90, 110],
+        "sheets_per_box": 28,
+        "barcode": "",
+        "images": []
+      }
+    ],
     "shared_images": [],
-    "parsedSpec": {
-      "size_or_type": "超大",
-      "capacity_or_dim": "黑色",
-      "quantity": "28張/捲"
-    }
+    "parsedSpec": null
   },
   {
     "id": "01_清潔袋-03_抽取式與業務用-超巨大_165L_22張",
@@ -662,37 +677,67 @@ export const products: Product[] = [
         "order": 0
       }
     ],
-    "specs": [],
-    "shared_images": [],
-    "parsedSpec": {
-          "size_or_type": "超巨大",
-          "capacity_or_dim": "165L",
-          "quantity": "22張/捲"
-        }
+    "specs": [
+      {
+        "id": "01_清潔袋-03_抽取式與業務用-超巨大_165L-black",
+        "size": "超巨大",
+        "label": "黑色",
+        "dimensions": [110, 130],
+        "sheets_per_box": 22,
+        "barcode": "",
+        "images": []
       },
       {
-        "id": "01_清潔袋-03_抽取式與業務用-超巨霸_260L_17張",
-        "categoryId": "01_清潔袋",
-        "subcategoryId": "03_抽取式與業務用",
-        "name": "台塑清潔袋(抽取/業務用)｜超巨霸 260L",
-        "originalName": "超巨霸_260L_17張",
-        "description": "專業級大容量設計，滿足高強度清理需求。加厚材質提供優異的抗刺穿與承重能力，是大型活動、工地或營業場所清潔的理想選擇。",
-        "images": [
-          {
-            "role": "規格圖",
-            "path": "/assets/01_清潔袋/03_抽取式與業務用/超巨霸_260L_17張/規格圖__IMG_0238.JPG",
-            "note": "",
-            "order": 0
-          }
-        ],
-        "specs": [],
-        "shared_images": [],
-        "parsedSpec": {
-          "size_or_type": "超巨霸",
-          "capacity_or_dim": "260L",
-          "quantity": "17張/捲"
-        }
+        "id": "01_清潔袋-03_抽取式與業務用-超巨大_165L-transparent",
+        "size": "超巨大",
+        "label": "透明",
+        "dimensions": [110, 130],
+        "sheets_per_box": 22,
+        "barcode": "",
+        "images": []
+      }
+    ],
+    "shared_images": [],
+    "parsedSpec": null
+  },
+  {
+    "id": "01_清潔袋-03_抽取式與業務用-超巨霸_260L_17張",
+    "categoryId": "01_清潔袋",
+    "subcategoryId": "03_抽取式與業務用",
+    "name": "台塑清潔袋(抽取/業務用)｜超巨霸 260L",
+    "originalName": "超巨霸_260L_17張",
+    "description": "專業級大容量設計，滿足高強度清理需求。加厚材質提供優異的抗刺穿與承重能力，是大型活動、工地或營業場所清潔的理想選擇。",
+    "images": [
+      {
+        "role": "規格圖",
+        "path": "/assets/01_清潔袋/03_抽取式與業務用/超巨霸_260L_17張/規格圖__IMG_0238.JPG",
+        "note": "",
+        "order": 0
+      }
+    ],
+    "specs": [
+      {
+        "id": "01_清潔袋-03_抽取式與業務用-超巨霸_260L-black",
+        "size": "超巨霸",
+        "label": "黑色",
+        "dimensions": [120, 140],
+        "sheets_per_box": 17,
+        "barcode": "",
+        "images": []
       },
+      {
+        "id": "01_清潔袋-03_抽取式與業務用-超巨霸_260L-transparent",
+        "size": "超巨霸",
+        "label": "透明",
+        "dimensions": [120, 140],
+        "sheets_per_box": 17,
+        "barcode": "",
+        "images": []
+      }
+    ],
+    "shared_images": [],
+    "parsedSpec": null
+  },
       {
         "id": "01_清潔袋-03_抽取式與業務用-超特大_125L_21張",
         "categoryId": "01_清潔袋",
@@ -708,14 +753,29 @@ export const products: Product[] = [
             "order": 0
           }
         ],
-        "specs": [],
-        "shared_images": [],
-        "parsedSpec": {
-          "size_or_type": "超特大",
-          "capacity_or_dim": "125L",
-          "quantity": "21張/捲"
-        }
+        "specs": [
+      {
+        "id": "01_清潔袋-03_抽取式與業務用-超特大_125L-black",
+        "size": "超特大",
+        "label": "黑色",
+        "dimensions": [92, 110],
+        "sheets_per_box": 21,
+        "barcode": "",
+        "images": []
       },
+      {
+        "id": "01_清潔袋-03_抽取式與業務用-超特大_125L-transparent",
+        "size": "超特大",
+        "label": "透明",
+        "dimensions": [92, 110],
+        "sheets_per_box": 21,
+        "barcode": "",
+        "images": []
+      }
+    ],
+    "shared_images": [],
+    "parsedSpec": null
+  },
       {
         "id": "01_清潔袋-03_抽取式與業務用-超特大_一般30張與加厚27張",
         "categoryId": "01_清潔袋",
@@ -731,14 +791,38 @@ export const products: Product[] = [
             "order": 0
           }
         ],
-        "specs": [],
-        "shared_images": [],
-        "parsedSpec": {
-          "size_or_type": "超特大",
-          "capacity_or_dim": "一般與加厚",
-          "quantity": "一般 30張/捲 / 加厚 27張/捲"
-        }
+        "specs": [
+      {
+        "id": "01_清潔袋-03_抽取式與業務用-超特大-standard-black",
+        "size": "一般版",
+        "label": "黑色",
+        "dimensions": [92, 110],
+        "sheets_per_box": 30,
+        "barcode": "",
+        "images": []
       },
+      {
+        "id": "01_清潔袋-03_抽取式與業務用-超特大-standard-transparent",
+        "size": "一般版",
+        "label": "透明",
+        "dimensions": [92, 110],
+        "sheets_per_box": 30,
+        "barcode": "",
+        "images": []
+      },
+      {
+        "id": "01_清潔袋-03_抽取式與業務用-超特大-thickened-black",
+        "size": "加厚款",
+        "label": "黑色",
+        "dimensions": [92, 110],
+        "sheets_per_box": 27,
+        "barcode": "",
+        "images": []
+      }
+    ],
+    "shared_images": [],
+    "parsedSpec": null
+  },
   {
     "id": "01_清潔袋-04_醫療感染性廢棄物袋-感染袋_多尺寸",
     "categoryId": "01_清潔袋",
