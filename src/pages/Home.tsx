@@ -18,22 +18,6 @@ export default function Home() {
             </p>
           </section>
 
-          {/* Key Trust Badges */}
-          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-            {[
-              { icon: 'verified', title: '安心合規', desc: 'SGS 食品級檢驗與環保署核准字號，符合衛生法規要求。' },
-              { icon: 'local_shipping', title: '滿額免運', desc: '全館滿 $1,500 即享免運宅配，雙北市區專車配送。' },
-              { icon: 'inventory_2', title: '急速發貨', desc: '常備百坪實體倉儲現貨，當日發貨營運不中斷。' },
-              { icon: 'calculate', title: '箱購特惠', desc: '透明階梯報價單，單店小量亦可享連鎖批發級優惠。' }
-            ].map((badge, idx) => (
-              <div key={idx} className="bg-surface-container-lowest p-6 rounded-3xl border border-border-warm shadow-sm hover:shadow-md transition-shadow">
-                <span className="material-symbols-outlined text-secondary text-3xl mb-4">{badge.icon}</span>
-                <h3 className="text-lg font-bold mb-2">{badge.title}</h3>
-                <p className="text-sm text-on-surface-variant leading-relaxed">{badge.desc}</p>
-              </div>
-            ))}
-          </section>
-
           {/* Hot Products Section */}
           <section className="mb-24" id="products">
             <div className="flex items-end justify-between mb-12">
@@ -103,6 +87,22 @@ export default function Home() {
                 </Link>
               ))}
             </div>
+          </section>
+
+          {/* Key Trust Badges */}
+          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+            {[
+              { icon: 'verified', title: '安心合規', desc: 'SGS 食品級檢驗與環保署核准字號，符合衛生法規要求。' },
+              { icon: 'local_shipping', title: '滿額免運', desc: '全館滿 $1,500 即享免運宅配，雙北市區專車配送。' },
+              { icon: 'inventory_2', title: '急速發貨', desc: '常備百坪實體倉儲現貨，當日發貨營運不中斷。' },
+              { icon: 'calculate', title: '箱購特惠', desc: '透明階梯報價單，單店小量亦可享連鎖批發級優惠。' }
+            ].map((badge, idx) => (
+              <div key={idx} className="bg-surface-container-lowest p-6 rounded-3xl border border-border-warm shadow-sm hover:shadow-md transition-shadow">
+                <span className="material-symbols-outlined text-secondary text-3xl mb-4">{badge.icon}</span>
+                <h3 className="text-lg font-bold mb-2">{badge.title}</h3>
+                <p className="text-sm text-on-surface-variant leading-relaxed">{badge.desc}</p>
+              </div>
+            ))}
           </section>
 
           {/* Wholesale Pricing Summary */}
