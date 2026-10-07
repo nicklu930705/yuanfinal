@@ -90,7 +90,7 @@ export default function Home() {
           </section>
 
           {/* Key Trust Badges */}
-          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
             {[
               { icon: 'verified', title: '安心合規', desc: 'SGS 食品級檢驗與環保署核准字號，符合衛生法規要求。' },
               { icon: 'local_shipping', title: '滿額免運', desc: '全館滿 $1,500 即享免運宅配，雙北市區專車配送。' },
@@ -103,6 +103,22 @@ export default function Home() {
                 <p className="text-sm text-on-surface-variant leading-relaxed">{badge.desc}</p>
               </div>
             ))}
+          </section>
+
+          {/* Home Brand Section before Footer */}
+          <section className="bg-slate-50 py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto w-full text-center mb-12 rounded-[2.5rem]">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-slate-900">關於侑安國際有限公司</h2>
+            <p className="text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto">
+              以品質立信，以服務致遠<br />
+              台塑原料專業經銷、免洗餐具包材、客製化包材服務。<br />
+              為什麼選擇我們：專業、穩定、長期。
+            </p>
+            <Link 
+              className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition" 
+              to="/about"
+            >
+              了解詳細企業資訊 <span className="material-symbols-outlined ml-1 text-[18px]">arrow_right_alt</span>
+            </Link>
           </section>
 
           </div>
