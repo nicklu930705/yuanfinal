@@ -254,12 +254,12 @@ export default function ProductDetail() {
               )}
             </div>
 
-            {hasSpecs && (
+            {hasSpecs && (sizes.length > 1 || (sizes[0] && groupedSpecs[sizes[0]].length > 1)) && (
               <div className="mb-8">
                 <h3 className="text-sm font-bold text-slate-900 mb-3 uppercase tracking-wider">規格選擇</h3>
                 
                 {/* Step 1: Select Size/Type (款式) */}
-                {sizes.length > 0 && (
+                {sizes.length > 1 && (
                   <div>
                     <div className="flex flex-wrap gap-2.5">
                       {sizes.map(size => (
