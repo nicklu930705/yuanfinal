@@ -8,11 +8,17 @@ export default function Footer() {
           {/* Column 1: Company Info */}
           <div>
             <h3 className="text-on-surface text-lg font-bold mb-4">侑安國際有限公司</h3>
-            <p className="text-sm text-on-surface-variant">
-              以品質立信，以服務致遠<br />
-              台塑原料專業經銷、免洗餐具包材、客製化包材服務。<br />
-              為什麼選擇我們：專業、穩定、長期。
-            </p>
+            <div className="text-sm text-on-surface-variant space-y-3">
+              <p className="leading-relaxed">
+                以品質立信，以服務致遠。我們提供台塑原料專業經銷、免洗餐具包材、客製化包材服務。
+              </p>
+              <p className="leading-relaxed">
+                侑安國際有限公司專注於餐飲營業包材與專業環境衛生用藥，做全台餐飲頭家最堅實的後勤支柱。
+              </p>
+              <p className="font-bold">
+                為什麼選擇我們：專業、穩定、長期。
+              </p>
+            </div>
           </div>
 
           {/* Column 2: Quick Links */}
