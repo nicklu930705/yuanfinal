@@ -232,7 +232,9 @@ export default function ProductDetail() {
                       { label: '款式', value: product.parsedSpec?.size_or_type || '-' },
                       { label: '規格', value: product.parsedSpec?.capacity_or_dim || '-' },
                       { label: '包裝數量', value: product.parsedSpec?.quantity || '-' }
-                    ].map((item, i) => (
+                    ]
+                    .filter(item => item.value !== '-')
+                    .map((item, i) => (
                       <React.Fragment key={i}>
                         <div className="text-slate-500">{item.label}</div>
                         <div className="font-medium text-right text-slate-900">{item.value}</div>
