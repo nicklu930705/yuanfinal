@@ -246,7 +246,7 @@ export default function ProductDetail() {
                 )}
 
                 {/* Step 2: Select Color/Variant (顏色) */}
-                {selectedSize && groupedSpecs[selectedSize] && (
+                {selectedSize && groupedSpecs[selectedSize] && product.subcategoryId !== '04_醫療感染性廢棄物袋' && (
                   <div>
                     {sizes.length > 1 && <p className="text-xs text-slate-500 mb-2 font-bold">2. 選擇顏色</p>}
                     <div className="flex flex-wrap gap-2.5">

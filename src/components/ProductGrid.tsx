@@ -174,7 +174,7 @@ export default function ProductGrid() {
                 ...(product.specs?.flatMap(s => s.images || []) || [])
               ];
               
-              const preferredImg = allImages.find(img => img.role === '規格圖' || img.role === '雙款規格圖' || img.role === '展示圖') || allImages[0];
+              const preferredImg = allImages.find(img => img.role === '規格圖' || img.role === '雙款規格圖' || img.role === '系列規格圖' || img.role === '展示圖') || allImages[0];
               const coverImg = preferredImg?.path || '';
               
               // Extract subcategory name for display
