@@ -129,6 +129,24 @@ export default function ProductDetail() {
               ) : (
                 <div className="w-full h-full flex items-center justify-center text-slate-400">無圖片</div>
               )}
+
+              {/* Floating Navigation Arrows */}
+              {sortedImages.length > 1 && (
+                <>
+                  <button 
+                    onClick={handlePrevImage}
+                    className="absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/90 shadow-lg flex items-center justify-center text-slate-900 hover:bg-white transition-all opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 z-10"
+                  >
+                    <ChevronLeft size={24} />
+                  </button>
+                  <button 
+                    onClick={handleNextImage}
+                    className="absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/90 shadow-lg flex items-center justify-center text-slate-900 hover:bg-white transition-all opacity-0 group-hover:opacity-100 translate-x-4 group-hover:translate-x-0 z-10"
+                  >
+                    <ChevronRight size={24} />
+                  </button>
+                </>
+              )}
             </div>
             
             {/* Thumbnails removed per user request */}

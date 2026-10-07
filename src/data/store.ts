@@ -1508,7 +1508,7 @@ export const products: Product[] = [
       {
         "role": "系列規格圖",
         "path": "/assets/03_夾鏈袋/02_台塑保鮮密實袋/00_系列共用/04_系列規格圖__IMG_0281.JPG",
-        "order": 0
+        "order": 4
       }
     ],
     "parsedSpec": null
@@ -1583,7 +1583,7 @@ export const products: Product[] = [
       {
         "role": "系列規格圖",
         "path": "/assets/03_夾鏈袋/03_台塑保鮮冷凍袋/00_系列共用/04_系列規格圖__IMG_0283.JPG",
-        "order": 0
+        "order": 4
       }
     ],
     "parsedSpec": null
