@@ -223,10 +223,9 @@ export default function ProductDetail() {
               <div className="mb-8">
                 <h3 className="text-sm font-bold text-slate-900 mb-3 uppercase tracking-wider">規格選擇</h3>
                 
-                {/* Step 1: Select Size/Type (款式) if there are multiple */}
-                {sizes.length > 1 && (
-                  <div className="mb-4">
-                    <p className="text-xs text-slate-500 mb-2 font-bold">1. 選擇款式</p>
+                {/* Step 1: Select Size/Type (款式) */}
+                {sizes.length > 0 && (
+                  <div>
                     <div className="flex flex-wrap gap-2.5">
                       {sizes.map(size => (
                         <button
@@ -248,7 +247,6 @@ export default function ProductDetail() {
                 {/* Step 2: Select Color/Variant (顏色) */}
                 {selectedSize && groupedSpecs[selectedSize] && product.subcategoryId !== '04_醫療感染性廢棄物袋' && (
                   <div>
-                    {sizes.length > 1 && <p className="text-xs text-slate-500 mb-2 font-bold">2. 選擇顏色</p>}
                     <div className="flex flex-wrap gap-2.5">
                       {groupedSpecs[selectedSize].map(spec => (
                         <button
