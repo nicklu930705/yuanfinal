@@ -149,7 +149,22 @@ export default function ProductDetail() {
               )}
             </div>
             
-            {/* Thumbnails removed per user request */}
+            {/* Thumbnails */}
+            {sortedImages.length > 1 && (
+              <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
+                {sortedImages.map((img, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setSelectedImage(img.path)}
+                    className={`relative flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden border-2 transition-all ${
+                      selectedImage === img.path ? 'border-primary-600 ring-2 ring-primary-50' : 'border-slate-100 hover:border-slate-200'
+                    }`}
+                  >
+                    <img src={img.path} alt="" className="w-full h-full object-cover" />
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Product Info */}
