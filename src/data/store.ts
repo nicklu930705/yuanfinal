@@ -454,7 +454,7 @@ export const products: Product[] = [
         "id": "01_清潔袋-02_拉繩式-巨無霸_130L_20張-black",
         "size": "巨無霸",
         "label": "黑色",
-        "dimensions": [100, 110],
+        "dimensions": [94, 102],
         "sheets_per_box": 20,
         "barcode": "",
         "images": []
@@ -463,7 +463,7 @@ export const products: Product[] = [
         "id": "01_清潔袋-02_拉繩式-巨無霸_130L_20張-transparent",
         "size": "巨無霸",
         "label": "透明",
-        "dimensions": [100, 110],
+        "dimensions": [94, 102],
         "sheets_per_box": 20,
         "barcode": "",
         "images": []
@@ -492,7 +492,7 @@ export const products: Product[] = [
         "id": "01_清潔袋-02_拉繩式-特大_70L_18張-black",
         "size": "特大",
         "label": "黑色",
-        "dimensions": [80, 90],
+        "dimensions": [78, 88],
         "sheets_per_box": 18,
         "barcode": "",
         "images": []
@@ -501,7 +501,7 @@ export const products: Product[] = [
         "id": "01_清潔袋-02_拉繩式-特大_70L_18張-transparent",
         "size": "特大",
         "label": "透明",
-        "dimensions": [80, 90],
+        "dimensions": [78, 88],
         "sheets_per_box": 18,
         "barcode": "",
         "images": []
@@ -606,7 +606,7 @@ export const products: Product[] = [
         "id": "01_清潔袋-02_拉繩式-超特大_125L_15張-black",
         "size": "超特大",
         "label": "黑色",
-        "dimensions": [94, 110],
+        "dimensions": [93, 100],
         "sheets_per_box": 15,
         "barcode": "",
         "images": []
@@ -615,7 +615,7 @@ export const products: Product[] = [
         "id": "01_清潔袋-02_拉繩式-超特大_125L_15張-transparent",
         "size": "超特大",
         "label": "透明",
-        "dimensions": [94, 110],
+        "dimensions": [93, 100],
         "sheets_per_box": 15,
         "barcode": "",
         "images": []
