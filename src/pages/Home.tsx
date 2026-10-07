@@ -12,8 +12,8 @@ export default function Home() {
             {/* Background Image Layer */}
             <div className="absolute inset-0 z-0">
               <img 
-                src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Abstract%20professional%20background%20of%20high-quality%20paper%20and%20plastic%20textures%2C%20minimalist%20clean%20design%2C%20soft%20neutral%20gray%20and%20white%20tones%2C%20premium%20material%20feel%2C%20commercial%20background%2C%208k&image_size=landscape_16_9" 
-                alt="Professional Catering Supplies V3" 
+                src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=High-end%20professional%20food-grade%20catering%20packaging%20bags%2C%20clear%20zipper%20bags%2C%20and%20neatly%20folded%20plastic%20bags%2C%20arranged%20artistically%20on%20a%20clean%20stone%20countertop%2C%20soft%20morning%20light%2C%20commercial%20product%20photography%2C%20minimalist%20aesthetic%2C%20neutral%20colors%2C%208k&image_size=landscape_16_9" 
+                alt="Professional Catering Supplies V4" 
                 className="w-full h-full object-cover opacity-60"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
