@@ -326,103 +326,103 @@ export const products: Product[] = [
     "specs": [],
     "shared_images": [],
     "parsedSpec": {
-      "size_or_type": "巨無霸",
-      "capacity_or_dim": "130L",
-      "quantity": "20張"
-    }
-  },
-  {
-    "id": "01_清潔袋-02_拉繩式-特大_70L_18張",
-    "categoryId": "01_清潔袋",
-    "subcategoryId": "02_拉繩式",
-    "name": "台塑拉繩清潔袋｜特大型 70L",
-    "originalName": "特大_70L_18張",
-    "description": "獨特拉繩設計，一拉即收，不髒手且封口快速便利。採用加厚強韌材質，抗刺穿力強，適合廚房及各類居家清潔使用。",
-    "images": [
+          "size_or_type": "巨無霸",
+          "capacity_or_dim": "130L",
+          "quantity": "20張/捲"
+        }
+      },
       {
-        "role": "規格圖",
-        "path": "/assets/01_清潔袋/02_拉繩式/特大_70L_18張/規格圖__IMG_0232.JPG",
-        "note": "",
-        "order": 0
-      }
-    ],
-    "specs": [],
-    "shared_images": [],
-    "parsedSpec": {
-      "size_or_type": "特大",
-      "capacity_or_dim": "70L",
-      "quantity": "18張"
-    }
-  },
-  {
-    "id": "01_清潔袋-02_拉繩式-超大_90L_14張",
-    "categoryId": "01_清潔袋",
-    "subcategoryId": "02_拉繩式",
-    "name": "台塑拉繩清潔袋｜超大型 90L",
-    "originalName": "超大_90L_14張",
-    "description": "獨特拉繩設計，一拉即收，不髒手且封口快速便利。採用加厚強韌材質，抗刺穿力強，適合廚房及各類居家清潔使用。",
-    "images": [
+        "id": "01_清潔袋-02_拉繩式-特大_70L_18張",
+        "categoryId": "01_清潔袋",
+        "subcategoryId": "02_拉繩式",
+        "name": "台塑拉繩清潔袋｜特大型 70L",
+        "originalName": "特大_70L_18張",
+        "description": "獨特拉繩設計，一拉即收，不髒手且封口快速便利。採用加厚強韌材質，抗刺穿力強，適合廚房及各類居家清潔使用。",
+        "images": [
+          {
+            "role": "規格圖",
+            "path": "/assets/01_清潔袋/02_拉繩式/特大_70L_18張/規格圖__IMG_0232.JPG",
+            "note": "",
+            "order": 0
+          }
+        ],
+        "specs": [],
+        "shared_images": [],
+        "parsedSpec": {
+          "size_or_type": "特大",
+          "capacity_or_dim": "70L",
+          "quantity": "18張/捲"
+        }
+      },
       {
-        "role": "規格圖",
-        "path": "/assets/01_清潔袋/02_拉繩式/超大_90L_14張/規格圖__IMG_0233.JPG",
-        "note": "IMG_0233寫840×950mm，IMG_0220的14張款寫84×95cm；容量名稱依原圖。",
-        "order": 0
-      }
-    ],
-    "specs": [],
-    "shared_images": [],
-    "parsedSpec": {
-      "size_or_type": "超大",
-      "capacity_or_dim": "90L",
-      "quantity": "14張/捲"
-    }
-  },
-  {
-    "id": "01_清潔袋-02_拉繩式-超大超值包_90L_25張",
-    "categoryId": "01_清潔袋",
-    "subcategoryId": "02_拉繩式",
-    "name": "台塑拉繩清潔袋｜超大超值包型 90L",
-    "originalName": "超大超值包_90L_25張",
-    "description": "獨特拉繩設計，一拉即收，不髒手且封口快速便利。採用加厚強韌材質，抗刺穿力強，適合廚房及各類居家清潔使用。",
-    "images": [
+        "id": "01_清潔袋-02_拉繩式-超大_90L_14張",
+        "categoryId": "01_清潔袋",
+        "subcategoryId": "02_拉繩式",
+        "name": "台塑拉繩清潔袋｜超大型 90L",
+        "originalName": "超大_90L_14張",
+        "description": "獨特拉繩設計，一拉即收，不髒手且封口快速便利。採用加厚強韌材質，抗刺穿力強，適合廚房及各類居家清潔使用。",
+        "images": [
+          {
+            "role": "規格圖",
+            "path": "/assets/01_清潔袋/02_拉繩式/超大_90L_14張/規格圖__IMG_0233.JPG",
+            "note": "IMG_0233寫840×950mm，IMG_0220的14張款寫84×95cm；容量名稱依原圖。",
+            "order": 0
+          }
+        ],
+        "specs": [],
+        "shared_images": [],
+        "parsedSpec": {
+          "size_or_type": "超大",
+          "capacity_or_dim": "90L",
+          "quantity": "14張/捲"
+        }
+      },
       {
-        "role": "規格圖",
-        "path": "/assets/01_清潔袋/02_拉繩式/超大超值包_90L_25張/規格圖__IMG_0234.JPG",
-        "note": "",
-        "order": 0
-      }
-    ],
-    "specs": [],
-    "shared_images": [],
-    "parsedSpec": {
-      "size_or_type": "超大超值包",
-      "capacity_or_dim": "90L",
-      "quantity": "25張"
-    }
-  },
-  {
-    "id": "01_清潔袋-02_拉繩式-超特大_125L_15張",
-    "categoryId": "01_清潔袋",
-    "subcategoryId": "02_拉繩式",
-    "name": "台塑拉繩清潔袋｜超特大型 125L",
-    "originalName": "超特大_125L_15張",
-    "description": "獨特拉繩設計，一拉即收，不髒手且封口快速便利。採用加厚強韌材質，抗刺穿力強，適合廚房及各類居家清潔使用。",
-    "images": [
+        "id": "01_清潔袋-02_拉繩式-超大超值包_90L_25張",
+        "categoryId": "01_清潔袋",
+        "subcategoryId": "02_拉繩式",
+        "name": "台塑拉繩清潔袋｜超大超值包型 90L",
+        "originalName": "超大超值包_90L_25張",
+        "description": "獨特拉繩設計，一拉即收，不髒手且封口快速便利。採用加厚強韌材質，抗刺穿力強，適合廚房及各類居家清潔使用。",
+        "images": [
+          {
+            "role": "規格圖",
+            "path": "/assets/01_清潔袋/02_拉繩式/超大超值包_90L_25張/規格圖__IMG_0234.JPG",
+            "note": "",
+            "order": 0
+          }
+        ],
+        "specs": [],
+        "shared_images": [],
+        "parsedSpec": {
+          "size_or_type": "超大超值包",
+          "capacity_or_dim": "90L",
+          "quantity": "25張/捲"
+        }
+      },
       {
-        "role": "規格圖",
-        "path": "/assets/01_清潔袋/02_拉繩式/超特大_125L_15張/規格圖__IMG_0235.JPG",
-        "note": "",
-        "order": 0
-      }
-    ],
-    "specs": [],
-    "shared_images": [],
-    "parsedSpec": {
-      "size_or_type": "超特大",
-      "capacity_or_dim": "125L",
-      "quantity": "15張"
-    }
-  },
+        "id": "01_清潔袋-02_拉繩式-超特大_125L_15張",
+        "categoryId": "01_清潔袋",
+        "subcategoryId": "02_拉繩式",
+        "name": "台塑拉繩清潔袋｜超特大型 125L",
+        "originalName": "超特大_125L_15張",
+        "description": "獨特拉繩設計，一拉即收，不髒手且封口快速便利。採用加厚強韌材質，抗刺穿力強，適合廚房及各類居家清潔使用。",
+        "images": [
+          {
+            "role": "規格圖",
+            "path": "/assets/01_清潔袋/02_拉繩式/超特大_125L_15張/規格圖__IMG_0235.JPG",
+            "note": "",
+            "order": 0
+          }
+        ],
+        "specs": [],
+        "shared_images": [],
+        "parsedSpec": {
+          "size_or_type": "超特大",
+          "capacity_or_dim": "125L",
+          "quantity": "15張/捲"
+        }
+      },
   {
     "id": "01_清潔袋-03_抽取式與業務用-超大_黑色_28張",
     "categoryId": "01_清潔袋",
