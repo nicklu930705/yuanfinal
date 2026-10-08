@@ -18,10 +18,9 @@ export default function Home() {
 
           {/* Content Layer */}
           <div className="relative z-10 w-full max-w-[1360px] mx-auto px-6 md:px-10 py-20 md:py-32">
-            <div className="max-w-3xl">
-              <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-[1.1] tracking-tight">
-                侑安國際<br />
-                <span className="text-slate-300">餐飲後勤供應的首選夥伴</span>
+            <div className="max-w-4xl">
+              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight tracking-tight whitespace-nowrap">
+                侑安國際 <span className="text-slate-300 ml-2 md:ml-4">餐飲後勤供應的首選夥伴</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-slate-100 mt-6 sm:mt-8 max-w-2xl leading-relaxed font-body font-medium opacity-90">
                 我們為餐飲店家提供高品質的營業用包材與環境衛生備品。從食品級耐熱袋到專業除蟲藥劑，侑安國際以合規、穩定、透明的服務，支援您的店鋪營運。
