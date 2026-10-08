@@ -343,6 +343,38 @@ export default function ProductDetail() {
                     加入詢價需求單
                   </button>
                 </div>
+
+                {/* Shopping Guide Summary */}
+                <div className="mt-8 p-6 bg-slate-50 rounded-3xl border border-slate-200">
+                  <h4 className="text-sm font-bold text-slate-900 mb-4 flex items-center gap-2 uppercase tracking-wider">
+                    <span className="w-1 h-4 bg-slate-400 rounded-full"></span>
+                    購買須知摘要
+                  </h4>
+                  <ul className="text-xs text-slate-600 space-y-2 font-medium">
+                    <li className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-slate-300"></span>
+                      現貨 1–3 個工作天內出貨
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-slate-300"></span>
+                      北北基滿 $5,000 免運宅配
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-slate-300"></span>
+                      提供貨到收現或銀行轉帳
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-slate-300"></span>
+                      紙本發票隨貨附（統編請備註）
+                    </li>
+                  </ul>
+                  <Link 
+                    to="/shopping-guide" 
+                    className="mt-4 inline-flex items-center text-xs font-bold text-primary-600 hover:text-primary-700 transition"
+                  >
+                    查看完整購物須知 <ChevronRight size={14} className="ml-0.5" />
+                  </Link>
+                </div>
                 {showSuccess && (
                   <div className="mt-4 text-primary-600 text-sm font-bold text-center animate-bounce">
                     ✨ 已成功加入需求清單！

@@ -176,6 +176,15 @@ export default function Cart() {
                   <textarea name="notes" value={formData.notes} onChange={handleInputChange} rows={3} className="w-full px-4 py-3 border border-slate-200 rounded-2xl bg-stone-50 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all" placeholder="有任何特殊需求請註明"></textarea>
                 </div>
                 
+                {/* Shopping Terms Reminder */}
+                <div className="py-4 px-4 bg-slate-50 rounded-2xl border border-slate-200 text-[11px] text-slate-500 leading-relaxed font-medium">
+                  點擊送出即表示您同意本站的
+                  <Link to="/shopping-guide" className="text-primary-600 hover:underline mx-1">運費規範</Link>
+                  與
+                  <Link to="/shopping-guide" className="text-primary-600 hover:underline mx-1">退換貨須知</Link>。
+                  北北基滿 $5,000 免運，其他地區運費另計。
+                </div>
+                
                 <button
                   type="submit"
                   disabled={isSubmitting}

@@ -29,6 +29,9 @@ export default function Footer() {
               <li>
                 <Link to="/about" className="hover:text-primary-600 transition-colors">關於我們</Link>
               </li>
+              <li>
+                <Link to="/shopping-guide" className="hover:text-primary-600 transition-colors">購物須知</Link>
+              </li>
             </ul>
           </div>
 
