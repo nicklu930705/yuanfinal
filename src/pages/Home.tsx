@@ -8,12 +8,19 @@ export default function Home() {
         <section className="relative w-full overflow-hidden bg-slate-900 min-h-[460px] md:min-h-[640px] flex items-center">
           {/* Background Image Layer */}
           <div className="absolute inset-0 z-0">
+            {/* Desktop Image */}
             <img 
               src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Premium%20minimalist%20catering%20packaging%20supplies%20showcase%2C%20professional%20product%20photography%20of%20neatly%20organized%20bags%20and%20containers%2C%20elegant%20studio%20lighting%2C%20clean%20aesthetic%2C%20high-end%20materials%2C%208k&image_size=landscape_16_9" 
-              alt="Professional Catering Supplies" 
-              className="w-full h-full object-cover opacity-60"
+              alt="Professional Catering Supplies Desktop" 
+              className="hidden md:block w-full h-full object-cover opacity-60"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent"></div>
+            {/* Mobile Image - Optimized for Portrait */}
+            <img 
+              src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Premium%20minimalist%20catering%20packaging%20supplies%20showcase%2C%20professional%20product%20photography%20of%20neatly%20organized%20bags%20and%20containers%2C%20elegant%20studio%20lighting%2C%20clean%20aesthetic%2C%20high-end%20materials%2C%208k&image_size=portrait_16_9" 
+              alt="Professional Catering Supplies Mobile" 
+              className="block md:hidden w-full h-full object-cover opacity-70"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent md:bg-gradient-to-r md:from-black/85 md:via-black/50 md:to-transparent bg-gradient-to-b from-black/70 via-black/40 to-black/20"></div>
           </div>
 
           {/* Content Layer */}
