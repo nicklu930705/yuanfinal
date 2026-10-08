@@ -13,6 +13,7 @@ export default function Navbar() {
   const navLinks = [
     { name: '全部商品', path: '/products' },
     { name: '關於我們', path: '/about' },
+    { name: '購物須知', path: '/shopping-guide' },
   ];
 
   return (
@@ -77,7 +78,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Overlay */}
-        <div className={`lg:hidden fixed inset-0 top-[113px] bg-white z-40 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className={`lg:hidden fixed inset-0 top-[64px] bg-white z-40 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <nav className="flex flex-col p-6 gap-6">
             {navLinks.map((link) => (
               <Link 
