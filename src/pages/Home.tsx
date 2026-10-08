@@ -40,6 +40,92 @@ export default function Home() {
         </section>
 
         <div className="max-w-[1360px] mx-auto px-6 md:px-10 py-8 md:py-16">
+          {/* Hot Products Section */}
+          <section className="mb-24" id="products">
+            <div className="flex items-end justify-between mb-12">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-headline font-bold text-on-surface">精選營業核心品項</h2>
+                <p className="text-lg text-on-surface-variant mt-2">全台超過 3,000 家餐飲門市穩定回購的明星商品</p>
+              </div>
+              <Link to="/products" className="text-lg font-bold text-secondary hover:underline flex items-center gap-1">
+                查看全部商品 <span className="material-symbols-outlined text-[18px]">arrow_right_alt</span>
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                {
+                  id: '01_清潔袋-01_一般捲取式-大_45L',
+                  name: '台塑清潔袋｜大型 45L',
+                  desc: '經典大型規格，適用於大多數標準垃圾桶。特殊的防漏封口技術，能有效防止液體滲出，是居家清潔的最佳幫手。',
+                  tag: '熱銷清潔袋',
+                  img: '/assets/01_清潔袋/01_一般捲取式/大_45L/展示圖2.jpeg',
+                  specs: ['大 45L (650x750mm)', '30枚 / 捲'],
+                  price: '38',
+                  link: '/products/01_清潔袋-01_一般捲取式-大_45L'
+                },
+                {
+                  id: '02_食品保鮮耐熱袋-01_台塑保鮮耐熱袋-200x300mm_150枚',
+                  name: '台塑保鮮耐熱袋｜150枚',
+                  desc: '選用 100% 全新食品級原料，不含塑化劑，符合衛生安全標準。強韌耐用防漏，耐熱性佳，適合食材分裝與保鮮。',
+                  tag: '廚房保鮮必備',
+                  img: '/assets/02_食品保鮮耐熱袋/01_台塑保鮮耐熱袋/200x300mm_150枚/展示圖.jpeg',
+                  specs: ['200x300mm', '150枚 / 盒'],
+                  price: '42',
+                  link: '/products/02_食品保鮮耐熱袋-01_台塑保鮮耐熱袋-200x300mm_150枚'
+                },
+                {
+                  id: '03_夾鏈袋-01_台塑LDPE夾鏈袋-01號_50x70mm',
+                  name: '台塑夾鏈袋｜1號',
+                  desc: '加厚材質，封口緊密。適用於各類小零件、飾品或藥品分裝，防潮防塵效果佳。',
+                  tag: '分裝收納必備',
+                  img: '/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/01號_50x70mm/展示圖.jpeg',
+                  specs: ['01號 50x70mm', '100入 / 包'],
+                  price: '25',
+                  link: '/products/03_夾鏈袋-01_夾鏈袋-01號_50x70mm'
+                },
+                {
+                  id: '04_病媒防治-02_老鼠防治-一錠鼠_滅鼠餌劑',
+                  name: '一錠鼠｜滅鼠餌劑',
+                  desc: '環保署核准上市，針對台灣家鼠習性研發。獨家誘引配方，老鼠取食意願高，效果顯著且穩定。',
+                  tag: '滅鼠首選',
+                  img: '/assets/04_病媒防治/02_老鼠防治/一錠鼠_滅鼠餌劑/展示圖.jpeg',
+                  specs: ['一錠鼠', '10入 / 盒'],
+                  price: '120',
+                  link: '/products/04_病媒防治-02_老鼠防治-一錠鼠_滅鼠餌劑'
+                }
+              ].map((product, idx) => (
+                <Link key={idx} to={product.link} className="group relative bg-surface-container-lowest rounded-3xl border border-border-warm overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div>
+                    <div className="aspect-[4/3] bg-stone-100 relative overflow-hidden">
+                      <img className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src={product.img} alt={product.name} />
+                      <span className="absolute top-3 left-3 bg-stone-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-lg">{product.tag}</span>
+                    </div>
+                    <div className="p-5">
+                      <h3 className="text-xl font-bold text-on-surface">{product.name}</h3>
+                      <p className="text-sm text-on-surface-variant mt-2 leading-relaxed line-clamp-2">{product.desc}</p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+
+          {/* Key Trust Badges Section */}
+          <section className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-24">
+            {[
+              { icon: 'verified', title: '安心合規', desc: 'SGS 食品級檢驗與環保署核准字號，符合衛生法規要求。' },
+              { icon: 'inventory_2', title: '急速發貨', desc: '常備百坪實體倉儲現貨，當日發貨營運不中斷。' },
+              { icon: 'calculate', title: '箱購特惠', desc: '透明階梯報價單，單店小量亦可享連鎖批發級優惠。' }
+            ].map((badge, idx) => (
+              <div key={idx} className="bg-surface-container-lowest p-6 rounded-3xl border border-border-warm shadow-sm hover:shadow-md transition-shadow">
+                <span className="material-symbols-outlined text-secondary text-3xl mb-4">{badge.icon}</span>
+                <h3 className="text-lg font-bold mb-2">{badge.title}</h3>
+                <p className="text-sm text-on-surface-variant leading-relaxed">{badge.desc}</p>
+              </div>
+            ))}
+          </section>
+
           {/* Inquiry and Brand Sections */}
           <div className="flex flex-col gap-2 mb-0 w-full">
             {/* Inquiry Banner */}
