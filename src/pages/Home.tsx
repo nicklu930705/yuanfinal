@@ -3,34 +3,34 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-surface">
-      {/* 1. Top Announcement Bar - Handled by MainLayout/Navbar usually, but I'll add it if needed */}
-      
-      <main className="py-12 md:py-24">
-        <div className="max-w-[1360px] mx-auto px-6 md:px-10">
-          {/* Hero Section */}
-          <section className="relative mb-24 overflow-hidden rounded-[2.5rem] bg-slate-900 min-h-[400px] md:min-h-[500px] flex items-center">
-            {/* Background Image Layer */}
-            <div className="absolute inset-0 z-0">
-              <img 
-                src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=A%20collection%20of%20high-quality%20industrial%20cleaning%20bags%20and%20professional%20catering%20supplies%2C%20organized%20in%20a%20modern%20minimalist%20storage%20area%2C%20clean%20lines%2C%20high-end%20material%20textures%2C%20professional%20lighting%2C%20cinematic%20product%20shot%2C%208k&image_size=landscape_16_9" 
-                alt="Professional Catering Supplies V5" 
-                className="w-full h-full object-cover opacity-60"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
-            </div>
+      <main>
+        {/* Hero Section - Full Width, Aligned to Top */}
+        <section className="relative w-full overflow-hidden bg-slate-900 min-h-[460px] md:min-h-[640px] flex items-center">
+          {/* Background Image Layer */}
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Premium%20minimalist%20catering%20packaging%20supplies%20showcase%2C%20professional%20product%20photography%20of%20neatly%20organized%20bags%20and%20containers%2C%20elegant%20studio%20lighting%2C%20clean%20aesthetic%2C%20high-end%20materials%2C%208k&image_size=landscape_16_9" 
+              alt="Professional Catering Supplies" 
+              className="w-full h-full object-cover opacity-60"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent"></div>
+          </div>
 
-            {/* Content Layer */}
-            <div className="relative z-10 px-8 md:px-16 py-12 md:py-20">
-              <h1 className="text-4xl md:text-6xl font-display font-bold text-white leading-tight">
+          {/* Content Layer */}
+          <div className="relative z-10 w-full max-w-[1360px] mx-auto px-6 md:px-10 py-20 md:py-32">
+            <div className="max-w-3xl">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-[1.1] tracking-tight">
                 侑安國際<br />
                 <span className="text-slate-300">餐飲後勤供應的首選夥伴</span>
               </h1>
-              <p className="text-lg md:text-xl text-slate-100 mt-6 max-w-2xl leading-relaxed font-body font-medium">
+              <p className="text-base sm:text-lg md:text-xl text-slate-100 mt-6 sm:mt-8 max-w-2xl leading-relaxed font-body font-medium opacity-90">
                 我們為餐飲店家提供高品質的營業用包材與環境衛生備品。從食品級耐熱袋到專業除蟲藥劑，侑安國際以合規、穩定、透明的服務，支援您的店鋪營運。
               </p>
             </div>
-          </section>
+          </div>
+        </section>
 
+        <div className="max-w-[1360px] mx-auto px-6 md:px-10 py-16 md:py-24">
           {/* Hot Products Section */}
           <section className="mb-24" id="products">
             <div className="flex items-end justify-between mb-12">
