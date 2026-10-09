@@ -41,7 +41,7 @@ export default function Home() {
 
         <div className="max-w-[1360px] mx-auto px-6 md:px-10 py-8 md:py-16">
           {/* Hot Products Section */}
-          <section className="mb-24" id="products">
+          <section className="mb-12 md:mb-24" id="products">
             <div className="flex items-end justify-between mb-12">
               <div>
                 <h2 className="text-3xl md:text-4xl font-headline font-bold text-on-surface">精選營業核心品項</h2>
@@ -112,7 +112,7 @@ export default function Home() {
           </section>
 
           {/* Key Trust Badges Section */}
-          <section className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-24">
+          <section className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 md:mb-24">
             {[
               { icon: 'verified', title: '安心合規', desc: 'SGS 食品級檢驗與環保署核准字號，符合衛生法規要求。' },
               { icon: 'inventory_2', title: '急速發貨', desc: '常備百坪實體倉儲現貨，當日發貨營運不中斷。' },
