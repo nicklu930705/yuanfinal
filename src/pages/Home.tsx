@@ -39,9 +39,9 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="max-w-[1360px] mx-auto px-6 md:px-10 py-8 md:py-16">
+        <div className="max-w-[1360px] mx-auto px-6 md:px-10 pt-8 pb-4 md:pt-16 md:pb-0">
           {/* Hot Products Section */}
-          <section className="mb-12 md:mb-24" id="products">
+          <section className="mb-12 md:mb-12" id="products">
             <div className="flex items-end justify-between mb-12">
               <div>
                 <h2 className="text-3xl md:text-4xl font-headline font-bold text-on-surface">精選營業核心品項</h2>
