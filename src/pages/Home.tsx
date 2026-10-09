@@ -121,13 +121,13 @@ export default function Home() {
                   icon: 'verified', 
                   title: '安心合規', 
                   desc: 'SGS 食品級檢驗與環保署核准字號，符合衛生法規要求。',
-                  img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Professional%20clean%20commercial%20kitchen%20packaging%20supplies%20inspection%2C%20real%20product%20photography%2C%20quality%20control%2C%20warm%20natural%20lighting%2C%20minimalist%20aesthetic&image_size=landscape_16_9'
+                  img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Professional%20ultra-clean%20modern%20factory%20production%20line%2C%20automated%20packaging%20process%2C%20bright%20sanitary%20environment%2C%20high%20quality%20commercial%20photography%2C%20minimalist%20warm%20aesthetic&image_size=landscape_16_9'
                 },
                 { 
                   icon: 'inventory_2', 
                   title: '急速發貨', 
                   desc: '常備百坪實體倉儲現貨，當日發貨營運不中斷。',
-                  img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Authentic%20commercial%20warehouse%20logistics%20scene%2C%20neatly%20organized%20inventory%2C%20shipping%20boxes%2C%20professional%20lighting%2C%20clean%20environment&image_size=landscape_16_9'
+                  img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Modern%20delivery%20truck%20moving%20fast%20on%20a%20clean%20highway%2C%20motion%20blur%20effect%2C%20dynamic%20logistics%20concept%2C%20professional%20commercial%20photography%2C%20warm%20sunset%20lighting&image_size=landscape_16_9'
                 },
                 { 
                   icon: 'calculate', 
@@ -136,7 +136,7 @@ export default function Home() {
                   img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Wholesale%20packaging%20supplies%20stacked%20professionally%2C%20bulk%20buying%20concept%2C%20real%20commercial%20stock%20photography%2C%20clean%20composition&image_size=landscape_16_9'
                 }
               ].map((badge, idx) => (
-                <div key={idx} className="relative w-full h-[280px] md:h-[320px] overflow-hidden group md:rounded-[2.5rem] md:border md:border-border-warm md:shadow-sm hover:shadow-xl transition-all duration-300">
+                <div key={idx} className="relative w-full h-[200px] md:h-[240px] overflow-hidden group md:rounded-[2.5rem] md:border md:border-border-warm md:shadow-sm hover:shadow-xl transition-all duration-300">
                   {/* Background Image */}
                   <img 
                     src={badge.img} 
@@ -149,14 +149,14 @@ export default function Home() {
 
                   {/* Content Overlay */}
                   <div className="absolute inset-0 flex items-center md:items-end">
-                    <div className="w-full px-6 md:px-8 py-8 md:py-10 flex flex-col items-start text-left">
-                      <div className="flex items-center gap-3 mb-2 md:mb-3">
-                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20">
-                          <span className="material-symbols-outlined text-white text-2xl md:text-3xl">{badge.icon}</span>
+                    <div className="w-full px-6 md:px-8 py-6 md:py-8 flex flex-col items-start text-left">
+                      <div className="flex items-center gap-3 mb-1 md:mb-2">
+                        <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg md:rounded-xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20">
+                          <span className="material-symbols-outlined text-white text-xl md:text-2xl">{badge.icon}</span>
                         </div>
-                        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white tracking-tight">{badge.title}</h3>
+                        <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white tracking-tight">{badge.title}</h3>
                       </div>
-                      <p className="text-sm md:text-base lg:text-lg text-white/90 leading-relaxed font-medium max-w-[280px] md:max-w-none">
+                      <p className="text-xs md:text-sm lg:text-base text-white/90 leading-relaxed font-medium max-w-[280px] md:max-w-none">
                         {badge.desc}
                       </p>
                     </div>
