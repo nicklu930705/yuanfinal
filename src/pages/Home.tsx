@@ -110,58 +110,64 @@ export default function Home() {
               ))}
             </div>
           </section>
+        </div>
 
-          {/* Key Trust Badges Section */}
-          <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 md:mb-24 overflow-x-hidden md:overflow-visible">
-            {[
-              { 
-                icon: 'verified', 
-                title: '安心合規', 
-                desc: 'SGS 食品級檢驗與環保署核准字號，符合衛生法規要求。',
-                img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Ultra-realistic%20photography%20of%20neatly%20organized%20food%20packaging%20materials%20in%20a%20clean%20professional%20facility%2C%20quality%20assurance%20scene%2C%20neutral%20warm%20tones%2C%20soft%20natural%20lighting%2C%20high-end%20commercial%20photography&image_size=landscape_16_9'
-              },
-              { 
-                icon: 'inventory_2', 
-                title: '急速發貨', 
-                desc: '常備百坪實體倉儲現貨，當日發貨營運不中斷。',
-                img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Professional%20real%20warehouse%20logistics%20center%2C%20high%20quality%20commercial%20photo%20of%20stacked%20product%20cartons%20on%20pallets%2C%20clean%20modern%20storage%20facility%2C%20natural%20daylight%2C%20sharp%20focus&image_size=landscape_16_9'
-              },
-              { 
-                icon: 'calculate', 
-                title: '箱購特惠', 
-                desc: '透明階梯報價單，單店小量亦可享連鎖批發級優惠。',
-                img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Commercial%20wholesale%20packaging%20display%2C%20large%20stack%20of%20premium%20packaging%20boxes%2C%20clean%20composition%2C%20warm%20professional%20lighting%2C%20real%20product%20stock%20photography&image_size=landscape_16_9'
-              }
-            ].map((badge, idx) => (
-              <div key={idx} className="relative w-screen md:w-full left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 h-[260px] md:h-[320px] overflow-hidden group md:rounded-[2.5rem] md:border md:border-border-warm md:shadow-sm hover:shadow-xl transition-all duration-300">
-                {/* Background Image */}
-                <img 
-                  src={badge.img} 
-                  alt={badge.title} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                
-                {/* Dark Overlay for Text Readability */}
-                <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent md:bg-gradient-to-b md:from-black/10 md:via-black/60 md:to-black/90"></div>
+        {/* Key Trust Badges Section - Responsive Full Bleed */}
+        <section className="w-full mb-12 md:mb-24 overflow-hidden">
+          <div className="max-w-[1360px] mx-auto px-0 md:px-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-6">
+              {[
+                { 
+                  icon: 'verified', 
+                  title: '安心合規', 
+                  desc: 'SGS 食品級檢驗與環保署核准字號，符合衛生法規要求。',
+                  img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Professional%20clean%20commercial%20kitchen%20packaging%20supplies%20inspection%2C%20real%20product%20photography%2C%20quality%20control%2C%20warm%20natural%20lighting%2C%20minimalist%20aesthetic&image_size=landscape_16_9'
+                },
+                { 
+                  icon: 'inventory_2', 
+                  title: '急速發貨', 
+                  desc: '常備百坪實體倉儲現貨，當日發貨營運不中斷。',
+                  img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Authentic%20commercial%20warehouse%20logistics%20scene%2C%20neatly%20organized%20inventory%2C%20shipping%20boxes%2C%20professional%20lighting%2C%20clean%20environment&image_size=landscape_16_9'
+                },
+                { 
+                  icon: 'calculate', 
+                  title: '箱購特惠', 
+                  desc: '透明階梯報價單，單店小量亦可享連鎖批發級優惠。',
+                  img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Wholesale%20packaging%20supplies%20stacked%20professionally%2C%20bulk%20buying%20concept%2C%20real%20commercial%20stock%20photography%2C%20clean%20composition&image_size=landscape_16_9'
+                }
+              ].map((badge, idx) => (
+                <div key={idx} className="relative w-full h-[280px] md:h-[320px] overflow-hidden group md:rounded-[2.5rem] md:border md:border-border-warm md:shadow-sm hover:shadow-xl transition-all duration-300">
+                  {/* Background Image */}
+                  <img 
+                    src={badge.img} 
+                    alt={badge.title} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  
+                  {/* Dark Overlay for Text Readability */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-transparent md:bg-gradient-to-b md:from-black/10 md:via-black/60 md:to-black/95"></div>
 
-                {/* Content Overlay */}
-                <div className="absolute inset-0 flex items-center md:items-end">
-                  <div className="w-full max-w-[1360px] mx-auto px-6 md:px-8 py-8 md:py-10 flex flex-col items-start text-left">
-                    <div className="flex items-center gap-3 mb-2 md:mb-3">
-                      <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20">
-                        <span className="material-symbols-outlined text-white text-2xl md:text-3xl">{badge.icon}</span>
+                  {/* Content Overlay */}
+                  <div className="absolute inset-0 flex items-center md:items-end">
+                    <div className="w-full px-6 md:px-8 py-8 md:py-10 flex flex-col items-start text-left">
+                      <div className="flex items-center gap-3 mb-2 md:mb-3">
+                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20">
+                          <span className="material-symbols-outlined text-white text-2xl md:text-3xl">{badge.icon}</span>
+                        </div>
+                        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white tracking-tight">{badge.title}</h3>
                       </div>
-                      <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white tracking-tight">{badge.title}</h3>
+                      <p className="text-sm md:text-base lg:text-lg text-white/90 leading-relaxed font-medium max-w-[280px] md:max-w-none">
+                        {badge.desc}
+                      </p>
                     </div>
-                    <p className="text-sm md:text-base lg:text-lg text-white/90 leading-relaxed font-medium max-w-[280px] md:max-w-none">
-                      {badge.desc}
-                    </p>
                   </div>
                 </div>
-              </div>
-            ))}
-          </section>
+              ))}
+            </div>
+          </div>
+        </section>
 
+        <div className="max-w-[1360px] mx-auto px-6 md:px-10 mb-8 md:mb-16">
           {/* Inquiry and Brand Sections */}
           <div className="flex flex-col gap-2 mb-0 w-full">
             {/* Inquiry Banner */}
