@@ -112,7 +112,7 @@ export default function Home() {
           </section>
 
           {/* Key Trust Badges Section */}
-          <section className="flex flex-col mb-12 md:mb-24 overflow-x-hidden">
+          <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 md:mb-24 overflow-x-hidden md:overflow-visible">
             {[
               { 
                 icon: 'verified', 
@@ -133,7 +133,7 @@ export default function Home() {
                 img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Commercial%20wholesale%20packaging%20display%2C%20large%20stack%20of%20premium%20packaging%20boxes%2C%20clean%20composition%2C%20warm%20professional%20lighting%2C%20real%20product%20stock%20photography&image_size=landscape_16_9'
               }
             ].map((badge, idx) => (
-              <div key={idx} className="relative w-screen left-1/2 -translate-x-1/2 h-[260px] md:h-[320px] overflow-hidden group mb-4 last:mb-0">
+              <div key={idx} className="relative w-screen md:w-full left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 h-[260px] md:h-[320px] overflow-hidden group md:rounded-[2.5rem] md:border md:border-border-warm md:shadow-sm hover:shadow-xl transition-all duration-300">
                 {/* Background Image */}
                 <img 
                   src={badge.img} 
@@ -142,18 +142,18 @@ export default function Home() {
                 />
                 
                 {/* Dark Overlay for Text Readability */}
-                <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent md:from-black/60 md:via-black/30 md:to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent md:bg-gradient-to-b md:from-black/10 md:via-black/60 md:to-black/90"></div>
 
                 {/* Content Overlay */}
-                <div className="absolute inset-0 flex items-center">
-                  <div className="w-full max-w-[1360px] mx-auto px-6 md:px-10 flex flex-col items-start text-left">
-                    <div className="flex items-center gap-4 mb-3">
-                      <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20">
-                        <span className="material-symbols-outlined text-white text-3xl">{badge.icon}</span>
+                <div className="absolute inset-0 flex items-center md:items-end">
+                  <div className="w-full max-w-[1360px] mx-auto px-6 md:px-8 py-8 md:py-10 flex flex-col items-start text-left">
+                    <div className="flex items-center gap-3 mb-2 md:mb-3">
+                      <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20">
+                        <span className="material-symbols-outlined text-white text-2xl md:text-3xl">{badge.icon}</span>
                       </div>
-                      <h3 className="text-2xl md:text-4xl font-bold text-white tracking-tight">{badge.title}</h3>
+                      <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white tracking-tight">{badge.title}</h3>
                     </div>
-                    <p className="text-base md:text-xl text-white/90 leading-relaxed font-medium max-w-xl">
+                    <p className="text-sm md:text-base lg:text-lg text-white/90 leading-relaxed font-medium max-w-[280px] md:max-w-none">
                       {badge.desc}
                     </p>
                   </div>
