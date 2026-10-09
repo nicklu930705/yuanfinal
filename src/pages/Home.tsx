@@ -112,16 +112,48 @@ export default function Home() {
           </section>
 
           {/* Key Trust Badges Section */}
-          <section className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 md:mb-24">
+          <section className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-6 mb-12 md:mb-24 overflow-x-hidden">
             {[
-              { icon: 'verified', title: '安心合規', desc: 'SGS 食品級檢驗與環保署核准字號，符合衛生法規要求。' },
-              { icon: 'inventory_2', title: '急速發貨', desc: '常備百坪實體倉儲現貨，當日發貨營運不中斷。' },
-              { icon: 'calculate', title: '箱購特惠', desc: '透明階梯報價單，單店小量亦可享連鎖批發級優惠。' }
+              { 
+                icon: 'verified', 
+                title: '安心合規', 
+                desc: 'SGS 食品級檢驗與環保署核准字號，符合衛生法規要求。',
+                img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Professional%20clean%20laboratory%20testing%20food%20grade%20plastic%20materials%2C%20quality%20control%2C%20minimalist%20warm%20aesthetic%2C%20bright%20lighting%2C%20high-end%20industrial%20safety&image_size=landscape_16_9'
+              },
+              { 
+                icon: 'inventory_2', 
+                title: '急速發貨', 
+                desc: '常備百坪實體倉儲現貨，當日發貨營運不中斷。',
+                img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Modern%20clean%20warehouse%20with%20neatly%20stacked%20cardboard%20boxes%2C%20logistics%20center%2C%20warm%20minimalist%20lighting%2C%20professional%20supply%20chain%20visual&image_size=landscape_16_9'
+              },
+              { 
+                icon: 'calculate', 
+                title: '箱購特惠', 
+                desc: '透明階梯報價單，單店小量亦可享連鎖批發級優惠。',
+                img: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Large%20quantity%20of%20packaged%20products%20stacked%20neatly%20for%20wholesale%2C%20bulk%20buying%20concept%2C%20clean%20professional%20arrangement%2C%20warm%20minimalist%20studio%20photography&image_size=landscape_16_9'
+              }
             ].map((badge, idx) => (
-              <div key={idx} className="bg-surface-container-lowest p-6 rounded-3xl border border-border-warm shadow-sm hover:shadow-md transition-shadow">
-                <span className="material-symbols-outlined text-secondary text-3xl mb-4">{badge.icon}</span>
-                <h3 className="text-lg font-bold mb-2">{badge.title}</h3>
-                <p className="text-sm text-on-surface-variant leading-relaxed">{badge.desc}</p>
+              <div key={idx} className="flex flex-col bg-transparent sm:bg-surface-container-lowest sm:rounded-[2.5rem] sm:border sm:border-border-warm sm:shadow-sm sm:hover:shadow-md transition-all duration-300 sm:overflow-hidden group">
+                {/* Image Container: Full Bleed on Mobile, Contained on Desktop */}
+                <div className="relative w-screen sm:w-full h-[220px] sm:h-[180px] md:h-[220px] left-1/2 sm:left-0 -translate-x-1/2 sm:translate-x-0 overflow-hidden">
+                  <img 
+                    src={badge.img} 
+                    alt={badge.title} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-black/5 sm:hidden"></div>
+                </div>
+
+                {/* Text Content */}
+                <div className="p-6 sm:p-6 md:p-8 flex flex-col items-center sm:items-start text-center sm:text-left">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="material-symbols-outlined text-secondary text-2xl md:text-3xl">{badge.icon}</span>
+                    <h3 className="text-xl font-bold text-on-surface">{badge.title}</h3>
+                  </div>
+                  <p className="text-sm md:text-base text-on-surface-variant leading-relaxed font-medium">
+                    {badge.desc}
+                  </p>
+                </div>
               </div>
             ))}
           </section>
