@@ -113,7 +113,7 @@ export default function Home() {
         </div>
 
         {/* Key Trust Badges Section - Responsive Full Bleed */}
-        <section className="w-full mb-12 md:mb-24 overflow-hidden">
+        <section className="w-full mb-12 md:mb-12 overflow-hidden">
           <div className="max-w-[1360px] mx-auto px-0 md:px-10">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-6">
               {[
@@ -170,8 +170,8 @@ export default function Home() {
         <div className="max-w-[1360px] mx-auto px-6 md:px-10 mb-8 md:mb-16">
           {/* Inquiry and Brand Sections */}
           <div className="flex flex-col gap-2 mb-0 w-full">
-            {/* Inquiry Banner */}
-            <section className="mt-8 bg-black rounded-[2.5rem] p-8 md:p-12 border border-slate-800 w-full">
+            {/* Inquiry Section */}
+          <section className="bg-black rounded-[2.5rem] p-8 md:p-12 border border-slate-800 w-full">
               <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
                 <div className="flex flex-col gap-3">
                   <h3 className="text-2xl md:text-4xl font-bold text-white">不確定規格？讓我們協助您挑選。</h3>
