@@ -23,9 +23,13 @@ export default function Navbar() {
         <div className="max-w-[1360px] mx-auto px-6 md:px-10 flex items-center justify-between h-16">
           {/* Brand Logo */}
           <Link className="flex items-center gap-3 group" to="/" onClick={() => setIsMenuOpen(false)}>
-            <div className="w-10 h-10 rounded-xl bg-primary-600 text-surface flex items-center justify-center font-headline font-bold tracking-wider shadow-md group-hover:bg-primary-700 transition-all duration-300 group-hover:scale-105">
-              侑
-            </div>
+            <img
+              src="/assets/brand/w-king-logo.png"
+              alt="W KING INTERNATIONAL"
+              width={56}
+              height={56}
+              className="w-14 h-14 shrink-0 object-contain mix-blend-multiply transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="flex flex-col">
               <span className="text-xl font-headline font-bold text-on-surface tracking-tight leading-none group-hover:text-primary-600 transition-colors">
                 侑安國際

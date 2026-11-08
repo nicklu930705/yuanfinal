@@ -22,6 +22,7 @@ interface Order {
     address: string;
     email: string;
     taxId: string;
+    invoiceCarrier?: string;
     notes: string;
   };
 }
@@ -134,6 +135,9 @@ export default function Admin() {
                       <div className="font-bold">{order.customer.companyName}</div>
                       <div className="text-sm text-slate-600 mt-1">{order.customer.contactName} / {order.customer.phone}</div>
                       <div className="text-sm text-slate-600">{order.customer.address}</div>
+                      {order.customer.invoiceCarrier && (
+                        <div className="text-sm text-slate-600 break-all">電子發票載具：{order.customer.invoiceCarrier}</div>
+                      )}
                       {order.customer.notes && (
                         <div className="text-sm text-amber-600 mt-2 bg-amber-50 p-2 rounded">
                           備註: {order.customer.notes}

@@ -12,6 +12,7 @@ export default function Cart() {
     address: '',
     email: '',
     taxId: '',
+    invoiceCarrier: '',
     notes: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -170,6 +171,23 @@ export default function Cart() {
                     <label className="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Email</label>
                     <input type="email" name="email" value={formData.email} onChange={handleInputChange} className="w-full px-4 py-3 border border-slate-200 rounded-2xl bg-stone-50 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all" placeholder="選填" />
                   </div>
+                </div>
+                <div>
+                  <label htmlFor="invoiceCarrier" className="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">電子發票載具（選填）</label>
+                  <input
+                    id="invoiceCarrier"
+                    type="text"
+                    name="invoiceCarrier"
+                    value={formData.invoiceCarrier}
+                    onChange={handleInputChange}
+                    autoCapitalize="characters"
+                    autoComplete="off"
+                    spellCheck={false}
+                    aria-describedby="invoiceCarrier-help"
+                    className="w-full px-4 py-3 border border-slate-200 rounded-2xl bg-stone-50 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all"
+                    placeholder="請輸入載具號碼，例如 /AB12CD3"
+                  />
+                  <p id="invoiceCarrier-help" className="mt-2 text-xs text-slate-500 leading-relaxed">請填寫您的電子發票載具號碼，無載具可留空。</p>
                 </div>
                 <div>
                   <label className="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">備註需求</label>
