@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 import ProductHeroCarousel from '../components/ProductHeroCarousel';
+import BrandHeroCarousel from '../components/BrandHeroCarousel';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-surface">
       <main>
-        <ProductHeroCarousel />
+        <BrandHeroCarousel />
 
         <div className="max-w-[1360px] mx-auto px-6 md:px-10 pt-8 pb-4 md:pt-16 md:pb-0">
           {/* Hot Products Section */}
@@ -78,6 +79,10 @@ export default function Home() {
               ))}
             </div>
           </section>
+        </div>
+
+        <div className="mx-auto mb-12 w-full max-w-[1360px] px-6 md:px-10">
+          <ProductHeroCarousel />
         </div>
 
         {/* Key Trust Badges Section - Responsive Full Bleed */}
