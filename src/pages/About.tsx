@@ -59,7 +59,7 @@ export default function About() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { icon: <Phone className="w-5 h-5" />, label: '電話', value: '02-24521268' },
+                { icon: <Phone className="w-5 h-5" />, label: '電話', value: '02-24526387' },
                 { icon: <span className="font-bold">F</span>, label: 'FAX', value: '02-24521579' },
                 { icon: <span className="font-bold text-lg">L</span>, label: 'LINE 官方帳號', value: '@593cexey' },
                 { icon: <MapPin className="w-5 h-5" />, label: '地址', value: '基隆市七堵區工建北路5號' }

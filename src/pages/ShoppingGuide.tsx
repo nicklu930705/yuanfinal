@@ -91,7 +91,7 @@ export default function ShoppingGuide() {
               <h4 className="font-bold text-slate-900 mb-2">發票開立</h4>
               <p>• 所有商品皆附隨貨紙本發票（可選擇二聯式或三聯式）。</p>
               <p>• 若有統一編號需求，請務必於訂購時主動告知。</p>
-              <p>• 電子發票載具：目前相關系統建置中（狀態：待確認），暫不支援電子載具。</p>
+              <p>• 若有電子發票載具需求，請於訂購時填寫載具號碼。</p>
             </div>
           </div>
         </AccordionItem>

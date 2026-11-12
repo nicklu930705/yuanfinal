@@ -39,7 +39,7 @@ export default function Footer() {
           <div>
             <h3 className="text-on-surface text-lg font-bold mb-4">聯絡我們</h3>
             <ul className="space-y-2 text-sm text-on-surface-variant">
-              <li>電話：02-24521268</li>
+              <li>電話：02-24526387</li>
               <li>FAX：02-24521579</li>
               <li>LINE ID：@593cexey</li>
               <li>地址：基隆市七堵區工建北路5號</li>
