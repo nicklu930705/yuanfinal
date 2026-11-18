@@ -3,7 +3,7 @@ import type { Product, ProductSpec } from './store';
 /**
  * 2026-11 對照 ERP 成本單後補上的商品。
  * 規格只寫成本單或實拍圖上看得到的資料，不知道的欄位一律省略（畫面上不顯示）。
- * 「規格圖」用真實商品照片（白底、已去掉來源網站的標記）；只有營潔卷裝耐熱袋暫時是「示意圖」（繪製，非實拍）。
+ * 「規格圖」右側用真實商品照片（白底、已去掉來源網站的標記）。營潔卷裝耐熱袋 7 種共用六兩那捲的實拍照，規格文字各自依成本單。
  * 每個規格對應的 ERP 品號見 erpProductMapping.ts。
  */
 
@@ -136,7 +136,7 @@ const heatBags: Product[] = [
     name: `營潔卷裝耐熱袋｜${b.type} ${b.dim}`,
     originalName: b.key,
     description: '營潔耐熱袋卷裝規格，整捲連續撕取，適合餐飲業、早餐店等大量使用的場所。',
-    images: img(`/assets/02_食品保鮮耐熱袋/03_營潔卷裝耐熱袋/${b.key}/示意圖__營潔卷裝耐熱袋${b.type}.png`),
+    images: img(`/assets/02_食品保鮮耐熱袋/03_營潔卷裝耐熱袋/${b.key}/規格圖__營潔卷裝耐熱袋${b.type}.png`, '規格圖'),
     specs: [],
     shared_images: [],
     parsedSpec: { size_or_type: b.type, capacity_or_dim: b.dim, quantity: `${b.qty}枚/捲` },
