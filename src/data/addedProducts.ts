@@ -34,9 +34,9 @@ const cleaningBags: Product[] = [
     description: '一般捲取式同系列的小型規格，平底封口設計，適合家庭、辦公室的小型垃圾桶使用。',
     images: img('/assets/01_清潔袋/01_一般捲取式/小_15L/規格圖__小15L.png', '規格圖'),
     specs: [
-      colorSpec(BAG_15L, 'pink', '小', '粉色', { dimensions: [43, 58], sheets_per_box: 72 }),
-      colorSpec(BAG_15L, 'black', '小', '黑色', { dimensions: [43, 58], sheets_per_box: 72 }),
-      colorSpec(BAG_15L, 'transparent', '小', '透明', { dimensions: [43, 58], sheets_per_box: 72 }),
+      colorSpec(BAG_15L, 'pink', '小', '粉色', { dimensions: [43, 56], sheets_per_box: 72 }),
+      colorSpec(BAG_15L, 'black', '小', '黑色', { dimensions: [43, 56], sheets_per_box: 72 }),
+      colorSpec(BAG_15L, 'transparent', '小', '透明', { dimensions: [43, 56], sheets_per_box: 72 }),
     ],
     shared_images: [],
     parsedSpec: null,
