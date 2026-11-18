@@ -4,7 +4,7 @@ import { ArrowLeft, MessageCircle, Info, ChevronLeft, ChevronRight, ListPlus, Ch
 import { products } from '../data/store';
 import { getProductUnit } from '../utils/productUnit';
 import { useCart } from '../context/CartContext';
-import { buildLineMessageUrl } from '../utils/lineInquiry';
+import { buildLineMessageUrl, getShipmentName } from '../utils/lineInquiry';
 
 export default function ProductDetail() {
   const { id } = useParams<{ id: string }>();
@@ -93,12 +93,13 @@ export default function ProductDetail() {
 
   const specName = selectedSpec ? `${selectedSpec.label} (${selectedSpec.size})` : '標準規格';
   const unit = getProductUnit(product);
+  const shipmentName = getShipmentName(product.id, hasSpecs ? selectedSpecId || null : null);
   const inquiryMessage = [
     '您好，我想詢問以下商品：',
     `商品：${product.name}`,
-    `規格：${specName}`,
+    ...(shipmentName ? [`　（出貨單：${shipmentName}）`] : []),
+    ...(selectedSpec ? [`規格：${specName}`] : []),
     `數量：${quantity} ${unit}`,
-    `商品連結：${window.location.origin}/products/${encodeURIComponent(product.id)}`,
     '請協助提供報價、運費與交期，謝謝。',
   ].join('\n');
   const lineInquiryUrl = buildLineMessageUrl(inquiryMessage);

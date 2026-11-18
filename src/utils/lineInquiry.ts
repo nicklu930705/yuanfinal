@@ -1,4 +1,5 @@
 import type { CartItem } from '../context/CartContext';
+import { erpProductMappings } from '../data/erpProductMapping';
 
 /** 官方 LINE 帳號 */
 export const LINE_ID = '@593cexey';
@@ -46,12 +47,33 @@ const CONTACT_LABELS: [keyof InquiryContact, string][] = [
   ['notes', '備註'],
 ];
 
+/**
+ * 官網商品規格 → 出貨單（ERP 成本單）品名，方便業務在 LINE 一眼對到出貨品項。
+ * 官網獨有、或與成本單有出入待確認的品項不附。
+ */
+const shipmentNames = new Map(
+  erpProductMappings
+    .filter((m) => m.erpName && (m.status === 'matched' || m.status === 'erp_only_added'))
+    .map((m) => [`${m.websiteProductId}|${m.websiteSpecId ?? ''}`, m.erpName as string]),
+);
+
+export const getShipmentName = (productId: string, specId: string | null) =>
+  shipmentNames.get(`${productId}|${specId ?? ''}`);
+
+/** 從清單項目 id 取回規格 id（商品頁：`商品id-規格id` 或 `商品id-default`；快速選購：無規格時就是商品 id） */
+const specIdOf = (item: CartItem) => {
+  const rest = item.id.slice(item.productId.length);
+  return !rest || rest === '-default' ? null : rest.slice(1);
+};
+
 /** 把詢價清單和聯絡資料組成要傳到 LINE 的文字 */
 export const buildCartInquiryText = (items: CartItem[], contact: InquiryContact) => {
   const lines: string[] = ['您好，我想詢價以下商品：'];
   items.forEach((item, i) => {
     const spec = item.spec && item.spec !== '標準規格' ? `（${item.spec}）` : '';
     lines.push(`${i + 1}. ${item.productName}${spec} × ${item.quantity} ${item.unit}`);
+    const shipment = getShipmentName(item.productId, specIdOf(item));
+    if (shipment) lines.push(`　（出貨單：${shipment}）`);
   });
   const filled = CONTACT_LABELS.filter(([key]) => contact[key].trim());
   if (filled.length) {
