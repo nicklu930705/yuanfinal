@@ -134,8 +134,8 @@ export default function ProductDetail() {
                   src={selectedImage} 
                   alt={product.name} 
                   className={`w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ${
-                    product.name.includes('營潔') ? 'p-12 md:p-20' : 'p-4'
-                  }`} 
+                    /規格圖|展示圖/.test(sortedImages.find(img => img.path === selectedImage)?.role || '') ? 'p-2' : 'p-8'
+                  }`}
                 />
               ) : (
                 <div className="w-full h-full flex items-center justify-center text-slate-400">無圖片</div>

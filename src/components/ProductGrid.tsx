@@ -190,14 +190,16 @@ export default function ProductGrid() {
 
               return (
                 <Link key={product.id} to={`/products/${encodeURIComponent(product.id)}`} className="group bg-white rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-xl hover:border-primary-200 overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1">
-                  <div className="aspect-w-4 aspect-h-3 w-full bg-stone-50 relative border-b border-slate-50 overflow-hidden">
+                  {/* 固定 16:9 圖片框（規格圖本身就是 16:9），每張卡一樣大；規格圖填滿，一般商品照留一點邊 */}
+                  <div className="aspect-video w-full bg-white relative border-b border-slate-100 overflow-hidden">
                     {coverImg ? (
-                      <img 
-                        src={coverImg} 
-                        alt={product.name} 
-                        className={`w-full h-full object-contain group-hover:scale-110 transition-transform duration-500 ${
-                          product.name.includes('營潔') ? 'p-8 sm:p-10' : 'p-4'
-                        }`} 
+                      <img
+                        src={coverImg}
+                        alt={product.name}
+                        loading="lazy"
+                        className={`absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ${
+                          /規格圖|展示圖/.test(preferredImg?.role || '') ? '' : 'p-3'
+                        }`}
                       />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-slate-400 text-sm">無圖片</div>

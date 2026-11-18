@@ -1146,5 +1146,19 @@
     "height": 1080,
     "sha256": "f11bde0aa93c361109f60e6a62e1f0a9d7d7df7fef5ef11c0c122f37013d2e8a",
     "original_zip_path": ""
+  },
+  {
+    "source": "台塑商品照，取自現代網路商城（處理後）",
+    "path": "02_食品保鮮耐熱袋/02_營潔平板式耐熱袋/四兩裝_15.5x19.5cm/規格圖__營潔耐熱袋四兩裝15.5x19.5cm.png",
+    "category": "02_食品保鮮耐熱袋",
+    "subcategory": "02_營潔平板式耐熱袋",
+    "product_group": "四兩裝_15.5x19.5cm",
+    "role": "規格圖",
+    "status": "可用",
+    "note": "2026-11 補做，讓四兩與其他營潔平板式尺寸同版型；右側為真實商品照（白底、去除來源網站標記）",
+    "width": 1920,
+    "height": 1080,
+    "sha256": "8ee3136467bfce0845143eab6b86bfc74599d8ff4e7d4d1a90508adb349403e9",
+    "original_zip_path": ""
   }
 ]

@@ -31,7 +31,6 @@ export default function Home() {
                   img: '/assets/01_清潔袋/01_一般捲取式/大_45L/展示圖2.jpeg',
                   specs: ['大 45L (650x750mm)', '30枚 / 捲'],
                   price: '38',
-                  link: '/products/01_清潔袋-01_一般捲取式-大_45L'
                 },
                 {
                   id: '02_食品保鮮耐熱袋-01_台塑保鮮耐熱袋-200x300mm_150枚',
@@ -41,7 +40,6 @@ export default function Home() {
                   img: '/assets/02_食品保鮮耐熱袋/01_台塑保鮮耐熱袋/200x300mm_150枚/展示圖.jpeg',
                   specs: ['200x300mm', '150枚 / 盒'],
                   price: '42',
-                  link: '/products/02_食品保鮮耐熱袋-01_台塑保鮮耐熱袋-200x300mm_150枚'
                 },
                 {
                   id: '03_夾鏈袋-01_台塑LDPE夾鏈袋-01號_50x70mm',
@@ -51,7 +49,6 @@ export default function Home() {
                   img: '/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/01號_50x70mm/展示圖.jpeg',
                   specs: ['01號 50x70mm', '100入 / 包'],
                   price: '25',
-                  link: '/products/03_夾鏈袋-01_夾鏈袋-01號_50x70mm'
                 },
                 {
                   id: '04_病媒防治-02_老鼠防治-一錠鼠_滅鼠餌劑',
@@ -61,10 +58,9 @@ export default function Home() {
                   img: '/assets/04_病媒防治/02_老鼠防治/一錠鼠_滅鼠餌劑/展示圖.jpeg',
                   specs: ['一錠鼠', '10入 / 盒'],
                   price: '120',
-                  link: '/products/04_病媒防治-02_老鼠防治-一錠鼠_滅鼠餌劑'
                 }
               ].map((product, idx) => (
-                <Link key={idx} to={product.link} className="group relative bg-surface-container-lowest rounded-3xl border border-border-warm overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <Link key={idx} to={`/products/${encodeURIComponent(product.id)}`} className="group relative bg-surface-container-lowest rounded-3xl border border-border-warm overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                   <div>
                     <div className="aspect-[4/3] bg-stone-100 relative overflow-hidden">
                       <img className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src={product.img} alt={product.name} />
