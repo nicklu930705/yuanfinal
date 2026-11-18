@@ -3,7 +3,7 @@ import type { Product, ProductSpec } from './store';
 /**
  * 2026-11 對照 ERP 成本單後補上的商品。
  * 規格只寫成本單或實拍圖上看得到的資料，不知道的欄位一律省略（畫面上不顯示）。
- * 「示意圖」是依網站規格圖風格繪製的說明圖，不是實拍照片。
+ * 「規格圖」用真實商品照片（白底、已去掉來源網站的標記）；只有營潔卷裝耐熱袋暫時是「示意圖」（繪製，非實拍）。
  * 每個規格對應的 ERP 品號見 erpProductMapping.ts。
  */
 
@@ -70,7 +70,7 @@ const cleaningBags: Product[] = [
     name: '台塑清潔袋(業務用)｜84×102cm 透明',
     originalName: '業務用_84x102cm',
     description: '業務用大尺寸清潔袋，84×102cm，透明款。每捲張數請洽專人確認。',
-    images: img('/assets/01_清潔袋/03_抽取式與業務用/業務用_84x102cm/示意圖__84x102cm透明.png'),
+    images: img('/assets/01_清潔袋/03_抽取式與業務用/業務用_84x102cm/規格圖__84x102cm透明.png', '規格圖'),
     specs: [colorSpec(BAG_84, 'transparent', '業務用', '透明', { dimensions: [84, 102] })],
     shared_images: [],
     parsedSpec: null,
@@ -82,7 +82,7 @@ const cleaningBags: Product[] = [
     name: '環保清潔袋｜超大型 90L 28mic',
     originalName: '超大_90L_28mic',
     description: '超大型 90L 環保清潔袋，厚度 28mic，透明款。每捲張數請洽專人確認。',
-    images: img('/assets/01_清潔袋/05_環保清潔袋/超大_90L_28mic/示意圖__環保清潔袋90L.png'),
+    images: img('/assets/01_清潔袋/05_環保清潔袋/超大_90L_28mic/規格圖__環保清潔袋90L.png', '規格圖'),
     specs: [colorSpec(ECO_90, 'transparent', '超大 90L', '透明')],
     shared_images: [],
     parsedSpec: null,
@@ -123,7 +123,7 @@ const heatBags: Product[] = [
     name: `營潔平板式耐熱袋｜${b.type} ${b.dim}`,
     originalName: b.key,
     description: '營潔平板式耐熱袋同系列尺寸，適用於食材分裝與熱食外帶包裝。',
-    images: img(`/assets/02_食品保鮮耐熱袋/02_營潔平板式耐熱袋/${b.key}/示意圖__營潔耐熱袋${b.type}${b.dim}.png`),
+    images: img(`/assets/02_食品保鮮耐熱袋/02_營潔平板式耐熱袋/${b.key}/規格圖__營潔耐熱袋${b.type}${b.dim}.png`, '規格圖'),
     specs: [],
     shared_images: [],
     parsedSpec: { size_or_type: b.type, capacity_or_dim: b.dim, quantity: `${b.qty}枚/包` },
@@ -162,7 +162,7 @@ const maskingTapes: Product[] = tapes.map((t): Product => ({
   name: `台塑遮蔽防塵膠帶｜${t.width}mm`,
   originalName: `${t.width}mm`,
   description: '膠帶與遮蔽膜一體，裝修、油漆施工時用來遮蓋保護家具、門窗與地面，可依需要的寬度選用。',
-  images: img(`/assets/05_遮蔽防塵膠帶/01_台塑遮蔽防塵膠帶/${t.width}mm/示意圖__遮蔽防塵膠帶${t.width}mm.png`),
+  images: img(`/assets/05_遮蔽防塵膠帶/01_台塑遮蔽防塵膠帶/${t.width}mm/規格圖__遮蔽防塵膠帶${t.width}mm.png`, '規格圖'),
   specs: [],
   shared_images: [],
   parsedSpec: { size_or_type: '寬幅', capacity_or_dim: `${t.width}mm × 25y（22.8m）`, quantity: `每箱 ${t.perBox} 捲` },
@@ -181,7 +181,7 @@ const gloves: Product[] = [
     name: '手套',
     originalName: '手套',
     description: '提供小、中、大三種尺寸。材質與每盒數量請洽專人確認。',
-    images: img('/assets/06_手套/01_手套/示意圖__手套.png'),
+    images: img('/assets/06_手套/01_手套/規格圖__手套.png', '規格圖'),
     specs: [
       colorSpec(GLOVES, 's', '手套', '小'),
       colorSpec(GLOVES, 'm', '手套', '中'),

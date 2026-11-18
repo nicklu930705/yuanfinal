@@ -88,7 +88,7 @@ export const categories: Category[] = [
       {
         "id": "05_環保清潔袋",
         "name": "環保清潔袋",
-        "cover": "/assets/01_清潔袋/05_環保清潔袋/超大_90L_28mic/示意圖__環保清潔袋90L.png"
+        "cover": "/assets/01_清潔袋/05_環保清潔袋/超大_90L_28mic/規格圖__環保清潔袋90L.png"
       }
     ]
   },
@@ -156,24 +156,24 @@ export const categories: Category[] = [
   {
     "id": "05_遮蔽防塵膠帶",
     "name": "遮蔽防塵膠帶",
-    "cover": "/assets/05_遮蔽防塵膠帶/01_台塑遮蔽防塵膠帶/550mm/示意圖__遮蔽防塵膠帶550mm.png",
+    "cover": "/assets/05_遮蔽防塵膠帶/01_台塑遮蔽防塵膠帶/550mm/規格圖__遮蔽防塵膠帶550mm.png",
     "subcategories": [
       {
         "id": "01_台塑遮蔽防塵膠帶",
         "name": "台塑遮蔽防塵膠帶",
-        "cover": "/assets/05_遮蔽防塵膠帶/01_台塑遮蔽防塵膠帶/550mm/示意圖__遮蔽防塵膠帶550mm.png"
+        "cover": "/assets/05_遮蔽防塵膠帶/01_台塑遮蔽防塵膠帶/550mm/規格圖__遮蔽防塵膠帶550mm.png"
       }
     ]
   },
   {
     "id": "06_手套",
     "name": "手套",
-    "cover": "/assets/06_手套/01_手套/示意圖__手套.png",
+    "cover": "/assets/06_手套/01_手套/規格圖__手套.png",
     "subcategories": [
       {
         "id": "01_手套",
         "name": "手套",
-        "cover": "/assets/06_手套/01_手套/示意圖__手套.png"
+        "cover": "/assets/06_手套/01_手套/規格圖__手套.png"
       }
     ]
   }
