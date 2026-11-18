@@ -122,7 +122,7 @@ export const erpProductMappings: ErpProductMapping[] = [
   m('YA-EH-P30', '營潔耐熱袋 3斤，32×43 cm，79張/包', `${YP}3斤裝_32x43cm`, null, '營潔平板式耐熱袋｜3斤裝 32x43cm', 'erp_only_added'),
   m('YA-EH-P50', '營潔耐熱袋 5斤，35×50 cm，52張/包', `${YP}5斤裝_35x50cm`, null, '營潔平板式耐熱袋｜5斤裝 35x50cm', 'erp_only_added'),
   m('YA-EH-P100', '營潔耐熱袋 10斤，45×62 cm，26張/包', `${YP}10斤裝_45x62cm`, null, '營潔平板式耐熱袋｜10斤裝 45x62cm', 'erp_only_added'),
-  m('YA-EH-P150', '營潔耐熱袋 5斤，48×65 cm，22張/包', `${YP}15斤裝_48x65cm`, null, '營潔平板式耐熱袋｜15斤裝 48x65cm', 'erp_only_added', '成本單寫 5斤，包裝實際印 15斤；業主確認官網寫 15斤'),
+  m('YA-EH-P150', '營潔耐熱袋 15斤，48×65 cm，22張/包', `${YP}15斤裝_48x65cm`, null, '營潔平板式耐熱袋｜15斤裝 48x65cm', 'erp_only_added', '成本單原寫 5斤，包裝實際印 15斤；業主確認為 15斤（LINE 出貨單品名也寫 15斤）'),
   m('YA-EH-R02', '營潔卷裝耐熱袋 四兩，15.5×19.5 cm，1822張/捲', `${YR}四兩_15.5x19.5cm`, null, '營潔卷裝耐熱袋｜四兩 15.5x19.5cm', 'erp_only_added'),
   m('YA-EH-R03', '營潔卷裝耐熱袋 六兩，18.5×23 cm，1275張/捲', `${YR}六兩_18.5x23cm`, null, '營潔卷裝耐熱袋｜六兩 18.5x23cm', 'erp_only_added'),
   m('YA-EH-R05', '營潔卷裝耐熱袋 半斤，22×27 cm，897張/捲', `${YR}半斤_22x27cm`, null, '營潔卷裝耐熱袋｜半斤 22x27cm', 'erp_only_added'),
