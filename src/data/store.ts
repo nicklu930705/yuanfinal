@@ -1,3 +1,4 @@
+import { addedProducts } from "./addedProducts";
 
 export interface ProductImage {
   role: string;
@@ -10,8 +11,10 @@ export interface ProductSpec {
   id: string;
   size: string;
   label: string;
-  dimensions: number[];
-  sheets_per_box: number;
+  /** 尺寸（cm）。不知道時省略，畫面就不顯示這一行。 */
+  dimensions?: number[];
+  /** 每捲／包／盒張數。不知道時省略，畫面就不顯示這一行。 */
+  sheets_per_box?: number;
   barcode: string;
   images: ProductImage[];
 }
@@ -34,6 +37,8 @@ export interface Product {
   shared_images: ProductImage[];
   parsedSpec: ParsedSpec | null;
   notForSale?: boolean;
+  /** 售賣單位。省略時沿用舊規則（清潔袋＝捲、夾鏈袋／營潔平板式耐熱袋＝包、其他＝盒）。 */
+  unit?: '捲' | '包' | '盒';
 }
 
 export interface Subcategory {
@@ -79,6 +84,11 @@ export const categories: Category[] = [
         "id": "04_醫療感染性廢棄物袋",
         "name": "醫療感染性廢棄物袋",
         "cover": "/assets/01_清潔袋/04_醫療感染性廢棄物袋/系列規格圖__IMG_0215.JPG"
+      },
+      {
+        "id": "05_環保清潔袋",
+        "name": "環保清潔袋",
+        "cover": "/assets/01_清潔袋/05_環保清潔袋/超大_90L_28mic/示意圖__環保清潔袋90L.png"
       }
     ]
   },
@@ -96,6 +106,11 @@ export const categories: Category[] = [
         "id": "02_營潔平板式耐熱袋",
         "name": "營潔平板式耐熱袋",
         "cover": "/assets/02_食品保鮮耐熱袋/02_營潔平板式耐熱袋/306.jpg"
+      },
+      {
+        "id": "03_營潔卷裝耐熱袋",
+        "name": "營潔卷裝耐熱袋",
+        "cover": "/assets/02_食品保鮮耐熱袋/03_營潔卷裝耐熱袋/四兩_15.5x19.5cm/示意圖__營潔卷裝耐熱袋四兩.png"
       }
     ]
   },
@@ -137,10 +152,34 @@ export const categories: Category[] = [
         "cover": "/assets/04_病媒防治/02_老鼠防治/一錠鼠_滅鼠餌劑/01_包裝主圖__IMG_0268.JPG"
       }
     ]
+  },
+  {
+    "id": "05_遮蔽防塵膠帶",
+    "name": "遮蔽防塵膠帶",
+    "cover": "/assets/05_遮蔽防塵膠帶/01_台塑遮蔽防塵膠帶/550mm/示意圖__遮蔽防塵膠帶550mm.png",
+    "subcategories": [
+      {
+        "id": "01_台塑遮蔽防塵膠帶",
+        "name": "台塑遮蔽防塵膠帶",
+        "cover": "/assets/05_遮蔽防塵膠帶/01_台塑遮蔽防塵膠帶/550mm/示意圖__遮蔽防塵膠帶550mm.png"
+      }
+    ]
+  },
+  {
+    "id": "06_手套",
+    "name": "手套",
+    "cover": "/assets/06_手套/01_手套/示意圖__手套.png",
+    "subcategories": [
+      {
+        "id": "01_手套",
+        "name": "手套",
+        "cover": "/assets/06_手套/01_手套/示意圖__手套.png"
+      }
+    ]
   }
 ];
 
-export const products: Product[] = [
+const baseProducts: Product[] = [
 {
     "id": "01_清潔袋-01_一般捲取式-中_20L",
     "categoryId": "01_清潔袋",
@@ -622,7 +661,7 @@ export const products: Product[] = [
     "id": "01_清潔袋-03_抽取式與業務用-超大_黑色_28張",
     "categoryId": "01_清潔袋",
     "subcategoryId": "03_抽取式與業務用",
-    "name": "台塑清潔袋(抽取/業務用)｜超大 黑色",
+    "name": "台塑清潔袋(抽取/業務用)｜超大 28張",
     "originalName": "超大_黑色_28張",
     "description": "專業級大容量設計，滿足高強度清理需求。加厚材質提供優異的抗刺穿與承重能力，是大型活動、工地或營業場所清潔的理想選擇。",
     "images": [
@@ -638,6 +677,15 @@ export const products: Product[] = [
         "id": "01_清潔袋-03_抽取式與業務用-超大-black",
         "size": "超大",
         "label": "黑色",
+        "dimensions": [90, 110],
+        "sheets_per_box": 28,
+        "barcode": "",
+        "images": []
+      },
+      {
+        "id": "01_清潔袋-03_抽取式與業務用-超大-white",
+        "size": "超大",
+        "label": "白色",
         "dimensions": [90, 110],
         "sheets_per_box": 28,
         "barcode": "",
@@ -1559,3 +1607,6 @@ export const products: Product[] = [
     "parsedSpec": null
   }
 ];
+
+// 2026-11 依 ERP 成本單補上的商品，資料在 addedProducts.ts
+export const products: Product[] = [...baseProducts, ...addedProducts];

@@ -3,6 +3,7 @@ import { Search, Plus } from 'lucide-react';
 import { products, categories } from '../data/store';
 import { useCart } from '../context/CartContext';
 import { sortProductsBySize } from '../utils/productSort';
+import { getProductUnit } from '../utils/productUnit';
 
 export default function QuickOrder() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -29,7 +30,7 @@ export default function QuickOrder() {
           categoryId: product.categoryId,
           specLabel: `${spec.label} (${spec.size})`,
           coverImg: spec.images?.[0]?.path || product.images[0]?.path || '',
-          unit: product.categoryId === '01_清潔袋' ? '捲' : (product.subcategoryId === '01_台塑LDPE夾鏈袋' || product.subcategoryId === '02_營潔平板式耐熱袋' ? '包' : '盒')
+          unit: getProductUnit(product)
         }));
       }
       return [{
@@ -39,7 +40,7 @@ export default function QuickOrder() {
         categoryId: product.categoryId,
         specLabel: '標準規格',
         coverImg: product.images[0]?.path || '',
-        unit: product.categoryId === '01_清潔袋' ? '捲' : (product.subcategoryId === '01_台塑LDPE夾鏈袋' || product.subcategoryId === '02_營潔平板式耐熱袋' ? '包' : '盒')
+        unit: getProductUnit(product)
       }];
     });
   }, [filteredProducts]);

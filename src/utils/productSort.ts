@@ -37,6 +37,12 @@ export const getProductSortValue = (product: Product): number => {
     return 999 * 1000;
   }
 
+  // 1b. 遮蔽防塵膠帶：以寬度 (mm) 為準
+  if (product.categoryId === '05_遮蔽防塵膠帶') {
+    const wMatch = combinedStr.match(/(\d+)\s*mm/);
+    if (wMatch) return parseInt(wMatch[1]);
+  }
+
   // 2. 處理多規格商品 (Specs based)
   if (product.specs && product.specs.length > 0) {
     const s = product.specs[0];

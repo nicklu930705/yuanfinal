@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { ArrowLeft, MessageCircle, Info, ChevronLeft, ChevronRight } from 'lucide-react';
 import { products } from '../data/store';
+import { getProductUnit } from '../utils/productUnit';
 
 export default function ProductDetail() {
   const { id } = useParams<{ id: string }>();
@@ -87,9 +88,7 @@ export default function ProductDetail() {
   }
 
   const specName = selectedSpec ? `${selectedSpec.label} (${selectedSpec.size})` : '標準規格';
-  const unit = product.categoryId === '01_清潔袋'
-    ? '捲'
-    : (product.subcategoryId === '01_台塑LDPE夾鏈袋' || product.subcategoryId === '02_營潔平板式耐熱袋' ? '包' : '盒');
+  const unit = getProductUnit(product);
   const inquiryMessage = [
     '您好，我想詢問以下商品：',
     `商品：${product.name}`,
@@ -184,23 +183,21 @@ export default function ProductDetail() {
                   <div className="grid grid-cols-2 gap-y-4 text-sm">
                     {[
                       { label: '款式', value: selectedSpec.label },
-                      { 
-                        label: '規格', 
-                        value: product.categoryId === '01_清潔袋' 
+                      {
+                        label: '規格',
+                        value: !selectedSpec.dimensions?.length
+                          ? null
+                          : product.categoryId === '01_清潔袋'
                           ? (product.subcategoryId === '04_醫療感染性廢棄物袋'
                               ? `${selectedSpec.dimensions.join(' × ')}cm`
                               : `${selectedSpec.size} (${selectedSpec.dimensions.map(d => d * 10).join(' × ')}mm)`)
-                          : `${selectedSpec.dimensions.join(' × ')} cm` 
+                          : `${selectedSpec.dimensions.join(' × ')} cm`
                       },
-                      { 
-                        label: '張數', 
-                        value: product.categoryId === '01_清潔袋'
-                          ? `${selectedSpec.sheets_per_box} 枚/捲` 
-                          : (product.subcategoryId === '01_台塑LDPE夾鏈袋' || product.subcategoryId === '02_營潔平板式耐熱袋')
-                            ? `${selectedSpec.sheets_per_box} 枚/包`
-                            : `${selectedSpec.sheets_per_box} 枚/盒`
+                      {
+                        label: '張數',
+                        value: selectedSpec.sheets_per_box ? `${selectedSpec.sheets_per_box} 枚/${unit}` : null
                       }
-                    ].map((item, i) => (
+                    ].filter(item => item.value !== null).map((item, i) => (
                       <React.Fragment key={i}>
                         <div className="text-slate-500">{item.label}</div>
                         <div className="font-medium text-right text-slate-900">{item.value}</div>
