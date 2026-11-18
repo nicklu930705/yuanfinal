@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { ArrowLeft, ShoppingCart, Info, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowLeft, MessageCircle, Info, ChevronLeft, ChevronRight } from 'lucide-react';
 import { products } from '../data/store';
-import { useCart } from '../context/CartContext';
 
 export default function ProductDetail() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const { addItem } = useCart();
   
   const product = products.find(p => p.id === decodeURIComponent(id || ''));
   
@@ -63,7 +61,6 @@ export default function ProductDetail() {
 
   const [selectedImage, setSelectedImage] = useState(sortedImages[0]?.path || '');
   const [quantity, setQuantity] = useState(1);
-  const [showSuccess, setShowSuccess] = useState(false);
 
   // Helper for arrow navigation
   const handlePrevImage = () => {
@@ -89,24 +86,19 @@ export default function ProductDetail() {
     return <div className="p-8 text-center">商品不存在</div>;
   }
 
-  const handleAdd = () => {
-    const specName = selectedSpec ? `${selectedSpec.label} (${selectedSpec.size})` : '標準規格';
-    // For new products, order_unit is not in the json directly on variant, but let's use '盒' or '件'
-    const unit = product.categoryId === '01_清潔袋' 
-      ? '捲' 
-      : (product.subcategoryId === '01_台塑LDPE夾鏈袋' || product.subcategoryId === '02_營潔平板式耐熱袋' ? '包' : '盒');
-
-    addItem({
-      id: `${product.id}-${selectedSpecId || 'default'}`,
-      productId: product.id,
-      productName: product.name,
-      spec: specName,
-      quantity,
-      unit
-    });
-    setShowSuccess(true);
-    setTimeout(() => setShowSuccess(false), 3000);
-  };
+  const specName = selectedSpec ? `${selectedSpec.label} (${selectedSpec.size})` : '標準規格';
+  const unit = product.categoryId === '01_清潔袋'
+    ? '捲'
+    : (product.subcategoryId === '01_台塑LDPE夾鏈袋' || product.subcategoryId === '02_營潔平板式耐熱袋' ? '包' : '盒');
+  const inquiryMessage = [
+    '您好，我想詢問以下商品：',
+    `商品：${product.name}`,
+    `規格：${specName}`,
+    `數量：${quantity} ${unit}`,
+    `商品連結：${window.location.origin}/products/${encodeURIComponent(product.id)}`,
+    '請協助提供報價、運費與交期，謝謝。',
+  ].join('\n');
+  const lineInquiryUrl = `https://line.me/R/oaMessage/%40593cexey/?${encodeURIComponent(inquiryMessage)}`;
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -328,20 +320,18 @@ export default function ProductDetail() {
                     >+</button>
                   </div>
                   <span className="ml-4 text-slate-500 font-bold">
-                    {product.categoryId === '01_清潔袋' 
-                      ? '捲' 
-                      : (product.subcategoryId === '01_台塑LDPE夾鏈袋' || product.subcategoryId === '02_營潔平板式耐熱袋' ? '包' : '盒')}
+                    {unit}
                   </span>
                 </div>
 
                 <div className="flex space-x-4">
-                  <button
-                    onClick={handleAdd}
-                    className="flex-1 bg-primary-600 hover:bg-primary-700 text-white py-4 px-8 rounded-2xl font-bold text-lg flex items-center justify-center transition-all shadow-lg shadow-primary-200 active:scale-95"
+                  <a
+                    href={lineInquiryUrl}
+                    className="flex-1 bg-primary-600 hover:bg-primary-700 text-white py-4 px-8 rounded-2xl font-bold text-lg flex items-center justify-center transition-all shadow-lg shadow-primary-200 active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
                   >
-                    <ShoppingCart className="w-5 h-5 mr-3" />
-                    加入詢價需求單
-                  </button>
+                    <MessageCircle aria-hidden="true" className="w-5 h-5 mr-3" />
+                    LINE 詢價
+                  </a>
                 </div>
 
                 {/* Shopping Guide Summary */}
@@ -375,11 +365,6 @@ export default function ProductDetail() {
                     查看完整購物須知 <ChevronRight size={14} className="ml-0.5" />
                   </Link>
                 </div>
-                {showSuccess && (
-                  <div className="mt-4 text-primary-600 text-sm font-bold text-center animate-bounce">
-                    ✨ 已成功加入需求清單！
-                  </div>
-                )}
               </div>
             ) : (
               <div className="mt-auto border-t border-slate-100 pt-8">
