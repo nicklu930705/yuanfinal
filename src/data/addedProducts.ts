@@ -102,7 +102,7 @@ const flatHeatBags: HeatBag[] = [
   { key: '3斤裝_32x43cm', type: '3斤裝', dim: '32x43cm', qty: 79 },
   { key: '5斤裝_35x50cm', type: '5斤裝', dim: '35x50cm', qty: 52 },
   { key: '10斤裝_45x62cm', type: '10斤裝', dim: '45x62cm', qty: 26 },
-  { key: '5斤裝_48x65cm', type: '5斤裝', dim: '48x65cm', qty: 22 },
+  { key: '15斤裝_48x65cm', type: '15斤裝', dim: '48x65cm', qty: 22 },
 ];
 
 const rollHeatBags: HeatBag[] = [
