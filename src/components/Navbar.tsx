@@ -12,6 +12,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: '全部商品', path: '/products' },
+    { name: '快速選購', path: '/quick-order' },
     { name: '關於我們', path: '/about' },
     { name: '購物須知', path: '/shopping-guide' },
   ];
@@ -58,11 +59,12 @@ export default function Navbar() {
           <div className="flex items-center gap-2 sm:gap-4">
             {/* Cart Icon (Visible on all screens) */}
             <Link 
-              aria-label="需求清單" 
-              className="relative flex p-2.5 rounded-xl text-on-surface hover:bg-primary-50 hover:text-primary-600 transition-all duration-300 border border-transparent hover:border-primary-100 shadow-sm hover:shadow" 
+              aria-label="詢價清單" 
+              className="relative flex items-center p-2.5 rounded-xl text-on-surface hover:bg-primary-50 hover:text-primary-600 transition-all duration-300 border border-transparent hover:border-primary-100 shadow-sm hover:shadow"
               to="/cart"
             >
               <span className="material-symbols-outlined">shopping_cart</span>
+              <span className="hidden sm:inline ml-1.5 text-sm font-bold">詢價清單</span>
               {totalQuantity > 0 && (
                 <span className="absolute -top-1 -right-1 bg-primary-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full min-w-[18px] text-center shadow-lg border-2 border-white">
                   {totalQuantity}
@@ -101,7 +103,7 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               <div className="flex items-center gap-2">
-                <span>需求清單</span>
+                <span>詢價清單</span>
                 {totalQuantity > 0 && (
                   <span className="bg-primary-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">
                     {totalQuantity}

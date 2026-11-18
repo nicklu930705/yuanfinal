@@ -6,7 +6,6 @@ import ProductList from './pages/ProductList';
 import ProductDetail from './pages/ProductDetail';
 import QuickOrder from './pages/QuickOrder';
 import Cart from './pages/Cart';
-import Admin from './pages/Admin';
 import About from './pages/About';
 import ShoppingGuide from './pages/ShoppingGuide';
 import { CartProvider } from './context/CartContext';
@@ -25,7 +24,6 @@ function App() {
             <Route path="cart" element={<Cart />} />
             <Route path="about" element={<About />} />
             <Route path="shopping-guide" element={<ShoppingGuide />} />
-            <Route path="admin" element={<Admin />} />
           </Route>
         </Routes>
       </BrowserRouter>

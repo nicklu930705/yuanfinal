@@ -410,7 +410,7 @@ const baseProducts: Product[] = [
     "id": "01_清潔袋-01_一般捲取式-飯店旅館無心捲_10L",
     "categoryId": "01_清潔袋",
     "subcategoryId": "01_一般捲取式",
-    "name": "台塑清潔袋｜飯店旅館無心捲型 10L",
+    "name": "台塑清潔袋｜飯店旅館無心捲型 12L",
     "originalName": "飯店旅館無心捲_10L",
     "description": "專為飯店旅館設計的無心捲規格，節省空間且更換便利。採用高品質 HDPE 材質，強韌抗拉扯，是專業住宿空間清潔的優質選擇。",
     "images": [
@@ -425,7 +425,7 @@ const baseProducts: Product[] = [
     "shared_images": [],
     "parsedSpec": {
       "size_or_type": "飯店旅館無心捲",
-      "capacity_or_dim": "10L",
+      "capacity_or_dim": "12L",
       "quantity": "100枚/捲"
     }
   },

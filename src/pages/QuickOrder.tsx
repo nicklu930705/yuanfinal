@@ -64,8 +64,8 @@ export default function QuickOrder() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-slate-900 mb-2">快速訂購</h1>
-        <p className="text-slate-600">適合熟客快速選購多項商品，一鍵加入需求清單。</p>
+        <h1 className="text-3xl font-bold text-slate-900 mb-2">快速選購</h1>
+        <p className="text-slate-600">一次挑多樣商品加入詢價清單，最後在清單頁用 LINE 一次送出。</p>
       </div>
       
       <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 mb-8 flex flex-col md:flex-row gap-4">

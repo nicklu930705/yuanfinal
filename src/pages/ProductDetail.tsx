@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { ArrowLeft, MessageCircle, Info, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowLeft, MessageCircle, Info, ChevronLeft, ChevronRight, ListPlus, CheckCircle } from 'lucide-react';
 import { products } from '../data/store';
 import { getProductUnit } from '../utils/productUnit';
+import { useCart } from '../context/CartContext';
+import { buildLineMessageUrl } from '../utils/lineInquiry';
 
 export default function ProductDetail() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  
+  const { items: cartItems, addItem } = useCart();
+  const [justAdded, setJustAdded] = useState(false);
+
   const product = products.find(p => p.id === decodeURIComponent(id || ''));
   
   const hasSpecs = product?.specs && product.specs.length > 0;
@@ -97,7 +101,20 @@ export default function ProductDetail() {
     `商品連結：${window.location.origin}/products/${encodeURIComponent(product.id)}`,
     '請協助提供報價、運費與交期，謝謝。',
   ].join('\n');
-  const lineInquiryUrl = `https://line.me/R/oaMessage/%40593cexey/?${encodeURIComponent(inquiryMessage)}`;
+  const lineInquiryUrl = buildLineMessageUrl(inquiryMessage);
+  const cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+
+  const handleAddToList = () => {
+    addItem({
+      id: `${product.id}-${selectedSpecId || 'default'}`,
+      productId: product.id,
+      productName: product.name,
+      spec: specName,
+      quantity,
+      unit,
+    });
+    setJustAdded(true);
+  };
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -321,15 +338,37 @@ export default function ProductDetail() {
                   </span>
                 </div>
 
-                <div className="flex space-x-4">
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <button
+                    type="button"
+                    onClick={handleAddToList}
+                    className="flex-1 bg-primary-600 hover:bg-primary-700 text-white py-4 px-6 rounded-2xl font-bold text-lg flex items-center justify-center transition-all shadow-lg shadow-primary-200 active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                  >
+                    <ListPlus aria-hidden="true" className="w-5 h-5 mr-2" />
+                    加入詢價清單
+                  </button>
                   <a
                     href={lineInquiryUrl}
-                    className="flex-1 bg-primary-600 hover:bg-primary-700 text-white py-4 px-8 rounded-2xl font-bold text-lg flex items-center justify-center transition-all shadow-lg shadow-primary-200 active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                    className="flex-1 bg-[#06C755] hover:bg-[#05b14c] text-white py-4 px-6 rounded-2xl font-bold text-lg flex items-center justify-center transition-all shadow-lg shadow-green-100 active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#06C755]"
                   >
-                    <MessageCircle aria-hidden="true" className="w-5 h-5 mr-3" />
-                    LINE 詢價
+                    <MessageCircle aria-hidden="true" className="w-5 h-5 mr-2" />
+                    LINE 直接詢價
                   </a>
                 </div>
+                <p className="mt-3 text-xs text-slate-500 leading-relaxed">
+                  只問這一項：按「LINE 直接詢價」。要問多樣：先「加入詢價清單」，最後在清單頁一次用 LINE 送出。
+                </p>
+                {justAdded && (
+                  <div role="status" className="mt-4 flex items-center justify-between gap-3 bg-green-50 border border-green-200 text-green-800 rounded-2xl px-4 py-3">
+                    <span className="flex items-center gap-2 text-sm font-bold">
+                      <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
+                      已加入詢價清單（共 {cartCount} 件）
+                    </span>
+                    <Link to="/cart" className="shrink-0 text-sm font-bold text-white bg-green-600 hover:bg-green-700 px-4 py-2 rounded-xl transition">
+                      前往清單送出
+                    </Link>
+                  </div>
+                )}
 
                 {/* Shopping Guide Summary */}
                 <div className="mt-8 p-6 bg-slate-50 rounded-3xl border border-slate-200">
