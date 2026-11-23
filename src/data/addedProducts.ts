@@ -91,17 +91,17 @@ const cleaningBags: Product[] = [
 
 // ---------- 營潔耐熱袋 ----------
 
-interface HeatBag { key: string; type: string; dim: string; qty: number }
+interface HeatBag { key: string; type: string; dim: string; qty: number; photo?: boolean }
 
 // 平板式（包裝）：四兩已在舊資料中，這裡補其他尺寸
 const flatHeatBags: HeatBag[] = [
   { key: '六兩裝_18.5x23cm', type: '六兩裝', dim: '18.5x23cm', qty: 255 },
-  { key: '半斤裝_22x27cm', type: '半斤裝', dim: '22x27cm', qty: 183 },
-  { key: '1斤裝_24x31cm', type: '1斤裝', dim: '24x31cm', qty: 146 },
-  { key: '2斤裝_28x39cm', type: '2斤裝', dim: '28x39cm', qty: 99 },
-  { key: '3斤裝_32x43cm', type: '3斤裝', dim: '32x43cm', qty: 79 },
-  { key: '5斤裝_35x50cm', type: '5斤裝', dim: '35x50cm', qty: 52 },
-  { key: '10斤裝_45x62cm', type: '10斤裝', dim: '45x62cm', qty: 26 },
+  { key: '半斤裝_22x27cm', type: '半斤裝', dim: '22x27cm', qty: 183, photo: true },
+  { key: '1斤裝_24x31cm', type: '1斤裝', dim: '24x31cm', qty: 146, photo: true },
+  { key: '2斤裝_28x39cm', type: '2斤裝', dim: '28x39cm', qty: 99, photo: true },
+  { key: '3斤裝_32x43cm', type: '3斤裝', dim: '32x43cm', qty: 79, photo: true },
+  { key: '5斤裝_35x50cm', type: '5斤裝', dim: '35x50cm', qty: 52, photo: true },
+  { key: '10斤裝_45x62cm', type: '10斤裝', dim: '45x62cm', qty: 26, photo: true },
   { key: '15斤裝_48x65cm', type: '15斤裝', dim: '48x65cm', qty: 22 },
 ];
 
@@ -123,7 +123,9 @@ const heatBags: Product[] = [
     name: `營潔平板式耐熱袋｜${b.type} ${b.dim}`,
     originalName: b.key,
     description: '營潔平板式耐熱袋同系列尺寸，適用於食材分裝與熱食外帶包裝。',
-    images: img(`/assets/02_食品保鮮耐熱袋/02_營潔平板式耐熱袋/${b.key}/規格圖__營潔耐熱袋${b.type}${b.dim}.png`, '規格圖'),
+    images: b.photo
+      ? img(`/assets/02_食品保鮮耐熱袋/02_營潔平板式耐熱袋/${b.key}/商品圖__營潔耐熱袋${b.type}${b.dim}.webp`, '展示圖')
+      : img(`/assets/02_食品保鮮耐熱袋/02_營潔平板式耐熱袋/${b.key}/規格圖__營潔耐熱袋${b.type}${b.dim}.png`, '規格圖'),
     specs: [],
     shared_images: [],
     parsedSpec: { size_or_type: b.type, capacity_or_dim: b.dim, quantity: `${b.qty}枚/包` },
