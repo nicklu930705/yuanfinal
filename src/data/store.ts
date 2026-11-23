@@ -1040,7 +1040,7 @@ const baseProducts: Product[] = [
     "subcategoryId": "01_台塑LDPE夾鏈袋",
     "name": "台塑夾鏈袋｜00號",
     "originalName": "00特小號_35x40mm",
-    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。",
+    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。\n袋口封邊有一條紅線（紅線夾鏈袋），第二張圖為袋子本體。",
     "images": [
       {
         "role": "規格圖",
@@ -1050,7 +1050,14 @@ const baseProducts: Product[] = [
       }
     ],
     "specs": [],
-    "shared_images": [],
+    "shared_images": [
+      {
+        "role": "內容物圖",
+        "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/00_系列共用/內容物圖__紅線夾鏈袋.jpg",
+        "note": "袋子本體（紅線夾鏈袋），業主提供；外包裝見規格圖",
+        "order": 1
+      }
+    ],
     "parsedSpec": {
       "size_or_type": "00號",
       "capacity_or_dim": "35x40x0.04mm",
@@ -1063,7 +1070,7 @@ const baseProducts: Product[] = [
     "subcategoryId": "01_台塑LDPE夾鏈袋",
     "name": "台塑夾鏈袋｜0號",
     "originalName": "00號_40x60mm",
-    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。",
+    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。\n袋口封邊有一條紅線（紅線夾鏈袋），第二張圖為袋子本體。",
     "images": [
       {
         "role": "規格圖",
@@ -1073,7 +1080,14 @@ const baseProducts: Product[] = [
       }
     ],
     "specs": [],
-    "shared_images": [],
+    "shared_images": [
+      {
+        "role": "內容物圖",
+        "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/00_系列共用/內容物圖__紅線夾鏈袋.jpg",
+        "note": "袋子本體（紅線夾鏈袋），業主提供；外包裝見規格圖",
+        "order": 1
+      }
+    ],
     "parsedSpec": {
       "size_or_type": "0號",
       "capacity_or_dim": "40x60x0.04mm",
@@ -1086,7 +1100,7 @@ const baseProducts: Product[] = [
     "subcategoryId": "01_台塑LDPE夾鏈袋",
     "name": "台塑夾鏈袋｜1號",
     "originalName": "01號_50x70mm",
-    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。",
+    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。\n袋口封邊有一條紅線（紅線夾鏈袋），第二張圖為袋子本體。",
     "images": [
       {
         "role": "規格圖",
@@ -1096,7 +1110,14 @@ const baseProducts: Product[] = [
       }
     ],
     "specs": [],
-    "shared_images": [],
+    "shared_images": [
+      {
+        "role": "內容物圖",
+        "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/00_系列共用/內容物圖__紅線夾鏈袋.jpg",
+        "note": "袋子本體（紅線夾鏈袋），業主提供；外包裝見規格圖",
+        "order": 1
+      }
+    ],
     "parsedSpec": {
       "size_or_type": "1號",
       "capacity_or_dim": "50x70x0.04mm",
@@ -1109,7 +1130,7 @@ const baseProducts: Product[] = [
     "subcategoryId": "01_台塑LDPE夾鏈袋",
     "name": "台塑夾鏈袋｜2號",
     "originalName": "02號_60x85mm",
-    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。",
+    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。\n袋口封邊有一條紅線（紅線夾鏈袋），第二張圖為袋子本體。",
     "images": [
       {
         "role": "規格圖",
@@ -1119,7 +1140,14 @@ const baseProducts: Product[] = [
       }
     ],
     "specs": [],
-    "shared_images": [],
+    "shared_images": [
+      {
+        "role": "內容物圖",
+        "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/00_系列共用/內容物圖__紅線夾鏈袋.jpg",
+        "note": "袋子本體（紅線夾鏈袋），業主提供；外包裝見規格圖",
+        "order": 1
+      }
+    ],
     "parsedSpec": {
       "size_or_type": "2號",
       "capacity_or_dim": "60x85x0.04mm",
@@ -1132,7 +1160,7 @@ const baseProducts: Product[] = [
     "subcategoryId": "01_台塑LDPE夾鏈袋",
     "name": "台塑夾鏈袋｜3號",
     "originalName": "03號_70x100mm",
-    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。",
+    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。\n袋口封邊有一條紅線（紅線夾鏈袋），第二張圖為袋子本體。",
     "images": [
       {
         "role": "規格圖",
@@ -1142,7 +1170,14 @@ const baseProducts: Product[] = [
       }
     ],
     "specs": [],
-    "shared_images": [],
+    "shared_images": [
+      {
+        "role": "內容物圖",
+        "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/00_系列共用/內容物圖__紅線夾鏈袋.jpg",
+        "note": "袋子本體（紅線夾鏈袋），業主提供；外包裝見規格圖",
+        "order": 1
+      }
+    ],
     "parsedSpec": {
       "size_or_type": "3號",
       "capacity_or_dim": "70x100x0.04mm",
@@ -1155,7 +1190,7 @@ const baseProducts: Product[] = [
     "subcategoryId": "01_台塑LDPE夾鏈袋",
     "name": "台塑夾鏈袋｜4號",
     "originalName": "04號_85x120mm",
-    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。",
+    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。\n袋口封邊有一條紅線（紅線夾鏈袋），第二張圖為袋子本體。",
     "images": [
       {
         "role": "規格圖",
@@ -1165,7 +1200,14 @@ const baseProducts: Product[] = [
       }
     ],
     "specs": [],
-    "shared_images": [],
+    "shared_images": [
+      {
+        "role": "內容物圖",
+        "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/00_系列共用/內容物圖__紅線夾鏈袋.jpg",
+        "note": "袋子本體（紅線夾鏈袋），業主提供；外包裝見規格圖",
+        "order": 1
+      }
+    ],
     "parsedSpec": {
       "size_or_type": "4號",
       "capacity_or_dim": "85x120x0.04mm",
@@ -1178,7 +1220,7 @@ const baseProducts: Product[] = [
     "subcategoryId": "01_台塑LDPE夾鏈袋",
     "name": "台塑夾鏈袋｜5號",
     "originalName": "05號_100x140mm",
-    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。",
+    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。\n袋口封邊有一條紅線（紅線夾鏈袋），第二張圖為袋子本體。",
     "images": [
       {
         "role": "規格圖",
@@ -1188,7 +1230,14 @@ const baseProducts: Product[] = [
       }
     ],
     "specs": [],
-    "shared_images": [],
+    "shared_images": [
+      {
+        "role": "內容物圖",
+        "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/00_系列共用/內容物圖__紅線夾鏈袋.jpg",
+        "note": "袋子本體（紅線夾鏈袋），業主提供；外包裝見規格圖",
+        "order": 1
+      }
+    ],
     "parsedSpec": {
       "size_or_type": "5號",
       "capacity_or_dim": "100x140x0.04mm",
@@ -1201,7 +1250,7 @@ const baseProducts: Product[] = [
     "subcategoryId": "01_台塑LDPE夾鏈袋",
     "name": "台塑夾鏈袋｜6號",
     "originalName": "06號_120x170mm",
-    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。",
+    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。\n袋口封邊有一條紅線（紅線夾鏈袋），第二張圖為袋子本體。",
     "images": [
       {
         "role": "規格圖",
@@ -1211,7 +1260,14 @@ const baseProducts: Product[] = [
       }
     ],
     "specs": [],
-    "shared_images": [],
+    "shared_images": [
+      {
+        "role": "內容物圖",
+        "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/00_系列共用/內容物圖__紅線夾鏈袋.jpg",
+        "note": "袋子本體（紅線夾鏈袋），業主提供；外包裝見規格圖",
+        "order": 1
+      }
+    ],
     "parsedSpec": {
       "size_or_type": "6號",
       "capacity_or_dim": "120x170x0.04mm",
@@ -1224,7 +1280,7 @@ const baseProducts: Product[] = [
     "subcategoryId": "01_台塑LDPE夾鏈袋",
     "name": "台塑夾鏈袋｜7號",
     "originalName": "07號_140x200mm",
-    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。",
+    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。\n袋口封邊有一條紅線（紅線夾鏈袋），第二張圖為袋子本體。",
     "images": [
       {
         "role": "規格圖",
@@ -1234,7 +1290,14 @@ const baseProducts: Product[] = [
       }
     ],
     "specs": [],
-    "shared_images": [],
+    "shared_images": [
+      {
+        "role": "內容物圖",
+        "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/00_系列共用/內容物圖__紅線夾鏈袋.jpg",
+        "note": "袋子本體（紅線夾鏈袋），業主提供；外包裝見規格圖",
+        "order": 1
+      }
+    ],
     "parsedSpec": {
       "size_or_type": "7號",
       "capacity_or_dim": "140x200x0.04mm",
@@ -1247,7 +1310,7 @@ const baseProducts: Product[] = [
     "subcategoryId": "01_台塑LDPE夾鏈袋",
     "name": "台塑夾鏈袋｜8 號",
     "originalName": "08號_170x240mm",
-    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。",
+    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。\n袋口封邊有一條紅線（紅線夾鏈袋），第二張圖為袋子本體。",
     "images": [
       {
         "role": "規格圖",
@@ -1257,7 +1320,14 @@ const baseProducts: Product[] = [
       }
     ],
     "specs": [],
-    "shared_images": [],
+    "shared_images": [
+      {
+        "role": "內容物圖",
+        "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/00_系列共用/內容物圖__紅線夾鏈袋.jpg",
+        "note": "袋子本體（紅線夾鏈袋），業主提供；外包裝見規格圖",
+        "order": 1
+      }
+    ],
     "parsedSpec": {
       "size_or_type": "8號",
       "capacity_or_dim": "170x240x0.04mm",
@@ -1270,7 +1340,7 @@ const baseProducts: Product[] = [
     "subcategoryId": "01_台塑LDPE夾鏈袋",
     "name": "台塑夾鏈袋｜9號",
     "originalName": "09號_200x280mm",
-    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。",
+    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。\n袋口封邊有一條紅線（紅線夾鏈袋），第二張圖為袋子本體。",
     "images": [
       {
         "role": "規格圖",
@@ -1280,7 +1350,14 @@ const baseProducts: Product[] = [
       }
     ],
     "specs": [],
-    "shared_images": [],
+    "shared_images": [
+      {
+        "role": "內容物圖",
+        "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/00_系列共用/內容物圖__紅線夾鏈袋.jpg",
+        "note": "袋子本體（紅線夾鏈袋），業主提供；外包裝見規格圖",
+        "order": 1
+      }
+    ],
     "parsedSpec": {
       "size_or_type": "9號",
       "capacity_or_dim": "200x280x0.04mm",
@@ -1293,7 +1370,7 @@ const baseProducts: Product[] = [
     "subcategoryId": "01_台塑LDPE夾鏈袋",
     "name": "台塑夾鏈袋｜10號",
     "originalName": "10號_240x340mm",
-    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。",
+    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。\n袋口封邊有一條紅線（紅線夾鏈袋），第二張圖為袋子本體。",
     "images": [
       {
         "role": "規格圖",
@@ -1303,7 +1380,14 @@ const baseProducts: Product[] = [
       }
     ],
     "specs": [],
-    "shared_images": [],
+    "shared_images": [
+      {
+        "role": "內容物圖",
+        "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/00_系列共用/內容物圖__紅線夾鏈袋.jpg",
+        "note": "袋子本體（紅線夾鏈袋），業主提供；外包裝見規格圖",
+        "order": 1
+      }
+    ],
     "parsedSpec": {
       "size_or_type": "10號",
       "capacity_or_dim": "240x340x0.04mm",
@@ -1316,7 +1400,7 @@ const baseProducts: Product[] = [
     "subcategoryId": "01_台塑LDPE夾鏈袋",
     "name": "台塑夾鏈袋｜11號",
     "originalName": "11號_280x400mm",
-    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。",
+    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。\n袋口封邊有一條紅線（紅線夾鏈袋），第二張圖為袋子本體。",
     "images": [
       {
         "role": "規格圖",
@@ -1326,7 +1410,14 @@ const baseProducts: Product[] = [
       }
     ],
     "specs": [],
-    "shared_images": [],
+    "shared_images": [
+      {
+        "role": "內容物圖",
+        "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/00_系列共用/內容物圖__紅線夾鏈袋.jpg",
+        "note": "袋子本體（紅線夾鏈袋），業主提供；外包裝見規格圖",
+        "order": 1
+      }
+    ],
     "parsedSpec": {
       "size_or_type": "11號",
       "capacity_or_dim": "280x400x0.04mm",
@@ -1339,7 +1430,7 @@ const baseProducts: Product[] = [
     "subcategoryId": "01_台塑LDPE夾鏈袋",
     "name": "台塑夾鏈袋｜12號",
     "originalName": "12號_340x450mm",
-    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。",
+    "description": "高品質食品級 PE 材質，透明度高，方便內容物辨識。獨家高品質夾鏈封口，密封性極佳，適合乾貨、文具、衣物或各類生活小物分類收納。\n袋口封邊有一條紅線（紅線夾鏈袋），第二張圖為袋子本體。",
     "images": [
       {
         "role": "規格圖",
@@ -1349,7 +1440,14 @@ const baseProducts: Product[] = [
       }
     ],
     "specs": [],
-    "shared_images": [],
+    "shared_images": [
+      {
+        "role": "內容物圖",
+        "path": "/assets/03_夾鏈袋/01_台塑LDPE夾鏈袋/00_系列共用/內容物圖__紅線夾鏈袋.jpg",
+        "note": "袋子本體（紅線夾鏈袋），業主提供；外包裝見規格圖",
+        "order": 1
+      }
+    ],
     "parsedSpec": {
       "size_or_type": "12號",
       "capacity_or_dim": "340x450x0.04mm",

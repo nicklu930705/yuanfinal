@@ -1160,5 +1160,19 @@
     "height": 1080,
     "sha256": "8ee3136467bfce0845143eab6b86bfc74599d8ff4e7d4d1a90508adb349403e9",
     "original_zip_path": ""
+  },
+  {
+    "source": "業主提供（2026-11，原圖未修改）",
+    "path": "03_夾鏈袋/01_台塑LDPE夾鏈袋/00_系列共用/內容物圖__紅線夾鏈袋.jpg",
+    "category": "03_夾鏈袋",
+    "subcategory": "01_台塑LDPE夾鏈袋",
+    "product_group": "00_系列共用",
+    "role": "內容物圖",
+    "status": "可用",
+    "note": "台塑夾鏈袋 00號～12號共用的袋子本體照（紅線夾鏈袋）；外包裝見各號規格圖",
+    "width": 1122,
+    "height": 1402,
+    "sha256": "d6112e8e9319dc44f595c2c5e2e49a75a2180c0a11c320d1d535cef645db666f",
+    "original_zip_path": ""
   }
 ]
