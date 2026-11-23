@@ -136,7 +136,7 @@ const heatBags: Product[] = [
     name: `營潔卷裝耐熱袋｜${b.type} ${b.dim}`,
     originalName: b.key,
     description: '營潔耐熱袋卷裝規格，整捲連續撕取，適合餐飲業、早餐店等大量使用的場所。',
-    images: img(`/assets/02_食品保鮮耐熱袋/03_營潔卷裝耐熱袋/${b.key}/規格圖__營潔卷裝耐熱袋${b.type}.png`, '規格圖'),
+    images: img(`/assets/02_食品保鮮耐熱袋/03_營潔卷裝耐熱袋/${b.key}/商品圖__營潔卷裝耐熱袋${b.type}.webp`, '展示圖'),
     specs: [],
     shared_images: [],
     parsedSpec: { size_or_type: b.type, capacity_or_dim: b.dim, quantity: `${b.qty}枚/捲` },
