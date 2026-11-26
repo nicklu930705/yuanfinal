@@ -385,15 +385,6 @@ const baseProducts: Product[] = [
         "images": []
       },
       {
-        "id": "01_清潔袋-01_一般捲取式-超小_10L-pink",
-        "size": "超小",
-        "label": "粉色",
-        "dimensions": [38, 45],
-        "sheets_per_box": 100,
-        "barcode": "",
-        "images": []
-      },
-      {
         "id": "01_清潔袋-01_一般捲取式-超小_10L-transparent",
         "size": "超小",
         "label": "透明",
@@ -585,7 +576,7 @@ const baseProducts: Product[] = [
         "id": "01_清潔袋-02_拉繩式-超大超值包_90L_25張",
         "categoryId": "01_清潔袋",
         "subcategoryId": "02_拉繩式",
-        "name": "台塑拉繩清潔袋｜超大超值包型 90L",
+        "name": "台塑拉繩清潔袋｜超大超量包型 90L",
         "originalName": "超大超值包_90L_25張",
         "description": "獨特拉繩設計，一拉即收，不髒手且封口快速便利。採用加厚強韌材質，抗刺穿力強，適合廚房及各類居家清潔使用。",
         "images": [
@@ -599,7 +590,7 @@ const baseProducts: Product[] = [
         "specs": [
       {
         "id": "01_清潔袋-02_拉繩式-超大超值包_90L_25張-black",
-        "size": "超大超值包",
+        "size": "超大超量包",
         "label": "黑色",
         "dimensions": [84, 95],
         "sheets_per_box": 25,
@@ -608,7 +599,7 @@ const baseProducts: Product[] = [
       },
       {
         "id": "01_清潔袋-02_拉繩式-超大超值包_90L_25張-transparent",
-        "size": "超大超值包",
+        "size": "超大超量包",
         "label": "透明",
         "dimensions": [84, 95],
         "sheets_per_box": 25,
